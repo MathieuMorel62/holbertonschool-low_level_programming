@@ -15,9 +15,9 @@ int main(void)
 int num;
 int letter;
 
-for (num = 0; num < 9; num++)
+for (num = 0; num < 10; num++)
 {
-putchar(num);
+putchar((num % 10) + '0');
 }
 for (letter = 'a'; letter <= 'f'; letter++)
 {
