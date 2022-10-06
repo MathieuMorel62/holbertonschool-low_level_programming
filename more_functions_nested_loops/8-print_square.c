@@ -2,7 +2,7 @@
 
 /**
  * print_square - prints a square /n.
- *
+ * @size: the size of the square.
  * return: 0
  */
 
@@ -13,7 +13,7 @@ int b;
 if (size <= 0)
 _putchar ('\n');
 
-for (a = 0; a < size; a ++)
+for (a = 0; a < size; a++)
 {
 for (b = 0; b < size; b++)
 {
