@@ -23,7 +23,7 @@ Read or watch :
 		
 	    => rules: all
 		
-	    => The all rule builds your executable
+	          => The all rule builds your executable
 		
             => variables: none
 
