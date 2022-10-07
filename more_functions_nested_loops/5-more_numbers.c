@@ -9,20 +9,20 @@
 
 void more_numbers(void)
 {
-int print_lines;
-int numbers;
+	int print_lines;
+	int numbers;
 
-for (print_lines = 0; print_lines < 10; print_lines++)
-{
-for (numbers = 0; numbers <= 14; numbers++)
-{
-if (numbers >= 10)
-{
-_putchar((numbers / 10) + '0');
-}
-_putchar((numbers % 10) + '0');
-}
-_putchar('\n');
-}
+	for (print_lines = 0; print_lines < 10; print_lines++)
+	{
+		for (numbers = 0; numbers <= 14; numbers++)
+		{
+			if (numbers >= 10)
+			{
+				_putchar((numbers / 10) + '0');
+			}
+			_putchar((numbers % 10) + '0');
+		}
+		_putchar('\n');
+	}
 }
 
