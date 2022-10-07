@@ -8,19 +8,21 @@
 
 void print_alphabet_x10(void)
 {
-char letter;
-int number = 0;
+	char letter;
+	int number = 0;
 
-while (number <= 9)
-{
-for (letter = 'a'; letter <= 'z'; letter++)
-{
-_putchar(letter);
-}
+	while (number <= 9)
 
-_putchar('\n');
+	{
+		for (letter = 'a'; letter <= 'z'; letter++)
+	
+		{
+			_putchar(letter);
+		}
 
-number++;
-}
+		_putchar('\n');
+
+		number++;
+	}
 }
 
