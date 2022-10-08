@@ -2,7 +2,7 @@
 
 ![img](https://ict.iitk.ac.in/wp-content/uploads/c-programming-2.jpg)
 
-## 1. C - HELLO, WORLD
+## [1. C - HELLO, WORLD](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/hello_world)
 
 ### GENERAL
 
@@ -35,7 +35,7 @@
 -------------------------------
 
 
-## 2. C - VARIABLES, IF, ELSE, WHILE
+## [2. C - VARIABLES, IF, ELSE, WHILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/variables_if_else_while)
 
 ### GENERAL
 
@@ -71,7 +71,7 @@
 
 --------------------------------
 
-## 3. C - FUNCTIONS, NESTED LOOPS
+## [3. C - FUNCTIONS, NESTED LOOPS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/functions_nested_loops)
 
 ### GENERAL
 
@@ -91,7 +91,7 @@
 
 --------------------------------------
 
-## 4. C - MAKEFILES
+## [4. C - MAKEFILES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/makefiles)
 
 ### GENERAL
 
@@ -109,7 +109,7 @@
 
 ----------------------------------
 
-## 5. C - MORE FUNCTIONS, MORE NESTED LOOPS
+## [5. C - MORE FUNCTIONS, MORE NESTED LOOPS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_functions_nested_loops)
 
 ### GENERAL
 
