@@ -15,7 +15,7 @@
  # TASKS
 
 
-[0. MAKE -f 0 - MAKEFILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/0-Makefile)
+### [0. MAKE -f 0 - MAKEFILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/0-Makefile)
 
 Create your first Makefile.
   
@@ -31,7 +31,7 @@ Requirements :
 
 ----------------------------
 
-[1. MAKE -f 1 - MAKEFILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/1-Makefile)
+### [1. MAKE -f 1 - MAKEFILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/1-Makefile)
 
 Requirements :
 
@@ -49,7 +49,7 @@ Requirements :
 
 --------------------------------
 
-[2. MAKE -f 2 - MAKEFILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/2-Makefile)
+### [2. MAKE -f 2 - MAKEFILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/2-Makefile)
 
 Requirements :
 
@@ -75,7 +75,7 @@ Requirements :
 
 --------------------------
 
-[3. MAKE - f 3 - MAKEFILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/3-Makefile)
+### [3. MAKE - f 3 - MAKEFILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/3-Makefile)
 
 Requirements :
 
@@ -113,7 +113,7 @@ Requirements :
 
 --------------------------------
 
-[4. A COMPLETE MAKEFILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/4-Makefile)
+### [4. A COMPLETE MAKEFILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/4-Makefile)
 
 Requirements : 
 
@@ -153,7 +153,7 @@ Requirements :
 
 ------------------------------
 
-[5. MAKE -f 100 - MAKEFILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/100-Makefile)
+### [5. MAKE -f 100 - MAKEFILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/100-Makefile)
 
 Requirements :
 
