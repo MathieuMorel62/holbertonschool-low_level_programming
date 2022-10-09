@@ -23,7 +23,7 @@
 # TASKS
 
 
-[0. _PUTCHAR:](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/0-putchar.c)
+### [0. _PUTCHAR:](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/0-putchar.c)
 
 Write a program that prints _putchar, followed by a new line.
 
@@ -31,7 +31,7 @@ Write a program that prints _putchar, followed by a new line.
 
 -----------------------
 
-[1. I SOMETIMES SUFFER FROM INSOMNIA. AND WHEN I CAN'T FALL ASLEEP, I PLAY WHAT I CALL THE ALPHABET GAME](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/1-alphabet.c)
+### [1. I SOMETIMES SUFFER FROM INSOMNIA. AND WHEN I CAN'T FALL ASLEEP, I PLAY WHAT I CALL THE ALPHABET GAME](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/1-alphabet.c)
 
 Write a function that prints the alphabet, in lowercase, followed by a new line.
  
@@ -41,7 +41,7 @@ Write a function that prints the alphabet, in lowercase, followed by a new line.
 
 -----------------------
 
-[2. 10 x ALPHABET](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/2-print_alphabet_x10.c)
+### [2. 10 x ALPHABET](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/2-print_alphabet_x10.c)
 
 Write a function that prints 10 times the alphabet, in lowercase, followed by a new line.
 
@@ -51,7 +51,7 @@ Write a function that prints 10 times the alphabet, in lowercase, followed by a 
 
 ------------------------
 
-[3. ISLOWER](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/3-islower.c)
+### [3. ISLOWER](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/3-islower.c)
 
 Write a function that checks for lowercase character.
 
@@ -65,7 +65,7 @@ FYI: The standard library provides a similar function: islower. Run man islower 
 
 --------------------------
 
-[4. ISALPHA](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/4-isalpha.c)
+### [4. ISALPHA](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/4-isalpha.c)
 
 Write a function that checks for alphabetic character.
 
@@ -79,7 +79,7 @@ FYI: The standard library provides a similar function: isalpha. Run man isalpha 
 
 ----------------------------
 
-[5. SIGN](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/5-sign.c)
+### [5. SIGN](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/5-sign.c)
 
 Write a function that prints the sign of a number.
 
@@ -93,7 +93,7 @@ Write a function that prints the sign of a number.
 
 ------------------------------
 
-[6. THERE IS NO SUCH THING AS ABSOLUTE VALUE IN THIS WORLD. YOU CAN ONLY ESTIMATE WHAT A THING IS WORTH TO YOU](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/6-abs.c)
+### [6. THERE IS NO SUCH THING AS ABSOLUTE VALUE IN THIS WORLD. YOU CAN ONLY ESTIMATE WHAT A THING IS WORTH TO YOU](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/6-abs.c)
 
 Write a function that computes the absolute value of an integer.
 
@@ -103,7 +103,7 @@ FYI: The standard library provides a similar function: abs. Run man abs to learn
 
 --------------------------
 
-[7. THERE ARE ONLY 3 COLORS, 10 DIGITS, AND 7 NOTES; IT'S WHAT WE DO WITH THEM THAT'S IMPORTANT](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/7-print_last_digit.c)
+### [7. THERE ARE ONLY 3 COLORS, 10 DIGITS, AND 7 NOTES; IT'S WHAT WE DO WITH THEM THAT'S IMPORTANT](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/7-print_last_digit.c)
 
 Write a function that prints the last digit of a number.
 
@@ -113,7 +113,7 @@ Write a function that prints the last digit of a number.
 
 ------------------------------------
 
-[8. I'M FEDERAL AGENT JACK BAUER, AND TODAY IS THE LONGEST DAY OF MY LIFE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/8-24_hours.c)
+### [8. I'M FEDERAL AGENT JACK BAUER, AND TODAY IS THE LONGEST DAY OF MY LIFE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/8-24_hours.c)
 
 Write a function that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
 
@@ -123,7 +123,7 @@ Write a function that prints every minute of the day of Jack Bauer, starting fro
 
 ------------------------------
 
-[9. LEARN YOUR TIMES TABLE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/9-times_table.c)
+### [9. LEARN YOUR TIMES TABLE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/9-times_table.c)
 
 Write a function that prints the 9 times table, starting with 0.
 
@@ -133,7 +133,7 @@ Write a function that prints the 9 times table, starting with 0.
 
 ----------------------------------
 
-[10. A + B](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/10-add.c)
+### [10. A + B](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/10-add.c)
 
 Write a function that adds two integers and returns the result.
 
@@ -141,7 +141,7 @@ Write a function that adds two integers and returns the result.
 
 -----------------------------
 
-[11. 98 BATTERY STREET, THE OG](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/11-print_to_98.c)
+### [11. 98 BATTERY STREET, THE OG](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/11-print_to_98.c)
 
 Write a function that prints all natural numbers from n to 98, followed by a new line.
 
