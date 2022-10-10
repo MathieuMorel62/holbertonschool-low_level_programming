@@ -127,3 +127,21 @@
 
 - What are header files and how to to use them with #include
 
+---------------------------------------
+
+## [6. C - POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/pointers_arrays_strings)
+
+### GENERAL
+
+- What are pointers and how to use them
+
+- What are arrays and how to use them
+
+- What are the differences between pointers and arrays
+
+- How to use strings and how to manipulate them
+
+- Scope of variables
+
+
+
