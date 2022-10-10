@@ -2,10 +2,9 @@
 #include <stdio.h>
 
 /**
- * _strlen - Returns the length of a string
- * @s: Variable being evaluated
- *
- * Return: Length of string
+ * print_rev - function that prints a string in reverse
+ * @s: string to print.
+ * Reurn : void.
  */
 
 void print_rev(char *s)
