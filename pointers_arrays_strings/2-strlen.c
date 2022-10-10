@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
+ * _strlen - Returns the length of a string
+ * @s: Variable being evaluated
  *
- *
- *
- *
+ * Return: Length of string
  */
 
 int _strlen(char *s)
