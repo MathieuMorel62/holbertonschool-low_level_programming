@@ -2,11 +2,11 @@
 #include <stddef.h>
 
 /**
- * compare - compares two strings
- * @haystack: source string
- * @needle: string being compared
- * Description: checks if needle is at start of haystack
- * Return: 1 if matches, 0 if not
+ * _strstr - Locates a substring
+ * @haystack: String being searched
+ * @needle: Substring being searched for
+ *
+ * Return: Pointer to beginning of located substring or NULL
  **/
 
 char *_strstr(char *haystack, char *needle)
