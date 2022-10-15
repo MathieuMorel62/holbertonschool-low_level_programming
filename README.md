@@ -143,5 +143,30 @@
 
 - Scope of variables
 
+----------------------------------------
 
+## [6. C - POINTER, ARRAYS AND STRINGS PART 02](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/pointers_arrays_strings_part_02)
 
+### GENERAL
+
+- What are pointers and how to use them
+
+- What are arrays and how to use them
+
+- What are the differences between pointers and arrays
+
+- How to use strings and how to manipulate them
+
+- Scope of variables
+
+----------------------------
+
+## [6. C - POINTER, ARRAYS AND STRINGS PART 03](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/pointers_arrays_strings_part_03)
+
+### GENERAL
+
+- What are pointers to pointers and how to use them
+
+- What are multidimensional arrays and how to use them
+
+- What are the most common C standard library functions to manipulate strings
