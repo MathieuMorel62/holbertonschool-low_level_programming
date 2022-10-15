@@ -15,7 +15,7 @@ For this project, we expect you to look at these concepts :
 #### Read or watch :
 
 - [C - Arrays](https://intranet.hbtn.io/rltoken/1PQnbj1BHB7w_mKhxhMWdg)
-- 
+
 - [C - Pointers](https://intranet.hbtn.io/rltoken/G2_eTEuCaSAXfKYuEteXfQ)
 
 - [C - Strings](https://intranet.hbtn.io/rltoken/N7AFmcH2JyKF35ly2RH1Uw)
