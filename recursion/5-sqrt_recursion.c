@@ -21,10 +21,10 @@ int root(int n, int i)
 }
 
 /**
- * _sqrt_recursion - returns the natural square of a root
+ * _sqrt_recursion - returns the natural square root of number
  * @n: parameter
  *
- * return: natural square root of number
+ * Return: natural square root of number
  */
 
 int _sqrt_recursion(int n)
