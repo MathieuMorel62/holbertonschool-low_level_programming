@@ -1,6 +1,6 @@
 # C - STATIC LIBRARIES
 
-![img](https://miro.medium.com/max/546/1*BAeYqcxZKJwKE-hNOdPspQ.png)
+![img](https://media-exp1.licdn.com/dms/image/C4D12AQHjjeKaE5LWBQ/article-cover_image-shrink_600_2000/0/1620087295947?e=2147483647&v=beta&t=VWAhrUrI1tBd8ZK6PygUu0x2hLOHWj0-AObWzN7eGyU)
 
 ## RESOURCES
 
