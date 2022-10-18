@@ -187,7 +187,7 @@
 
 ------------------------------
 
-## [8. C - STATIC LIBRARIES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/recursion)
+## [8. C - STATIC LIBRARIES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/static_libraries)
 
 ### GENERAL
 
