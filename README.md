@@ -170,3 +170,41 @@
 - What are multidimensional arrays and how to use them
 
 - What are the most common C standard library functions to manipulate strings
+
+----------------------------
+
+## [7. C _ RECURSION](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/recursion)
+
+### GENERAL
+
+- What is recursion
+
+- How to implement recursion
+
+- In what situations you should implement recursion
+
+- In what situations you shouldn’t implement recursion
+
+------------------------------
+
+## [8. C - STATIC LIBRARIES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/recursion)
+
+### GENERAL
+
+- What is a static library, how does it work, how to create one, and how to use it
+
+- Basic usage of ar, ranlib, nm
+
+--------------------------------
+
+## [9. C - ARGC, ARGV](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/argc_argv)
+
+### GENERAL
+
+- How to use arguments passed to your program
+
+- What are two prototypes of main that you know of, and in which case do you use one or the other
+
+- How to use __attribute__((unused)) or (void) to compile functions with unused variables or parameters
+
+
