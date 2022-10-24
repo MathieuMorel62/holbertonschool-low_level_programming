@@ -33,7 +33,10 @@ int **alloc_grid(int width, int height)
 			for (init = index; init >= 0; init--)
 			return (NULL);
 		}
+	}
 
+	for (index = 0; index < height; index++)
+	{
 		while (init < width)
 		{
 			res[index][init] = 0;
