@@ -1,21 +1,19 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * str_concat - Concatenates two strings
- * @s1: First string
- * @s2: Second string
+ * @s1: String one
+ * @s2: String two
  *
- * Return: Concatenated string, NULL if empty or fail
+ * Return: Return a concatenate string
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	int string1;
-	int string2;
-	char *result;
+	int index1, index2, x, y, z;
+	char *str;
 
 	if (s1 == NULL)
 		return (s1 = "");
@@ -23,18 +21,21 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 		return (s2 = "");
 
-	string1 = strlen(s1);
-	string2 = strlen(s2);
+	for (index1 = 0; s1[index1] != '\0'; index1++);
+	for (index2 = 0; s2[index2] != '\0'; index2++);
 
-	result = (char *) malloc(string1 + string2 + 1);
+	str = malloc((index1 + index2) * sizeof(char) + 1);
 
-	if (result)
-	{
-		memcpy(result, s1, string1);
-		memcpy(result + string1, s2, string2 + 1);
-	}
-	else
+	if (str == NULL)
 		return (NULL);
 
-	return (result);
+	for (x = 0; x < index1; x++)
+		str[x] = s1[x];
+
+	for (y = index1, z = 0; y < index1 + index2; y++, z++)
+		str[y] = s2[z];
+
+	str[index1 + index2] = '\0';
+
+	return (str);
 }
