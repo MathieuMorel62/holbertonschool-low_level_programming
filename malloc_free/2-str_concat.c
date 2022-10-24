@@ -12,14 +12,14 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int index1, index2, x, y, z;
+	unsigned int index1, index2, x, y, z;
 	char *str;
 
 	if (s1 == NULL)
-		return (s1 = "");
+		s1 = "";
 
 	if (s2 == NULL)
-		return (s2 = "");
+		s2 = "";
 
 	for (index1 = 0; s1[index1] != '\0'; index1++)
 	{
