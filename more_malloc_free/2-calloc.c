@@ -20,7 +20,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	ptr = malloc(nmemb * size);
 
-	if (ptr == 0)
+	if (ptr == NULL)
 		return (NULL);
 
 	for (count = 0; count < (nmemb * size); count++)
