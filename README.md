@@ -2,7 +2,7 @@
 
 ![img](https://ict.iitk.ac.in/wp-content/uploads/c-programming-2.jpg)
 
-## [1. C - HELLO, WORLD](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x01-hello_world)
+## [1. C - HELLO, WORLD](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x00-hello_world)
 
 ### GENERAL
 
