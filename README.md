@@ -207,4 +207,40 @@
 
 - How to use __attribute__((unused)) or (void) to compile functions with unused variables or parameters
 
+------------------------------------
 
+## [10. C - MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/malloc_free)
+
+### GENERAL
+
+- What is the difference between automatic and dynamic allocation
+
+- What is malloc and free and how to use them
+
+- Why and when use malloc
+
+- How to use valgrind to check for memory leak
+
+---------------------------------
+
+## [11. MORE MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_malloc_free)
+
+### GENERAL
+
+- How to use the exit function
+
+- What are the functions calloc and realloc from the standard library and how to use them
+
+-----------------------------
+
+## [12. C - PREPROCESSOR](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/preprocessor)
+
+### GENERAL
+
+- What are macros and how to use them
+
+- What are the most common predefined macros
+
+- How to include guard your header files
+
+---------------------------------------------
