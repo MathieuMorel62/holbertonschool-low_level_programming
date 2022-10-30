@@ -18,17 +18,16 @@
 
 # TASKS
 
-### [0. IT AIN'T WHAT THEY CALL YOU, IT'S WHAT YOU ANSWER TO](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/argc_argv/0-whatsmyname.c)
+### [0. It Ain't What They Call You, It's What You Answer To](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/argc_argv/0-whatsmyname.c)
 
 Write a program that prints its name, followed by a new line.
 
  - If you rename the program, it will print the new name, without having to compile it again
-
  - You should not remove the path before the name of the program
 
 ---------------------------------
 
-### [1. SILENCE IS ARGUMENT CARRIED OUT BY OTHER MEANS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/argc_argv/1-args.c)
+### [1. Silence Is Argument Carried Out By Other Means](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/argc_argv/1-args.c)
 
 Write a program that prints the number of arguments passed into it.
 
@@ -36,39 +35,45 @@ Write a program that prints the number of arguments passed into it.
 
 ----------------------------
 
-### [2. THE BEST ARGUMENT AGAINST DEMOCRACY IS A FIVE-MINUTE CONVERSATION WITH THE AVERAGE VOTER](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/argc_argv/2-args.c)
+### [2. The Best Argument Against Democracy Is A Five-Minute Conversation With The Average Voter](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/argc_argv/2-args.c)
 
 Write a program that prints all arguments it receives.
 
  - All arguments should be printed, including the first one
-
  - Only print one argument per line, ending with a new line
 
 ---------------------------
 
-### [3. NEITHER IRONY NOR SARCASM IS ARGUMENT](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/argc_argv/3-mul.c)
+### [3. Neither Irony Nor Sarcasm Is Argument](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/argc_argv/3-mul.c)
 
 Write a program that multiplies two numbers.
 
  - Your program should print the result of the multiplication, followed by a new line
-
  - You can assume that the two numbers and result of the multiplication can be stored in an integer
-
  - If the program does not receive two arguments, your program should print Error, followed by a new line, and return 1
 
 -------------------------------
 
-### [4. TO INFINITY AND BEYOND](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/argc_argv/4-add.c)
+### [4. To Infinity And Beyond](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/argc_argv/4-add.c)
 
 Write a program that adds positive numbers.
 
  - Print the result, followed by a new line
-
  - If no number is passed to the program, print 0, followed by a new line
-
  - If one of the number contains symbols that are not digits, print Error, followed by a new line, and return 1
-
  - You can assume that numbers and the addition of all the numbers can be stored in an int
 
+---------------------------------
 
+### [5. Minimal Number Of Coins For Change](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/argc_argv/100-change.c)
 
+Write a program that prints the minimum number of coins to make change for an amount of money.
+
+- Usage: ./change cents
+- where cents is the amount of cents you need to give back
+- if the number of arguments passed to your program is not exactly 1, print Error, followed by a new line, and return 1
+- you should use atoi to parse the parameter passed to your program
+- If the number passed as the argument is negative, print 0, followed by a new line
+- You can use an unlimited number of coins of values 25, 10, 5, 2, and 1 cent
+
+-----------------------------------
