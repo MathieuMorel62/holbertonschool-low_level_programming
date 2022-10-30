@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-/*
- * main - print numbers 01 to 89
+/**
+ * main - Prints 00-99 separating with , and space
  *
- * Return: Always 0
+ * Return: 0
  */
 
 int main(void)
@@ -30,4 +30,4 @@ int main(void)
 	putchar('\n');
 
 	return (0);
-}	
+}
