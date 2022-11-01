@@ -3,9 +3,9 @@
 #include "function_pointers.h"
 
 /**
- * print_name - f points
- * @name: name
- * @f: pointer to print 
+ * print_name - function that prints a name
+ * @name: pointer to name being printed
+ * @f: pointer to function printing
  * Return: void
  */
 
