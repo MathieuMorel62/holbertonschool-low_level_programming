@@ -3,10 +3,10 @@
 #include "3-calc.h"
 
 /**
- *
- *
- *
- *
+ * main - simple operations calculator
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return= 0
  */
 
 int main(int argc, char *argv[])
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 	f = (get_op_func(argv[2]));
 
-	if (f == NULL)
+	if (f == NULL || argv[2][1] != '\0')
 	{
 		puts("Error");
 		exit(99);
@@ -35,6 +35,6 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 	printf("%d\n", f(num1, num2));
-	
+
 	return (0);
 }
