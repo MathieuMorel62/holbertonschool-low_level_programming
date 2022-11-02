@@ -6,7 +6,7 @@
  * main - simple operations calculator
  * @argc: number of arguments
  * @argv: array of arguments
- * Return= 0
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
