@@ -20,7 +20,7 @@
 
 # TASKS
 
-### [0. SHE LOCKED AWAY A SECRET, DEEP INSIDE HERSELF, SOMETHING SHE ONCE KNEW TO BE TRUE... BUT CHOSE TO FORGET](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/0-puts_recursion.c)
+### [0. She Locked Away a Secret, Deep Inside Herself, Something She Once Knew To Be True... But Chose To Forget](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/0-puts_recursion.c)
 
 Write a function that prints a string, followed by a new line.
 
@@ -30,7 +30,7 @@ FYI: The standard library provides a similar function: puts. Run man puts to lea
 
 -------------------------------
 
-### [1. WHY IS IT SO IMPORTANT TO DREAM ? BECAUSE, IN MY DREAMS WE ARE TOGETHER](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/1-print_rev_recursion.c)
+### [1. Why Is It Ss Important To Dream ? Because, In My Dreams We Are Together](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/1-print_rev_recursion.c)
 
 Write a function that prints a string in reverse.
 
@@ -38,7 +38,7 @@ Write a function that prints a string in reverse.
 
 -----------------------------
 
-### [2. DREAMS FEEL REAL WHILE WE'RE IN THEM. IT'S ONLY WHEN WE WAKE UP THAT WE REALIZE SOMETHING WAS ACTUALLY STRANGE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/2-strlen_recursion.c)
+### [2. Dreams Feel Real While We're In Them. It's Only When We Wake Up That We Realize Something Was Actually Strange](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/2-strlen_recursion.c)
 
 Write a function that returns the length of a string.
 
@@ -48,43 +48,39 @@ FYI: The standard library provides a similar function: strlen. Run man strlen to
 
 -------------------------------
 
-### [3. YOU MUSTN'T BE AFRAID TO DREAM A LITTLE BIGGER, DARLING](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/3-factorial.c)
+### [3. You Mustn't Be Afraid To Dream a Little Bigger, Darling](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/3-factorial.c)
 
 Write a function that returns the factorial of a given number.
 
  - Prototype: int factorial(int n);
-
  - If n is lower than 0, the function should return -1 to indicate an error
-
  - Factorial of 0 is 1
 
 -------------------------------
 
-### [4. ONCE AN IDEA HAS TAKEN HOLD OF THE BRAIN IT'S ALMOST IMPOSSIBLE TO ERADICATE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/4-pow_recursion.c)
+### [4. Once An Idea Has Taken Hold Of The Brain It's Almost Impossible To Eradicate](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/4-pow_recursion.c)
 
 Write a function that returns the value of x raised to the power of y.
 
  - Prototype: int _pow_recursion(int x, int y);
-
  - If y is lower than 0, the function should return -1
 
 FYI: The standard library provides a different function: pow. Run man pow to learn more.
 
 -------------------------------
 
-### [5. YOUR SUBCONSCIOUS IS LOOKING FOR THE DREAMER](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/5-sqrt_recursion.c)
+### [5. Your Subconscious Is Looking For The Dreamer](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/5-sqrt_recursion.c)
 
 Write a function that returns the natural square root of a number.
 
  - Prototype: int _sqrt_recursion(int n);
-
  - If n does not have a natural square root, the function should return -1
 
 FYI: The standard library provides a different function: sqrt. Run man sqrt to learn more.
 
 --------------------------------
 
-### [6. INCEPTION. IS IT POSSIBLE ?](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/6-is_prime_number.c)
+### [6. Inception. Is It Possible ?](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/recursion/6-is_prime_number.c)
 
 Write a function that returns 1 if the input integer is a prime number, otherwise return 0.
 
