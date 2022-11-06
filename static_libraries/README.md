@@ -20,7 +20,7 @@
 
 # TASKS
 
-### [0. A LIBRARY IS NOT A LUXURY BUT ONE OF THE NECESSITIES OF LIFE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/static_libraries/main.h)
+### [0. A Library Is Not a Luxury But One Of The Necessities Of Life](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/static_libraries/main.h)
 
 Create the static library libmy.a containing all the functions listed below:
 
@@ -50,6 +50,8 @@ Don’t forget to push your main.h file to your repository. It should at least c
 
 -------------------------------------
 
-### [1. WITHOUT LIBRARIES WHAT HAVE WE ? WE HAVE NO PAST AND NO FUTURE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/static_libraries/create_static_lib.sh)
+### [1. Without Libraries What Have We ? We Have No Past And No Future](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/static_libraries/create_static_lib.sh)
 
 Create a script called create_static_lib.sh that creates a static library called liball.a from all the .c files that are in the current directory.
+
+-------------------------------
