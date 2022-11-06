@@ -16,7 +16,7 @@
 
 # TASKS
 
-#### [0. FLOAT LIKE A BUTTERFLY, STING LIKE A BEE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/malloc_free/0-create_array.c)
+### [0. Float Like a Butterfly, Sting Like a Bee](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/malloc_free/0-create_array.c)
 
 Write a function that creates an array of chars, and initializes it with a specific char.
 
@@ -26,7 +26,7 @@ Write a function that creates an array of chars, and initializes it with a speci
 
 ---------------------------------------------
 
-#### [1. THE WOMAN WHO HAS NO IMAGINATION HAS NO WINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/malloc_free/1-strdup.c)
+### [1. The Woman Who Has No Imagination Has No Wings](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/malloc_free/1-strdup.c)
 
 Write a function that returns a pointer to a newly allocated space in memory, which contains a copy of the string given as a parameter.
 
@@ -39,7 +39,7 @@ FYI: The standard library provides a similar function: strdup. Run man strdup to
 
 ----------------------------------
 
-#### [2. HE WHO IS NOT COURAGEOUS ENOUGH TO TAKE RISKS WILL ACCOMPLISH NOTHING IN LIFE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/malloc_free/2-str_concat.c)
+### [2. He Who Is Not Courageous Enough To Take Risks Will Accomplish Nothing In Life](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/malloc_free/2-str_concat.c)
 
 Write a function that concatenates two strings.
 
@@ -50,7 +50,7 @@ Write a function that concatenates two strings.
 
 ---------------------------------------------------
 
-#### [3. IF YOU EVEN DREAM OF BEATING ME YOU'D BETTER WAKE UP AND APOLOGIZE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/malloc_free/3-alloc_grid.c)
+### [3. If You Even Dream Of Beating Me You'd Better Wake Up And Apologize](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/malloc_free/3-alloc_grid.c)
 
 Write a function that returns a pointer to a 2 dimensional array of integers.
 
@@ -61,9 +61,11 @@ Write a function that returns a pointer to a 2 dimensional array of integers.
 
 --------------------------------------------
 
-#### [4. IT'S NOT BRAGGING IF YOU CAN BACK IT UP](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/malloc_free/4-free_grid.c)
+### [4. It's Not Bragging If You Can Back It Up](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/malloc_free/4-free_grid.c)
 
 Write a function that frees a 2 dimensional grid previously created by your alloc_grid function.
 
  - Prototype: void free_grid(int **grid, int height);
  - Note that we will compile with your alloc_grid.c file. Make sure it compiles.
+
+----------------------------------------
