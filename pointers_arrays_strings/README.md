@@ -26,7 +26,7 @@ For this project, we expect you to look at these concepts :
 
 # TASKS
 
-### [0. 98 BATTERY ST.](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/0-reset_to_98.c)
+### [0. 98 Battery St.](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/0-reset_to_98.c)
 
 Write a function that takes a pointer to an int as parameter and updates the value it points to to 98.
 
@@ -34,7 +34,7 @@ Write a function that takes a pointer to an int as parameter and updates the val
 
 ----------------------------------
 
-### [1. DON'T SWAP HORSES IN. CROSSING A STREAM](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/1-swap.c)
+### [1. Don't Swap Horses In. Crossing a Stream](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/1-swap.c)
 
 Write a function that swaps the values of two integers.
 
@@ -42,7 +42,7 @@ Write a function that swaps the values of two integers.
 
 ----------------------------
 
-### [2. THIS REPORT, BY ITS VERY LENGTH, DEFENDS ITSELF AGAINST THE RISK OF BEING READ](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/2-strlen.c)
+### [2. This Report, By Its Very Length, Defends Itself Against The Risk Of Being Read](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/2-strlen.c)
 
 Write a function that returns the length of a string.
 
@@ -52,7 +52,7 @@ FYI: The standard library provides a similar function: strlen. Run man strlen to
 
 ----------------------
 
-### [3. I DO NOT FEAR COMPUTERS. I FEAR THE LACK OF THEM](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/3-puts.c)
+### [3. I Do Not Fear Computers. I Fear The Lack Of Them](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/3-puts.c)
 
 Write a function that prints a string, followed by a new line, to stdout.
 
@@ -62,7 +62,7 @@ FYI: The standard library provides a similar function: puts. Run man puts to lea
 
 -----------------------------
 
-### [4. I CAN ONLY GO ONE WAY. I'VE NOT GOT A REVERSE GEAR](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/4-print_rev.c)
+### [4. I Can Only Go One Way. I've Not Got a Reverse Gear](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/4-print_rev.c)
 
 Write a function that prints a string, in reverse, followed by a new line.
 
@@ -70,7 +70,7 @@ Write a function that prints a string, in reverse, followed by a new line.
 
 ----------------------------
 
-### [5. A GOOD ENGINEER THINKS IN REVERSE AND ASKS HIMSELF ABOUT THE STYLISTIC CONSEQUENCES OF THE COMPONENTS AND SYSTEMS HE PROPOSES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/5-rev_string.c)
+### [5. A Good Engineer Thinks In Reverse And Asks Himself About The Stylistic Consequences Of The Components And Systems He Proposes](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/5-rev_string.c)
 
 Write a function that reverses a string.
 
@@ -78,7 +78,7 @@ Write a function that reverses a string.
 
 --------------------------------------
 
-### [6. HALF THE LIES THEY TELL ABOUT ME AREN'T TRUE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/6-puts2.c)
+### [6. Half The Lies They Tell About Me Aren't True](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/6-puts2.c)
 
 Write a function that prints every other character of a string, starting with the first character, followed by a new line.
 
@@ -86,35 +86,29 @@ Write a function that prints every other character of a string, starting with th
 
 --------------------------------
 
-### [7. WINNING IS ONLY HALF OF IT. HAVING FUN IS THE OTHER HALF](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/7-puts_half.c)
+### [7. Winnings Is Only Half Of It. Having Fun Is The Other Half](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/7-puts_half.c)
 
 Write a function that prints half of a string, followed by a new line.
 
  - Prototype: void puts_half(char *str);
-
  - The function should print the second half of the string
-
  - If the number of characters is odd, the function should print the last n characters of the string, where n = (length_of_the_string - 1) / 2
 
 ------------------------------------------
 
-### [8. ARRAYS ARE NOT POINTERS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/8-print_array.c)
+### [8. Arrays Are Not Pointers](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/8-print_array.c)
 
 Write a function that prints n elements of an array of integers, followed by a new line.
 
  - Prototype: void print_array(int *a, int n);
-
  - where n is the number of elements of the array to be printed
-
  - Numbers must be separated by comma, followed by a space
-
  - The numbers should be displayed in the same order as they are stored in the array
-
  - You are allowed to use printf
 
 -----------------------------------
 
-### [9. STRCPY](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/9-strcpy.c)
+### [9. Strcpy](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/9-strcpy.c)
 
  - Prototype: char *_strcpy(char *dest, char *src);
 
@@ -123,3 +117,5 @@ Write a function that copies the string pointed to by src, including the termina
  - Return value: the pointer to dest
 
 FYI: The standard library provides a similar function: strcpy. Run man strcpy to learn more.
+
+---------------------------------
