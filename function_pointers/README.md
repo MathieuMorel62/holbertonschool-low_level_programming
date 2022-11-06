@@ -111,7 +111,6 @@ This file should contain the function that selects the correct function to perfo
  - You are not allowed to use more than one if statement in your code
  - You are not allowed to use more than one while loop in your code
  - If s does not match any of the 5 expected operators (+, -, *, /, %), return NULL
- 
  - You are only allowed to declare these two variables in this function:
 
         op_t ops[] = {
