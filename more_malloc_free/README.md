@@ -14,7 +14,7 @@
 
 # TASKS
 
-#### [0. TRUST NO ONE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/more_malloc_free/0-malloc_checked.c)
+### [0. Trust No One](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/more_malloc_free/0-malloc_checked.c)
 
 Write a function that allocates memory using malloc.
 
@@ -24,7 +24,7 @@ Write a function that allocates memory using malloc.
 
 -------------------------------
 
-#### [1. STRING_NCONCAT](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/more_malloc_free/1-string_nconcat.c)
+### [1. String_Nconcat](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/more_malloc_free/1-string_nconcat.c)
 
 Write a function that concatenates two strings.
 
@@ -36,7 +36,7 @@ Write a function that concatenates two strings.
 
 -----------------------------
 
-#### [2. _CALLOC](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/more_malloc_free/2-calloc.c)
+### [2. _Calloc](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/more_malloc_free/2-calloc.c)
 
 Write a function that allocates memory for an array, using malloc.
 
@@ -50,7 +50,7 @@ FYI: The standard library provides a different function: calloc. Run man calloc 
 
 --------------------------------
 
-#### [3. ARRAY_RANGE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/more_malloc_free/3-array_range.c)
+### [3. Array_Range](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/more_malloc_free/3-array_range.c)
 
 Write a function that creates an array of integers.
 
