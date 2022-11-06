@@ -181,7 +181,7 @@ Write a program that prints all possible different combinations of three digits.
  
 --------------------------------------------
 
-### [12. Software Is Eating The World]()
+### [12. Software Is Eating The World](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/variables_if_else_while/102-print_comb5.c)
 
 Write a program that prints all possible combinations of two two-digit numbers.
 
