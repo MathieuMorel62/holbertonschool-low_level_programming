@@ -6,7 +6,7 @@
 
 # TASKS
 
-### [0. STRCAT](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings_part_02/0-strcat.c)
+### [0. Strcat](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings_part_02/0-strcat.c)
 
 Write a function that concatenates two strings.
 
