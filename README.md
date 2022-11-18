@@ -197,3 +197,19 @@ _____________________________________
 - How to build and use linked lists
 
 -------------------------
+
+### [17. C - MORE SINGLY LINKED LISTS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_singly_linked_lists)
+#### `GENERAL`
+
+- How to use linked lists
+- Start to look for the right source of information without too much help
+
+--------------------------
+
+### [18. C - BIT MANIPULATION](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/bit_manipulation)
+#### `GENERAL`
+
+- Look for the right source of information without too much help
+- How to manipulate bits and use bitwise operators
+
+--------------------------------
