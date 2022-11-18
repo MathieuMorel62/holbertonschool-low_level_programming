@@ -1,7 +1,7 @@
 ![img](https://ict.iitk.ac.in/wp-content/uploads/c-programming-2.jpg)
 
 ### [1. C - HELLO, WORLD](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x00-hello_world)
-#### GENERAL
+#### `GENERAL`
 
 - Why C programming is awesome
 - Who invented C 
@@ -21,7 +21,7 @@
 
 
 ### [2. C - VARIABLES, IF, ELSE, WHILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/variables_if_else_while)
-#### GENERAL
+#### `GENERAL`
 
 - What are the arithmetic operators and how to use them
 - What are the logical operators (sometimes called boolean operators) and how to use them
@@ -42,7 +42,7 @@
 --------------------------------
 
 ### [3. C - FUNCTIONS, NESTED LOOPS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/functions_nested_loops)
-#### GENERAL
+#### `GENERAL`
 
 - What are nested loops and how to use them
 - What is a function and how do you use functions
@@ -55,7 +55,7 @@
 --------------------------------------
 
 ### [4. C - MAKEFILES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/makefiles)
-#### GENERAL
+#### `GENERAL`
 
 - What are make, Makefiles
 - When, why and how to use Makefiles
@@ -67,7 +67,7 @@
 ----------------------------------
 
 ### [5. C - MORE FUNCTIONS, MORE NESTED LOOPS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_functions_nested_loops)
-#### GENERAL
+#### `GENERAL`
 
 - What are nested loops and how to use them
 - What is a function and how do you use functions
@@ -80,7 +80,7 @@
 ---------------------------------------
 
 ### [6. C - POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/pointers_arrays_strings)
-#### GENERAL
+#### `GENERAL`
 
 - What are pointers and how to use them
 - What are arrays and how to use them
@@ -91,7 +91,7 @@
 ----------------------------------------
 
 ### [6. C - POINTER, ARRAYS AND STRINGS PART 02](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/pointers_arrays_strings_part_02)
-#### GENERAL
+#### `GENERAL`
 
 - What are pointers and how to use them
 - What are arrays and how to use them
@@ -102,7 +102,7 @@
 ----------------------------
 
 ### [6. C - POINTER, ARRAYS AND STRINGS PART 03](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/pointers_arrays_strings_part_03)
-#### GENERAL
+#### `GENERAL`
 
 - What are pointers to pointers and how to use them
 - What are multidimensional arrays and how to use them
@@ -111,7 +111,7 @@
 ----------------------------
 
 ### [7. C _ RECURSION](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/recursion)
-#### GENERAL
+#### `GENERAL`
 
 - What is recursion
 - How to implement recursion
@@ -121,7 +121,7 @@
 ------------------------------
 
 ### [8. C - STATIC LIBRARIES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/static_libraries)
-#### GENERAL
+#### `GENERAL`
 
 - What is a static library, how does it work, how to create one, and how to use it
 - Basic usage of ar, ranlib, nm
@@ -129,7 +129,7 @@
 --------------------------------
 
 ### [9. C - ARGC, ARGV](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/argc_argv)
-#### GENERAL
+#### `GENERAL`
 
 - How to use arguments passed to your program
 - What are two prototypes of main that you know of, and in which case do you use one or the other
@@ -138,7 +138,7 @@
 ------------------------------------
 
 ### [10. C - MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/malloc_free)
-#### GENERAL
+#### `GENERAL`
 
 - What is the difference between automatic and dynamic allocation
 - What is malloc and free and how to use them
@@ -147,8 +147,8 @@
 
 ---------------------------------
 
-### [11. MORE MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_malloc_free)
-#### GENERAL
+### [11. C - MORE MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_malloc_free)
+#### `GENERAL`
 
 - How to use the exit function
 - What are the functions calloc and realloc from the standard library and how to use them
@@ -156,7 +156,7 @@
 -----------------------------
 
 ### [12. C - PREPROCESSOR](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/preprocessor)
-#### GENERAL
+#### `GENERAL`
 
 - What are macros and how to use them
 - What are the most common predefined macros
@@ -164,8 +164,8 @@
 
 ---------------------------------------------
 
-### [13. STRUCTURES, TYPEDEF](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/structures_typedef)
-#### GENERAL
+### [13. C - STRUCTURES, TYPEDEF](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/structures_typedef)
+#### `GENERAL`
 
 - What are structures, when, why and how to use them
 - How to use typedef
@@ -173,7 +173,7 @@
 _____________________________________
 
 ### [14. C - FUNCTION POINTERS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/function_pointers)
-#### GENERAL
+#### `GENERAL`
 
 - What are function pointers and how to use them
 - What does a function pointer exactly hold
@@ -182,7 +182,7 @@ _____________________________________
 ------------------------------------
 
 ### [15. C - VARIADIC FUNCTIONS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/variadic_functions)
-#### GENERAL
+#### `GENERAL`
 
 - What are variadic functions
 - How to use va_start, va_arg and va_end macros
@@ -190,3 +190,10 @@ _____________________________________
 
 -----------------------------------
 
+### [16. C - SINGLY LINKED LISTS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/singly_linked_lists)
+#### `GENERAL`
+
+- When and why using linked lists vs arrays
+- How to build and use linked lists
+
+-------------------------
