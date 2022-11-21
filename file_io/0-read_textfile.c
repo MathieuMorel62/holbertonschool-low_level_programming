@@ -3,7 +3,7 @@
 /**
  * read_textfile - function that reads a text file and prints
  * @filename: file name
- * @letters: size
+ * @letters: size.
  *
  * Return: readed
 */
