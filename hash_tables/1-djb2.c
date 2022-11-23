@@ -3,7 +3,7 @@
 /**
  * hash_djb2 - function implementing the djb2 algorithm.
  * @str: string used to generate hash value
- * 
+ *
  * Return: hash value
 */
 
