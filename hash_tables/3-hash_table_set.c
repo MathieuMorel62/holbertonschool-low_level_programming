@@ -6,12 +6,12 @@
  * @key: key hash table
  * @value: value associated with the key
  *
- * Return: 1 if success or 0 
+ * Return: 1 if success or 0
 */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-    hash_node_t *tmp = NULL, *newNode = NULL;
+	hash_node_t *tmp = NULL, *newNode = NULL;
 	unsigned long int index;
 
 	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
