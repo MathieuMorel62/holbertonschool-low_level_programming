@@ -10,7 +10,7 @@
 int main(void)
 {
 	int i;
-	long long int a = 1, b = 2, c;
+	long int a = 1, b = 2, c;
 
 	_putchar(a + '0');
 	_putchar(',');
