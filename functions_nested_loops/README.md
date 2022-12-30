@@ -145,7 +145,7 @@ Write a function that prints the n times table, starting with 0.
 
 ---------------------
 
-#### [13. Nature made The Natural Numbers; All Else Is The Work Of Women](url)
+#### [13. Nature made The Natural Numbers; All Else Is The Work Of Women](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/functions_nested_loops/101-natural.c)
 
 If we list all the natural numbers below `10` that are multiples of `3` or `5`, we get `3`, `5`, `6` and `9`. The sum of these multiples is `23`. Write a program that computes and prints the sum of all the multiples of `3` or `5` below `1024` (excluded), followed by a new line.
 
