@@ -19,10 +19,10 @@ int main(void)
 	for (i = 0; i < 48; i++)
 	{
 		temp = prev + curr;
-		printf("%d, ", temp);
+		printf("%lu, ", temp);
 		prev = curr;
 		curr = temp;
 	}
-	printf("%d\n", curr + prev);
+	printf("%lu\n", curr + prev);
 	return (0);
 }
