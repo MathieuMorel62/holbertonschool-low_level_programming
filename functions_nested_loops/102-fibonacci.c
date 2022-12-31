@@ -17,11 +17,10 @@ int main(void)
 
 	for (i = 0; i < 48; i++)
 	{
-		temp = curr;
-		curr = prev + curr;
-		prev = temp;
-
-		printf("%d, ", prev);
+		temp = prev + curr;
+		printf("%d, ", temp);
+		prev = curr;
+		curr = temp;
 	}
 	printf("%d\n", curr + prev);
 	return (0);
