@@ -9,20 +9,23 @@
 
 int main(void)
 {
-	unsigned long int prev = 1;
-	unsigned long int curr = 2;
-	int i;
-	unsigned long int temp;
+	unsigned long int prev = 0;
+	unsigned long int curr = 1;
+	int count;
+	unsigned long int sum;
 
-	printf("1, 2, ");
-
-	for (i = 0; i < 48; i++)
+	for (count = 0; count < 50; count++)
 	{
-		temp = prev + curr;
-		printf("%lu, ", temp);
+		sum = prev + curr;
+		printf("%lu", sum);
+
 		prev = curr;
-		curr = temp;
+		curr = sum;
+
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
-	printf("%lu\n", curr + prev);
 	return (0);
 }
