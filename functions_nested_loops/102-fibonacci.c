@@ -13,7 +13,7 @@ int main(void)
 	int curr = 2;
 	int i, temp;
 
-	printf("1, ");
+	printf("1, 2, ");
 
 	for (i = 0; i < 48; i++)
 	{
@@ -21,7 +21,7 @@ int main(void)
 		curr = prev + curr;
 		prev = temp;
 
-		printf("%d, ", curr);
+		printf("%d, ", prev);
 	}
 	printf("%d\n", curr + prev);
 	return (0);
