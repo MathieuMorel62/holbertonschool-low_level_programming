@@ -9,9 +9,10 @@
 
 int main(void)
 {
-	int prev = 1;
-	int curr = 2;
-	int i, temp;
+	unsigned long int prev = 1;
+	unsigned long int curr = 2;
+	int i;
+	unsigned long int temp;
 
 	printf("1, 2, ");
 
