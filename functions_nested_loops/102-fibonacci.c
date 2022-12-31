@@ -9,23 +9,20 @@
 
 int main(void)
 {
-	int i;
-	unsigned long int a = 1, b = 2, c;
+	int prev = 1;
+	int curr = 2;
+	int i, temp;
 
-	_putchar(a + '0');
-	_putchar(',');
-	_putchar(' ');
-	_putchar(b + '0');
+	printf("1, ");
 
-	for (i = 3; i <= 50; i++)
+	for (i = 0; i < 48; i++)
 	{
-		c = a + b;
-		_putchar(',');
-		_putchar(' ');
-		_putchar(c + '0');
-		a = b;
-		b = c;
+		temp = curr;
+		curr = prev + curr;
+		prev = temp;
+
+		printf("%d, ", curr);
 	}
-	_putchar('\n');
+	printf("%d\n", curr + prev);
 	return (0);
 }
