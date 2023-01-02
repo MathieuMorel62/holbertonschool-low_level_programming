@@ -1,5 +1,4 @@
 #include <stdio.h>
-#define MAX_VALUE 10000000000
 
 /**
  * main - This function prints the first 98 Fibonacci numbers,
