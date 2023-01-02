@@ -271,4 +271,452 @@ julien@ubuntu:~/Doubly linked lists$
   
 ---------------------
 
+#### [4. Free List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/4-free_dlistint.c)
 
+Write a function that frees a `dlistint_t list`.
+
+- Prototype: `void free_dlistint(dlistint_t *head)`;
+    
+<details>
+<summary>File Compilation / test</summary>
+<br>
+
+```
+julien@ubuntu:~/Doubly linked lists$ cat 4-main.c
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always EXIT_SUCCESS.
+ */
+int main(void)
+{
+    dlistint_t *head;
+
+    head = NULL;
+    add_dnodeint_end(&head, 0);
+    add_dnodeint_end(&head, 1);
+    add_dnodeint_end(&head, 2);
+    add_dnodeint_end(&head, 3);
+    add_dnodeint_end(&head, 4);
+    add_dnodeint_end(&head, 98);
+    add_dnodeint_end(&head, 402);
+    add_dnodeint_end(&head, 1024);
+    print_dlistint(head);
+    free_dlistint(head);
+    head = NULL;
+    return (EXIT_SUCCESS);
+}
+julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c -o e
+julien@ubuntu:~/Doubly linked lists$ valgrind ./e 
+==4197== Memcheck, a memory error detector
+==4197== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==4197== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==4197== Command: ./e
+==4197== 
+0
+1
+2
+3
+4
+98
+402
+1024
+==4197== 
+==4197== HEAP SUMMARY:
+==4197==     in use at exit: 0 bytes in 0 blocks
+==4197==   total heap usage: 9 allocs, 9 frees, 1,216 bytes allocated
+==4197== 
+==4197== All heap blocks were freed -- no leaks are possible
+==4197== 
+==4197== For counts of detected and suppressed errors, rerun with: -v
+==4197== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+julien@ubuntu:~/Doubly linked lists$ 
+```
+</details>
+
+----------------------
+
+#### [5. Get Node At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/5-get_dnodeint.c)
+    
+Write a function that returns the nth node of a `dlistint_t` linked list.
+
+- Prototype: `dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)`;
+- where index is the `index` of the node, starting from `0`
+- if the node does not exist, return `NULL`
+
+<details>
+<summary>File Compilation / test</summary>
+<br>
+
+```
+julien@ubuntu:~/Doubly linked lists$ cat 5-main.c
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always EXIT_SUCCESS.
+ */
+int main(void)
+{
+    dlistint_t *head;
+    dlistint_t *node;
+
+    head = NULL;
+    add_dnodeint_end(&head, 0);
+    add_dnodeint_end(&head, 1);
+    add_dnodeint_end(&head, 2);
+    add_dnodeint_end(&head, 3);
+    add_dnodeint_end(&head, 4);
+    add_dnodeint_end(&head, 98);
+    add_dnodeint_end(&head, 402);
+    add_dnodeint_end(&head, 1024);
+    print_dlistint(head);
+    node = get_dnodeint_at_index(head, 5);
+    printf("%d\n", node->n);
+    free_dlistint(head);
+    head = NULL;
+    return (EXIT_SUCCESS);
+}
+julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 5-get_dnodeint.c -o h
+julien@ubuntu:~/Doubly linked lists$ ./h
+0
+1
+2
+3
+4
+98
+402
+1024
+98
+julien@ubuntu:~/Doubly linked lists$
+```
+</details>
+    
+---------------------
+
+#### [6. Sum List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/6-sum_dlistint.c)
+
+Write a function that returns the sum of all the data (n) of a `dlistint_t` linked list.
+
+- Prototype: `int sum_dlistint(dlistint_t *head)`;
+- if the list is empty, return `0`
+
+<details>
+<summary>File Compilation / test</summary>
+<br>
+
+```
+julien@ubuntu:~/Doubly linked lists$ cat 6-main.c 
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always EXIT_SUCCESS.
+ */
+int main(void)
+{
+    dlistint_t *head;
+    int sum;
+
+    head = NULL;
+    add_dnodeint_end(&head, 0);
+    add_dnodeint_end(&head, 1);
+    add_dnodeint_end(&head, 2);
+    add_dnodeint_end(&head, 3);
+    add_dnodeint_end(&head, 4);
+    add_dnodeint_end(&head, 98);
+    add_dnodeint_end(&head, 402);
+    add_dnodeint_end(&head, 1024);
+    sum = sum_dlistint(head);
+    printf("sum = %d\n", sum);
+    free_dlistint(head);
+    head = NULL;
+    return (EXIT_SUCCESS);
+}
+julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra 6-main.c -std=gnu89 3-add_dnodeint_end.c 4-free_dlistint.c 6-sum_dlistint.c -o i
+julien@ubuntu:~/Doubly linked lists$ ./i 
+sum = 1534
+julien@ubuntu:~/Doubly linked lists$ 
+```
+</details>
+
+-------------------------
+
+#### [7. Insert At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/7-insert_dnodeint.c)
+
+Write a function that inserts a new node at a given position.
+
+- Prototype: `dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)`;
+- where `idx` is the index of the list where the new node should be added. Index starts at `0`
+- Returns: the address of the new node, or `NULL` if it failed
+- if it is not possible to add the new node at index `idx`, do not add the new node and return `NULL`
+
+Your files `2-add_dnodeint.c` and `3-add_dnodeint_end.c` will be compiled during the correction
+
+<details>
+<summary>File Compilation / test</summary>
+<br>
+
+```
+julien@ubuntu:~/Doubly linked lists$ cat 7-main.c
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always EXIT_SUCCESS.
+ */
+int main(void)
+{
+    dlistint_t *head;
+
+    head = NULL;
+    add_dnodeint_end(&head, 0);
+    add_dnodeint_end(&head, 1);
+    add_dnodeint_end(&head, 2);
+    add_dnodeint_end(&head, 3);
+    add_dnodeint_end(&head, 4);
+    add_dnodeint_end(&head, 98);
+    add_dnodeint_end(&head, 402);
+    add_dnodeint_end(&head, 1024);
+    print_dlistint(head);
+    printf("-----------------\n");
+    insert_dnodeint_at_index(&head, 5, 4096);
+    print_dlistint(head);
+    free_dlistint(head);
+    head = NULL;
+    return (EXIT_SUCCESS);
+}
+julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-main.c 2-add_dnodeint.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 7-insert_dnodeint.c -o j
+julien@ubuntu:~/Doubly linked lists$ ./j 
+0
+1
+2
+3
+4
+98
+402
+1024
+-----------------
+0
+1
+2
+3
+4
+4096
+98
+402
+1024
+julien@ubuntu:~/Doubly linked lists$
+```
+</details>
+
+--------------------
+
+#### [8. Delete At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/8-delete_dnodeint.c)
+
+Write a function that deletes the node at index `index` of a `dlistint_t` linked list.
+
+- Prototype: `int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)`;
+- where `index` is the index of the node that should be deleted. Index starts at `0`
+- Returns: `1` if it succeeded, `-1` if it failed
+    
+<details>
+<summary>File Compilation / test</summary>
+<br>
+
+```
+julien@ubuntu:~/Doubly linked lists$ cat 8-main.c
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always EXIT_SUCCESS.
+ */
+int main(void)
+{
+    dlistint_t *head;
+
+    head = NULL;
+    add_dnodeint_end(&head, 0);
+    add_dnodeint_end(&head, 1);
+    add_dnodeint_end(&head, 2);
+    add_dnodeint_end(&head, 3);
+    add_dnodeint_end(&head, 4);
+    add_dnodeint_end(&head, 98);
+    add_dnodeint_end(&head, 402);
+    add_dnodeint_end(&head, 1024);
+    print_dlistint(head);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 5);
+    print_dlistint(head);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    print_dlistint(head);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    print_dlistint(head);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    print_dlistint(head);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    print_dlistint(head);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    print_dlistint(head);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    print_dlistint(head);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    printf("-----------------\n");
+    delete_dnodeint_at_index(&head, 0);
+    print_dlistint(head);
+    return (0);
+}
+julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 8-delete_dnodeint.c -o k
+julien@ubuntu:~/Doubly linked lists$ ./k
+0
+1
+2
+3
+4
+98
+402
+1024
+-----------------
+0
+1
+2
+3
+4
+402
+1024
+-----------------
+1
+2
+3
+4
+402
+1024
+-----------------
+2
+3
+4
+402
+1024
+-----------------
+3
+4
+402
+1024
+-----------------
+4
+402
+1024
+-----------------
+402
+1024
+-----------------
+1024
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+julien@ubuntu:~/Doubly linked lists$
+```
+</details>
+
+-------------------------
+    
+
+#### [9. Crackme4](url)
+
+Find the password for [`crackme4`](https://github.com/hs-hq/0x17.c).
+
+- Save the password in the file `100-password`
+- Your file should contain the exact password, no new line, no extra space
+- Hint: The program prints “OK” when the password is correct
+    
+---------------------
+    
+#### [10. Palindromes](url)
+
+A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is `9009 = 91 × 99`.
+
+Find the largest palindrome made from the product of two 3-digit numbers.
+
+- Save the result in the file `102-result`
+- Your file should contain the exact result, no new line, no extra space
+
+------------------
+
+#### [11. Crackme5](url)
+    
+Write a keygen for [`crackme5`](https://github.com/hs-hq/0x17.c).
+
+- Usage of the crackme: `./crackme5 username key`
+- The crackme will segfault if you do not enter the correct key for the user
+- Usage for your keygen: `./keygen5 username`
+- Your keygen should print a valid key for the `username`
+    
+<details>
+<summary>File Compilation / test</summary>
+<br>
+
+```
+julien@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 103-keygen.c -o keygen5
+julien@ubuntu:~/$ ./crackme5 julien javascript
+Segmentation fault (core dumped)
+julien@ubuntu:~/$ ./crackme5 julien `./keygen5 julien`
+Congrats!
+julien@ubuntu:~/$ 
+```
+</details>
+    
+----------------------------------
+## AUTHOR
+- Mathieu Morel
