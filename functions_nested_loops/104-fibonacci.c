@@ -16,12 +16,12 @@ int main(void)
 	unsigned long int count = 98;
 	unsigned long int sum, index;
 
-	printf("%d, %d, ", current, next);
+	printf("%ld, %ld, ", current, next);
 
 	for (index = 2; index < count; ++index)
 	{
 		sum = current + next;
-		printf("%d, ", sum);
+		printf("%ld, ", sum);
 		current = next;
 		next = sum;
 	}
