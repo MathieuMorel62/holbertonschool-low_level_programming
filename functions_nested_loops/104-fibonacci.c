@@ -11,10 +11,10 @@
 
 int main(void)
 {
-	int current = 1;
-	int next = 2;
-	int count = 98;
-	int sum, index;
+	unsigned long int current = 1;
+	unsigned long int next = 2;
+	unsigned long int count = 98;
+	unsigned long int sum, index;
 
 	printf("%d, %d, ", current, next);
 
