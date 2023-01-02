@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * main - This function prints the first 98 Fibonacci numbers,
+ * starting with 1 and 2,followed by a new line. The numbers are
+ * separated by a comma and a space.
+ *
+ * Return: 0 if the function completes successfully
+*/
+
+int main(void)
+{
+	int current = 1;
+	int next = 2;
+	int count = 98;
+	int sum, index;
+
+	printf("%d, %d, ", current, next);
+
+	for (index = 2; index < count; ++index)
+	{
+		sum = current + next;
+		printf("%d, ", sum);
+		current = next;
+		next = sum;
+	}
+	return (0);
+}
