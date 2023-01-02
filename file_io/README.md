@@ -7,21 +7,13 @@
 - [File Descriptors](https://en.wikipedia.org/wiki/File_descriptor)
 - [C Programming in Linux Tutorial #024 - open() read() write() Functions](https://www.youtube.com/watch?v=dP3N8g7h8gY)
 
-**Man or Help**
-
-- `open`
-- `close`
-- `read`
-- `write`
-- `dprintf`
-
 ## Requirements
-### General
+
  - All your files will be compiled on Ubuntu 20.04 LTS using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
  - A `README.md` file, at the root of the folder of the project is mandatory
  - Your code should use the `Betty` style. It will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
  - In the following examples, the `main.c` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our `main.c` files might be different from the one shown in the examples
- - The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called `main.h`
+ - The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called [`main.h`](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/file_io/main.h)
 -------------------------------
 # Tasks
 
