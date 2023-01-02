@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#define MAX_VALUE 10000000000
 
 /**
  * main - This function prints the first 98 Fibonacci numbers,
@@ -11,19 +11,16 @@
 
 int main(void)
 {
-	unsigned long int current = 1;
-	unsigned long int next = 2;
-	unsigned long int count = 98;
-	unsigned long int sum, index;
+	unsigned long int fib1 = 0, fib2 = 1, sum;
+	int count;
 
-	printf("%ld, %ld, ", current, next);
-
-	for (index = 2; index < count; ++index)
+	for (count = 0; count < 98; count++)
 	{
-		sum = current + next;
-		printf("%ld, ", sum);
-		current = next;
-		next = sum;
+		sum = fib1 + fib2;
+		printf("%lu, ", sum);
+		fib1 = fib2;
+		fib2 = sum;
 	}
+	printf("\n");
 	return (0);
 }
