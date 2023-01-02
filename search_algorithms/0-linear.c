@@ -10,7 +10,7 @@
  *
  * Return: The index of the first occurrence of value in the array,
  * or -1 if value is not present in the array or if array is NULL.
-*/
+ */
 
 int linear_search(int *array, size_t size, int value)
 {
