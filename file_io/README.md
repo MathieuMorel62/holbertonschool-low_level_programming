@@ -34,6 +34,11 @@ Write a function that reads a text file and prints it to the `POSIX` standard ou
 - if the file can not be opened or read, return `0`
 - if `filename` is `NULL` return `0`
 - if `write` fails or does not write the expected amount of bytes, return 0
+
+<details>
+<summary> File Compilation / test </summary>
+<br>
+
 ```
 julien@ubuntu:~/File descriptors and permissions$ cat Requiescat 
 Requiescat
@@ -129,6 +134,8 @@ Heap earth upon it.
 (printed chars: 468)
 julien@ubuntu:~/File descriptors and permissions$ 
 ```
+</details>
+
 --------------------------
 #### [1. Under The Snow](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/file_io/1-create_file.c)
 
@@ -141,6 +148,11 @@ Create a function that creates a file.
 - if the file already exists, truncate it
 - if `filename` is `NULL` return `-1`
 - if `text_content` is `NULL` create an empty file
+
+<details>
+<summary> File Compilation / test </summary>
+<br>
+
 ```
 julien@ubuntu:~/File descriptors and permissions$ cat 1-main.c
 #include <stdio.h>
@@ -173,6 +185,8 @@ julien@ubuntu:~/File descriptors and permissions$ ls -l hello
 julien@ubuntu:~/File descriptors and permissions$ cat hello 
 worldjulien@ubuntu:~/File descriptors and permis$ 
 ```
+</details>
+
 -------------------------
 #### [2. Speak Gently, She Can Hear](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/file_io/2-append_text_to_file.c)
 
@@ -184,6 +198,11 @@ Write a function that appends text at the end of a file.
 - Do not create the file if it does not exist
 - If `filename` is `NULL` return `-1`
 - If `text_content` is `NULL`, do not add anything to the file. Return 1 if the file exists and -1 if the file does not exist or if you do not have the required permissions to write the file
+
+<details>
+<summary> File Compilation / test </summary>
+<br>
+
 ```
 julien@ubuntu:~/File descriptors and permissions$ cat 2-main.c
 #include <stdio.h>
@@ -219,6 +238,8 @@ julien@ubuntu:~/File descriptors and permissions$ cat hello
 Hello World!
 julien@ubuntu:~/File descriptors and permissions$
 ```
+</details>
+
 ----------------------
 #### [3. Cp](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/file_io/3-cp.c)
 
@@ -236,6 +257,11 @@ if `file_from` does not exist, or if you can not read it, exit with code `98` an
 - Permissions of the created file: `rw-rw-r--`. If the file already exists, do not change the permissions
 - You must read `1,024` bytes at a time from the `file_from` to make less system calls. Use a buffer
 - You are allowed to use `dprintf`
+
+<details>
+<summary> File Compilation / test </summary>
+<br>
+
 ```
 julien@ubuntu:~/File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-cp.c -o cp
 julien@ubuntu:~/File descriptors and permissions$ cat incitatous 
@@ -253,6 +279,8 @@ Why you should think twice before putting pictures on social media.
 http://imgur.com/a/Mq1tc
 julien@ubuntu:~/File descriptors and permissions$ 
 ```
+</details>
+
 --------------------------
 #### [4. Elf](url)
 
@@ -276,6 +304,11 @@ Write a program that displays the information contained in the `ELF` header at t
 - You are allowed to use `printf`
 
 man `elf`, `readelf` 
+
+<details>
+<summary> File Compilation / test </summary>
+<br>
+
 ```
 julien@ubuntu:~/File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-elf_header.c -o elf_header
 julien@ubuntu:~/File descriptors and permissions$ ./elf_header ubuntu64 
@@ -388,6 +421,8 @@ ELF Header:
   Entry point address:               0x10d20
 julien@ubuntu:~/File descriptors and permissions$ 
 ```
+</details>
+
 ---------------------------
 
 ## Author
