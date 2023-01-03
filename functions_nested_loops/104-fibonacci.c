@@ -31,17 +31,18 @@ int main(void)
 			carr_back = (prev_back + prev_front) % 10000000000;
 
 			new_front = curr_back + curr_front + carr_front;
-			curr_back = curr_front, curr_front = new_front;
-			prev_back = prev_front, prev_front = carr_back;
-
+			curr_back = curr_front;
+			curr_front = new_front;
+			prev_back = prev_front;
+			prev_front = carr_back;
 			printf("%lu%lu", curr_front, prev_front);
 		}
 		else
 		{
 			/* Otherwise, just calculate the back part of the current number */
 			carr_back = prev_back + prev_front;
-			prev_back = prev_front, prev_front = carr_back;
-
+			prev_back = prev_front;
+			prev_front = carr_back;
 			printf("%lu", prev_front);
 		}
 		if (count != 97)
