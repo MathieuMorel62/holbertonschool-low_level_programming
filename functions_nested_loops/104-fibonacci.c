@@ -14,15 +14,21 @@ int main(void)
 {
 	unsigned long int fib1 = 0, fib2 = 1, sum;
 	int count;
-	double phi, a;
+	double phi = (1 + sqrt(5)) / 2;
 
 	for (count = 0; count < 98; count++)
 	{
 		sum = fib1 + fib2;
 		if (sum > MAX_VALUE)
 		{
-			phi = (1 + sqrt(5)) / 2;
-			a = pow(phi, count) / sqrt(5);
+			double a = 1;
+			int i;
+
+			for (i = 0; i < count; i++)
+			{
+				a = a * phi;
+			}
+			a = a / sqrt(5);
 			printf("%.0f, ", a);
 		}
 		else
