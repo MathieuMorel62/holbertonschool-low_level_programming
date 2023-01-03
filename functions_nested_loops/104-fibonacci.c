@@ -35,7 +35,7 @@ int main(void)
 			curr_front = new_front;
 			prev_back = prev_front;
 			prev_front = carr_back;
-			printf("%lu%lu", curr_front, prev_front);
+			printf("%lu%010lu", curr_front, prev_front);
 		}
 		else
 		{
