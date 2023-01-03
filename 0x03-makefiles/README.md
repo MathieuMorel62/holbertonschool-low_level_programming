@@ -22,7 +22,7 @@
  # TASKS
 
 
-### [0. Make -f 0 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/0-Makefile)
+#### [0. Make -f 0 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x03-makefiles/0-Makefile)
 
 Create your first Makefile.
   
@@ -71,7 +71,7 @@ j#00000000000000w]+]++qw#00000000000000
 
 ----------------------------
 
-### [1. Make -f 1 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/1-Makefile)
+#### [1. Make -f 1 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x03-makefiles/1-Makefile)
 
 Requirements :
 
@@ -96,7 +96,7 @@ gcc main.c school.c -o school
 
 --------------------------------
 
-### [2. Make -f 2 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/2-Makefile)
+#### [2. Make -f 2 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x03-makefiles/2-Makefile)
 
 Requirements :
 
@@ -133,8 +133,7 @@ gcc main.o school.o -o school
 
 --------------------------
 
-### [3. Make - f 3 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/3-Makefile)
-
+#### [3. Make - f 3 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x03-makefiles/3-Makefile)
 Requirements :
 
   - name of the executable: `school`
@@ -217,7 +216,7 @@ gcc main.o school.o -o school
 
 --------------------------------
 
-### [4. A Complete Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/4-Makefile)
+#### [4. A Complete Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x03-makefiles/4-Makefile)
 
 Requirements : 
 
@@ -252,7 +251,7 @@ gcc main.o school.o -o school
 
 ------------------------------
 
-### [5. Make -f 100 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/makefiles/100-Makefile)
+#### [5. Make -f 100 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x03-makefiles/100-Makefile)
 
 Requirements :
 
