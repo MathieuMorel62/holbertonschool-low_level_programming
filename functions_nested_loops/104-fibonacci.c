@@ -12,28 +12,30 @@
 
 int main(void)
 {
-	unsigned long int fib1 = 0, fib2 = 1, sum;
+	double fib1 = 1, fib2 = 2, sum;
 	int count;
 	double phi = (1 + sqrt(5)) / 2;
+	int power_mode = 0;
 
 	for (count = 0; count < 98; count++)
 	{
-		sum = fib1 + fib2;
-		if (sum > MAX_VALUE)
+		if (power_mode)
 		{
-			double a = 1;
-			int i;
-
-			for (i = 0; i < count; i++)
-			{
-				a = a * phi;
-			}
-			a = a / sqrt(5);
-			printf("%.0f, ", a);
+			sum = fib1 + fib2;
+			printf("%.0f, ", sum);
+			fib1 = fib2;
+			fib2 = sum;
 		}
 		else
 		{
-			printf("%lu, ", sum);
+			sum = fib1 + fib2;
+			if (sum > MAX_VALUE)
+			{
+				power_mode = 1;
+				fib1 = fib1 / sqrt(5);
+				fib2 = fib2 / sqrt(5);
+			}
+			printf("%.0f, ", sum);
 			fib1 = fib2;
 			fib2 = sum;
 		}
