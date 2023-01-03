@@ -14,7 +14,6 @@ int main(void)
 {
 	double fib1 = 1, fib2 = 2, sum;
 	int count;
-	double phi = (1 + sqrt(5)) / 2;
 	int power_mode = 0;
 
 	for (count = 0; count < 98; count++)
