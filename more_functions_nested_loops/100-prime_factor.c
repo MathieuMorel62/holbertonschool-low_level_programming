@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 /**
  * findLargestPrimeFactor - finds the largest prime factor of a given number
@@ -9,17 +10,13 @@
 
 long int findLargestPrimeFactor(long int num)
 {
-	long int divisor = 2;
+	long int divisor;
 
-	while (divisor <= num)
+	for (divisor = 2; divisor <= sqrt(num); divisor++)
 	{
 		if (num % divisor == 0)
 		{
 			num /= divisor;
-		}
-		else
-		{
-			divisor++;
 		}
 	}
 	return (num);
