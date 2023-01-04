@@ -4,46 +4,31 @@
  * _atoi - Convert a string to a integer.
  * @s: The string to convert.
  *
- * Return: The integer representation of the number in the string.
+ * Return: The converted integer, or 0 if the string does not contain numbers.
 */
 
 int _atoi(char *s)
 {
-	int index = 0, found_number = 0, result = 0, sign = 1, neg = 0;
+	int index = 0, sign = 1, found_number = 0;
+	unsigned int num = 0;
 
-	while (s[index] != '\0')
+	while (s[index])
 	{
-		if (s[index] == ' ')
-			;
-
-		else if (s[index] == '+' || s[index] == '-')
+		if (s[index] == '-')
 		{
-			if (!found_number)
-				sign = (s[index] == '+') ? 1 : -1;
-
-			while (s[index] == ' ')
-				index++;
-
-			if (sign == -1)
-				neg++;
+			sign = sign * -1;
 		}
-		else if (s[index] >= '0' && s[index] <= '9')
+		while (s[index] >= '0' && s[index] <= '9')
 		{
 			found_number = 1;
-			result = result * 10 + (s[index] - '0');
+			num = (num * 10) + (s[index] - '0');
+			index++;
 		}
-		else
-		{
-			if (found_number)
-				break;
-		}
+		if (found_number == 1)
+			break;
+
 		index++;
 	}
-	if (!found_number)
-		return (0);
-
-	if (neg % 2 != 0)
-		result = -result;
-
-	return (result);
+	num = num * sign;
+	return (num);
 }
