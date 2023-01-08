@@ -37,7 +37,7 @@ For this project, we expect you to look at these concepts :
 
 # TASKS
 
-### [0. 98 Battery St.](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/0-reset_to_98.c)
+#### [0. 98 Battery St.](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/0-reset_to_98.c)
 
 Write a function that takes a pointer to an `int` as parameter and updates the value it points to to `98`.
 
@@ -78,7 +78,7 @@ n=98
 
 ----------------------------------
 
-### [1. Don't Swap Horses In. Crossing a Stream](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/1-swap.c)
+#### [1. Don't Swap Horses In. Crossing a Stream](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/1-swap.c)
 
 Write a function that swaps the values of two integers.
 
@@ -121,7 +121,7 @@ a=42, b=98
 
 ----------------------------
 
-### [2. This Report, By Its Very Length, Defends Itself Against The Risk Of Being Read](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/2-strlen.c)
+#### [2. This Report, By Its Very Length, Defends Itself Against The Risk Of Being Read](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/2-strlen.c)
 
 Write a function that returns the length of a string.
 
@@ -162,7 +162,7 @@ mathieu@ubuntu:~/$ ./2-strlen
 
 ----------------------
 
-### [3. I Do Not Fear Computers. I Fear The Lack Of Them](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/3-puts.c)
+#### [3. I Do Not Fear Computers. I Fear The Lack Of Them](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/3-puts.c)
 
 Write a function that prints a string, followed by a new line, to `stdout`.
 
@@ -201,7 +201,7 @@ I do not fear computers. I fear the lack of them - Isaac Asimov
 
 -----------------------------
 
-### [4. I Can Only Go One Way. I've Not Got a Reverse Gear](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/4-print_rev.c)
+#### [4. I Can Only Go One Way. I've Not Got a Reverse Gear](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/4-print_rev.c)
 
 Write a function that prints a string, in reverse, followed by a new line.
 
@@ -237,7 +237,7 @@ vomisA caasI - meht fo kcal eht raef I .sretupmoc raef ton od I
 
 ----------------------------
 
-### [5. A Good Engineer Thinks In Reverse And Asks Himself About The Stylistic Consequences Of The Components And Systems He Proposes](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/5-rev_string.c)
+#### [5. A Good Engineer Thinks In Reverse And Asks Himself About The Stylistic Consequences Of The Components And Systems He Proposes](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/5-rev_string.c)
 
 Write a function that reverses a string.
 
@@ -276,7 +276,7 @@ loohcS yM
 
 --------------------------------------
 
-### [6. Half The Lies They Tell About Me Aren't True](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/6-puts2.c)
+#### [6. Half The Lies They Tell About Me Aren't True](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/6-puts2.c)
 
 Write a function that prints every other character of a string, starting with the first character, followed by a new line.
 
@@ -312,7 +312,7 @@ mathieu@ubuntu:~/$ ./6-puts2
 
 --------------------------------
 
-### [7. Winnings Is Only Half Of It. Having Fun Is The Other Half](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/7-puts_half.c)
+#### [7. Winnings Is Only Half Of It. Having Fun Is The Other Half](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/7-puts_half.c)
 
 Write a function that prints half of a string, followed by a new line.
 
@@ -350,7 +350,7 @@ mathieu@ubuntu:~/$ ./7-puts_half
 
 ------------------------------------------
 
-### [8. Arrays Are Not Pointers](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/8-print_array.c)
+#### [8. Arrays Are Not Pointers](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/8-print_array.c)
 
 Write a function that prints `n` elements of an array of integers, followed by a new line.
 
@@ -394,7 +394,7 @@ mathieu@ubuntu:~/$ ./8-print_array
 
 -----------------------------------
 
-### [9. Strcpy](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/9-strcpy.c)
+#### [9. Strcpy](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/pointers_arrays_strings/9-strcpy.c)
 
  - Prototype: `char *_strcpy(char *dest, char *src)`;
 
