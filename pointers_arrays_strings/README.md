@@ -119,3 +119,6 @@ Write a function that copies the string pointed to by src, including the termina
 FYI: The standard library provides a similar function: strcpy. Run man strcpy to learn more.
 
 ---------------------------------
+## AUTHOR
+
+- Mathieu Morel
