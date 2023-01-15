@@ -1,9 +1,9 @@
 # C - VARIABLES, IF, ELSE, WHILE
 
-![img](https://www.mrvermainstitute.com/wp-content/uploads/2022/04/C-progamming.jpg)
+<img src="https://www.mrvermainstitute.com/wp-content/uploads/2022/04/C-progamming.jpg" height="500px" width="100%">
 
 ## RESOURCES
-### Read or watch :
+### Read or Watch :
 
 - [Everything You Need To Know To Start With C.pdf](https://intranet.hbtn.io/rltoken/eQnlX5zRiOACgE8lhB8RIA)
 - [Keywords And Identifiers](https://intranet.hbtn.io/rltoken/CJPUuNKHthtvZgImtEVvXA)
@@ -17,6 +17,7 @@
 - [While Loop](https://intranet.hbtn.io/rltoken/zqJKmSFQD8nlNSDnGcU7AQ)
 
 ## Requirements
+
 - Allowed editors: `vi`, `vim`, `emacs`
 - All your files will be compiled on `Ubuntu 20.04 LTS` using `gcc`, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
 - All your files should end with a new line
@@ -29,8 +30,7 @@
 
 # TASKS
 
-
-### [0. Positive Anything Is Better Than Negative Nothing](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/0-positive_or_negative.c)
+#### [0. Positive Anything Is Better Than Negative Nothing](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/0-positive_or_negative.c)
 
 This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print whether the number stored in the variable `n` is positive or negative.
 
@@ -43,11 +43,12 @@ This program will assign a random number to the variable `n` each time it is exe
       - if the number is 0: `is zero`
       - if the number is less than 0: `is negative`
   - Followed by a new line
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-positive_or_negative.c -o 0-positive_or_negative
 mathieu@ubuntu:~/$ ./0-positive_or_negative 
 -520693284 is negative
@@ -77,7 +78,7 @@ mathieu@ubuntu:~/$ ./0-positive_or_negative
 
 ---------------------------------
 
-### [1. The Last Digit](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/1-last_digit.c)
+#### [1. The Last Digit](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/1-last_digit.c)
 
 This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `n`.
 
@@ -92,11 +93,12 @@ This program will assign a random number to the variable `n` each time it is exe
       - if the last digit of `n` is 0: the string `and is 0`
       - if the last digit of `n` is less than 6 and not 0: the string `and is less than 6 and not 0`
     - followed by a new line
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-last_digit.c -o 1-last_digit
 mathieu@ubuntu:~/$ ./1-last_digit 
 Last digit of 629438752 is 2 and is less than 6 and not 0
@@ -141,18 +143,19 @@ Last digit of 809065140 is 0 and is 0
 
 ------------------------------
 
-### [2. I Sometimes Suffer From Insomnia. And When I Can't Fall Asleep, I Play What I Call The Alphabet Game](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/2-print_alphabet.c)
+#### [2. I Sometimes Suffer From Insomnia. And When I Can't Fall Asleep, I Play What I Call The Alphabet Game](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/2-print_alphabet.c)
 
 Write a program that prints the alphabet in lowercase, followed by a new line.
 
   - You can only use the `putchar` function (every other function (`printf`, `puts`, etc…) is forbidden)
   - All your code should be in the `main` function
   - You can only use `putchar` twice in your code
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-print_alphabet.c -o 2-print_alphabet
 mathieu@ubuntu:~/$ ./2-print_alphabet
 
@@ -162,18 +165,19 @@ abcdefghijklmnopqrstuvwxyz
 
 ----------------------------
 
-### [3. Alphabet](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/3-print_alphabets.c)
+#### [3. Alphabet](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/3-print_alphabets.c)
 
 Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
 
   - You can only use the `putchar` function (every other function (`printf`, `puts`, etc…) is forbidden)
   - All your code should be in the `main` function
   - You can only use `putchar` three times in your code
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-print_alphabets.c -o 3-print_alphabets
 mathieu@ubuntu:~/$ ./3-print_alphabets | cat -e
 
@@ -183,7 +187,7 @@ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$
 
 ---------------------------
 
-### [4. When I Was Having That Alphabet Soup, I Never Throught That It Would Pay Off](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/4-print_alphabt.c)
+#### [4. When I Was Having That Alphabet Soup, I Never Throught That It Would Pay Off](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/4-print_alphabt.c)
 
 Write a program that prints the alphabet in lowercase, followed by a new line.
 
@@ -191,11 +195,12 @@ Write a program that prints the alphabet in lowercase, followed by a new line.
   - You can only use the `putchar` function (every other function (`printf`, `puts`, etc…) is forbidden)
   - All your code should be in the `main` function
   - You can only use `putchar` twice in your code
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-print_alphabt.c -o 4-print_alphabt
 mathieu@ubuntu:~/$ ./4-print_alphabt
 
@@ -205,16 +210,17 @@ abcdfghijklmnoprstuvwxyz
 
 -------------------------------
 
-### [5. Numbers](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/5-print_numbers.c)
+#### [5. Numbers](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/5-print_numbers.c)
 
 Write a program that prints all single digit numbers of base 10 starting from `0`, followed by a new line.
 
   - All your code should be in the `main` function
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-print_numbers.c -o 5-print_numbers
 mathieu@ubuntu:~/$ ./5-print_numbers 
 
@@ -224,7 +230,7 @@ mathieu@ubuntu:~/$ ./5-print_numbers
 
 ----------------------------------
 
-### [6. Numberz](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/6-print_numberz.c)
+#### [6. Numberz](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/6-print_numberz.c)
 
 Write a program that prints all single digit numbers of base 10 starting from `0`, followed by a new line.
 
@@ -232,11 +238,12 @@ Write a program that prints all single digit numbers of base 10 starting from `0
   - You can only use the `putchar` function (every other function (`printf`, `puts`, etc…) is forbidden)
   - You can only use `putchar` twice in your code
   - All your code should be in the `main` function
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-print_numberz.c -o 6-print_numberz
 mathieu@ubuntu:~/$ ./6-print_numberz 
 
@@ -246,18 +253,19 @@ mathieu@ubuntu:~/$ ./6-print_numberz
 
 -----------------------------
 
-### [7. Smile In The Mirror](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/7-print_tebahpla.c)
+#### [7. Smile In The Mirror](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/7-print_tebahpla.c)
 
 Write a program that prints the lowercase alphabet in reverse, followed by a new line.
 
   - You can only use the `putchar` function (every other function (`printf`, `puts`, etc…) is forbidden)
   - All your code should be in the `main` function
   - You can only use `putchar` twice in your code
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-print_tebahpla.c -o 7-print_tebahpla
 mathieu@ubuntu:~/$ ./7-print_tebahpla
 
@@ -267,18 +275,19 @@ zyxwvutsrqponmlkjihgfedcba
 
 -------------------------------
 
-### [8. Hexadecimal](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/8-print_base16.c)
+#### [8. Hexadecimal](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/8-print_base16.c)
 
 Write a program that prints all the numbers of base 16 in lowercase, followed by a new line.
 
   - You can only use the `putchar` function (every other function (`printf`, `puts`, etc…) is forbidden)
   - All your code should be in the `main` function
   - You can only use `putchar` three times in your code
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-print_base16.c -o 8-print_base16
 mathieu@ubuntu:~/$ ./8-print_base16
 
@@ -288,7 +297,7 @@ mathieu@ubuntu:~/$ ./8-print_base16
 
 --------------------------
 
-### [9. Patience, Persistence And Perspiration Make An Unbeatable Combination For Success](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/9-print_comb.c)
+#### [9. Patience, Persistence And Perspiration Make An Unbeatable Combination For Success](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/9-print_comb.c)
 
 Write a program that prints all possible combinations of single-digit numbers.
 
@@ -298,11 +307,12 @@ Write a program that prints all possible combinations of single-digit numbers.
   - All your code should be in the `main` function
   - You can only use `putchar` four times maximum in your code
   - You are not allowed to use any variable of type `char`
-  <details>
+  
+<details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-print_comb.c -o 9-print_comb
 mathieu@ubuntu:~/$ ./9-print_comb | cat -e
 
@@ -312,7 +322,7 @@ mathieu@ubuntu:~/$ ./9-print_comb | cat -e
 
 ------------------------------
   
-### [10. Inventing Is A Combination Of Brains And Materials. The More Brains You Use, The Less Material You Need](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/100-print_comb3.c)
+#### [10. Inventing Is A Combination Of Brains And Materials. The More Brains You Use, The Less Material You Need](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/100-print_comb3.c)
   
   - Numbers must be separated by `,` , followed by a space
   - The two digits must be different
@@ -323,11 +333,12 @@ mathieu@ubuntu:~/$ ./9-print_comb | cat -e
   - You can only use `putchar` five times maximum in your code
   - You are not allowed to use any variable of type `char`
   - All your code should be in the `main` function
-  <details>
+
+<details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-print_comb3.c -o 100-print_comb3
 mathieu@ubuntu:~/$ ./100-print_comb3
 
@@ -337,7 +348,7 @@ mathieu@ubuntu:~/$ ./100-print_comb3
 
 ------------------------------------
 
-### [11. The Success Combination In Business Is: Do What You Do Better... And: Do More Of What You Do...](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/101-print_comb4.c)
+#### [11. The Success Combination In Business Is: Do What You Do Better... And: Do More Of What You Do...](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/101-print_comb4.c)
 Write a program that prints all possible different combinations of three digits.
 
  - Numbers must be separated by `,` , followed by a space
@@ -349,11 +360,12 @@ Write a program that prints all possible different combinations of three digits.
  - You can only use `putchar` six times maximum in your code
  - You are not allowed to use any variable of type `char`
  - All your code should be in the `main` function
- <details>
+ 
+<details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-print_comb4.c -o 101-print_comb4
 mathieu@ubuntu:~/$ ./101-print_comb4
 
@@ -363,7 +375,7 @@ mathieu@ubuntu:~/$ ./101-print_comb4
 
 --------------------------------------------
 
-### [12. Software Is Eating The World](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/102-print_comb5.c)
+#### [12. Software Is Eating The World](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/102-print_comb5.c)
 
 Write a program that prints all possible combinations of two two-digit numbers.
 
@@ -377,11 +389,12 @@ Write a program that prints all possible combinations of two two-digit numbers.
  - You can only use `putchar` eight times maximum in your code
  - You are not allowed to use any variable of type `char`
  - All your code should be in the `main` function
- <details>
+ 
+<details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 102-print_comb5.c -o 102-print_comb5
 mathieu@ubuntu:~/$ ./102-print_comb5
 
