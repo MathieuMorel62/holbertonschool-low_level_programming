@@ -3,7 +3,7 @@
 ![img](https://res.cloudinary.com/practicaldev/image/fetch/s--QQoKKPdY--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/0t3fdxw9v0iy0aw44fil.png)
 
 ## RESOURCES
-### Read or watch : 
+### Read or Watch : 
 
 - [Makefile](https://intranet.hbtn.io/rltoken/OPQoR8DQTSqs9jEKsgCqRw)
 - [Makefile Tutorial](https://intranet.hbtn.io/rltoken/OXlC1NnImsC2c4zz3vnHIA)
@@ -17,6 +17,13 @@
 - All your files should end with a new line
 - A `README.md` file, at the root of the folder of the project, is mandatory
 
+## More Info
+### Files
+**The following are very important steps**  
+- In the following tasks, we are going to use [these files](https://github.com/hs-hq/0x1B.c). We want to compile these only.
+- You can either create the files of the repository into your project folder **(makefiles)** and copy paste their content from github OR you can clone the **0x1B.c** repository into the **makefiles** folder.
+- If you’re going to clone it, you should enter the **makefiles** folder and **inside this folder** delete the **.git** folder using this command `rm -rf .git` then move the files from this folder into the **makefiles** folder to test your work.
+
 ------------------------------
 
  # TASKS
@@ -25,18 +32,17 @@
 #### [0. Make -f 0 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x03-makefiles/0-Makefile)
 
 Create your first Makefile.
-  
 Requirements :
-
   - name of the executable: `school`
   - rules: `all`	
     - The `all` rule builds your executable	
   - variables: none
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/Makefiles$ make -f 0-Makefile 
 gcc main.c school.c -o school
 mathieu@ubuntu:~/Makefiles$ ./school 
@@ -74,18 +80,18 @@ j#00000000000000w]+]++qw#00000000000000
 #### [1. Make -f 1 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x03-makefiles/1-Makefile)
 
 Requirements :
-
   - name of the executable: `school`	
   - rules: `all`
     - The `all` rule builds your executable	
   - variables: `CC`, `SRC`
     - `CC`: the compiler to be used
     - `SRC`: the `.c` files
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/Makefiles$ make -f 1-Makefile
 gcc main.c school.c -o school
 
@@ -99,7 +105,6 @@ gcc main.c school.c -o school
 #### [2. Make -f 2 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x03-makefiles/2-Makefile)
 
 Requirements :
-
   - name of the executable: `school`
   - rules: `all`
     - The `all` rule builds your executable
@@ -110,11 +115,12 @@ Requirements :
     - `NAME`: the name of the executable
   - The `all` rule should recompile only the updated source files
   - You are not allowed to have a list of all the `.o` files
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/Makefiles$ make -f 2-Makefile
 gcc    -c -o main.o main.c
 gcc    -c -o school.o school.c
@@ -135,7 +141,6 @@ gcc main.o school.o -o school
 
 #### [3. Make - f 3 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x03-makefiles/3-Makefile)
 Requirements :
-
   - name of the executable: `school`
   - rules: `all`, `clean`, `oclean`, `fclean`, `re`
     - `all`: builds your executable
@@ -152,11 +157,12 @@ Requirements :
   - The `all` rule should recompile only the updated source files
   - The `clean`, `oclean`, `fclean`, `re` rules should never fail
   - You are not allowed to have a list of all the `.o` files
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~//Makefiles$ ls -1
 0-Makefile
 1-Makefile
@@ -219,7 +225,6 @@ gcc main.o school.o -o school
 #### [4. A Complete Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x03-makefiles/4-Makefile)
 
 Requirements : 
-
   - name of the executable: `school`
   - rules: `all`, `clean`, `oclean`, `fclean`, `re`
     - `all`: builds your executable
@@ -237,11 +242,12 @@ Requirements :
   - The `all` rule should recompile only the updated source files
   - The `clean`, `oclean`, `fclean`, `re` rules should never fail
   - You are not allowed to have a list of all the `.o` files      
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/Makefiles$ make all -f 4-Makefile
 gcc -Wall -Werror -Wextra -pedantic   -c -o main.o main.c
 gcc -Wall -Werror -Wextra -pedantic   -c -o school.o school.c
@@ -254,7 +260,6 @@ gcc main.o school.o -o school
 #### [5. Make -f 100 - Makefile](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x03-makefiles/100-Makefile)
 
 Requirements :
-
   - name of the executable: `school`
   - rules: `all`, `clean`, `oclean`, `fclean`, `re`
     - `all`: builds your executable
