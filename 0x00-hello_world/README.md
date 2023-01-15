@@ -27,7 +27,8 @@
 - You are not allowed to use `system`
 - Your code should use the `Betty` style. It will be checked using [betty-style.pl](https://github.com/hs-hq/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/hs-hq/Betty/blob/master/betty-doc.pl)
 
-## Betty Linter
+## More Info
+### Betty Linter
 
 To run the Betty linter just with command `betty <filename>`:
 
@@ -75,11 +76,12 @@ Write a script that runs a C file through the preprocessor and save the result i
 
   - The C file name will be saved in the variable `$CFILE`
   - The output should be saved in the file `c`
+
 <details>
 <summary> File Compilation / test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/c/$ cat main.c 
 #include <stdio.h>
 
@@ -118,11 +120,12 @@ Write a script that compiles a C file but does not link.
   - The C file name will be saved in the variable `$CFILE`
   - The output file should be named the same as the C file, but with the extension `.o` instead of `.c`.
      - Example: if the C file is `main.c`, the output file should be `main.o`
+
 <details>
 <summary> File Compilation / test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/c/$ export CFILE=main.c
 mathieu@ubuntu:~/c/$ cat main.c
 
@@ -159,11 +162,12 @@ Write a script that generates the assembly code of a C code and save it in an ou
   - The C file name will be saved in the variable `$CFILE`
   - The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.
     - Example: if the C file is `main.c`, the output file should be `main.s`
+
 <details>
 <summary> File Compilation / test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/c/$ export CFILE=main.c
 mathieu@ubuntu:~/c/$ cat main.c
 
@@ -216,11 +220,12 @@ main:
 Write a script that compiles a C file and creates an executable named `cisfun`.
 
   - The C file name will be saved in the variable `$CFILE`
+
 <details>
 <summary> File Compilation / test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/c/$ export CFILE=main.c
 mathieu@ubuntu:~/c/$ cat main.c
 
@@ -253,11 +258,12 @@ Write a C program that prints exactly `"Programming is like building a multiling
   - Use the function `puts`
   - You are not allowed to use `printf`
   - Your program should end with the value `0`
+
 <details>
 <summary> File Compilation / test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/c/$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c && ./a.out
 "Programming is like building a multilingual puzzle
 
@@ -276,11 +282,12 @@ Write a C program that prints exactly `with proper grammar, but the outcome is a
   - You are not allowed to use the function `puts`
   - Your program should return `0`
   - Your program should compile without warning when using the `-Wall` `gcc` option
+
 <details>
 <summary> File Compilation / test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/c/$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c
 
 mathieu@ubuntu:~/c/$ ./a.out 
@@ -301,11 +308,12 @@ Write a C program that prints the size of various types on the computer it is co
   - Warnings are allowed
   - Your program should return `0`
   - You might have to install the package `libc6-dev-i386` on your Linux (Vagrant) to test the `-m32` `gcc` option
+
 <details>
 <summary> File Compilation / test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/c/$ gcc 6-size.c -m32 -o size32 2> /tmp/32
 mathieu@ubuntu:~/c/$ gcc 6-size.c -m64 -o size64 2> /tmp/64
 
@@ -337,11 +345,12 @@ Write a script that generates the assembly code (Intel syntax) of a C code and s
   - The C file name will be saved in the variable `$CFILE`.
   - The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.
     - Example: if the C file is `main.c`, the output file should be `main.s`
+
 <details>
 <summary> File Compilation / test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/c/$ export CFILE=main.c
 mathieu@ubuntu:~/c/$ cat main.c
 
@@ -393,11 +402,12 @@ Write a C program that prints exactly `and that piece of art is useful" - Dora K
   - You are not allowed to use any functions listed in the NAME section of the man (3) `printf` or man (3) `puts`
   - Your program should return 1
   - Your program should compile without any warnings when using the `-Wall` `gcc` option
+
 <details>
 <summary> File Compilation / test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/c/$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o quote 101-quote.c
 
 mathieu@ubuntu:~/c/$ ./quote
