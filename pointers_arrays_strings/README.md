@@ -1,9 +1,8 @@
 # C - POINTERS, ARRAYS AND STRINGS
 
-![img](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/216/IMG_2410.JPG)
+<img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/216/IMG_2410.JPG" width="100%" height="500px">
 
 ## CONCEPTS
-
 For this project, we expect you to look at these concepts :
 
 - [Pointers and arrays](https://intranet.hbtn.io/concepts/888)
@@ -47,7 +46,7 @@ Write a function that takes a pointer to an `int` as parameter and updates the v
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 0-main.c
 
 #include "main.h"
@@ -88,7 +87,7 @@ Write a function that swaps the values of two integers.
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 1-main.c
 
 #include "main.h"
@@ -128,11 +127,12 @@ Write a function that returns the length of a string.
   - Prototype: `int _strlen(char *s)`;
 
 FYI: The standard library provides a similar function: `strlen`. Run `man strlen` to learn more.
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 2-main.c
 
 #include "main.h"
@@ -174,7 +174,7 @@ FYI: The standard library provides a similar function: `puts`. Run `man puts` to
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 3-main.c
 
 #include "main.h"
@@ -206,11 +206,12 @@ I do not fear computers. I fear the lack of them - Isaac Asimov
 Write a function that prints a string, in reverse, followed by a new line.
 
   - Prototype: `void print_rev(char *s)`;
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 4-main.c
 
 #include "main.h"
@@ -242,11 +243,12 @@ vomisA caasI - meht fo kcal eht raef I .sretupmoc raef ton od I
 Write a function that reverses a string.
 
  - Prototype: `void rev_string(char *s)`;
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 5-main.c
 
 #include "main.h"
@@ -281,11 +283,12 @@ loohcS yM
 Write a function that prints every other character of a string, starting with the first character, followed by a new line.
 
  - Prototype: `void puts2(char *str)`;
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 6-main.c
 
 #include "main.h"
@@ -319,11 +322,12 @@ Write a function that prints half of a string, followed by a new line.
  - Prototype: `void puts_half(char *str)`;
  - The function should print the second half of the string
  - If the number of characters is odd, the function should print the last `n` characters of the string, where `n = (length_of_the_string - 1) / 2`
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 7-main.c
 
 #include "main.h"
@@ -359,11 +363,12 @@ Write a function that prints `n` elements of an array of integers, followed by a
  - Numbers must be separated by comma, followed by a space
  - The numbers should be displayed in the same order as they are stored in the array
  - You are allowed to use `printf`
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 8-main.c
 
 #include "main.h"
@@ -403,11 +408,12 @@ Write a function that copies the string pointed to by `src`, including the termi
  - Return value: the pointer to `dest`
 
 FYI: The standard library provides a similar function: `strcpy`. Run `man strcpy` to learn more.
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 9-main.c
 
 #include "main.h"
@@ -452,11 +458,12 @@ Write a function that convert a string to an integer.
 - We will use the `-fsanitize=signed-integer-overflow` gcc flag to compile your code.
 
 FYI: The standard library provides a similar function: `atoi`. Run `man atoi` to learn more.
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 100-main.c
 
 #include "main.h"
@@ -513,11 +520,12 @@ Create a program that generates random valid passwords for the program [101-crac
 - You don’t have to pass the `betty-style` tests (you still need to pass the `betty-doc` tests)
 - man `srand`, `rand`, `time`
 - `gdb` and `objdump` can help
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra 101-keygen.c -o 101-keygen
 mathieu@ubuntu:~/$ ./101-crackme "`./101-keygen`"
 Tada! Congrats
