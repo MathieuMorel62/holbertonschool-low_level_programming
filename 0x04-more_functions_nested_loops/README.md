@@ -3,7 +3,7 @@
 ![img](https://c8.alamy.com/comp/2G18XE3/abstract-modern-tech-of-programming-code-screen-developer-c-programming-language-of-computer-script-and-technology-background-of-software-2G18XE3.jpg)
 
 ## RESOURCES
-### Read or watch :
+### Read or Watch :
 
 - [Nested While Loops](https://intranet.hbtn.io/rltoken/lnzT56HYlUClB0-yDfwiqw)
 - [C - Functions](https://intranet.hbtn.io/rltoken/mWFYXPYiI87lYf6tyYtD_Q)
@@ -40,11 +40,12 @@ Write a function that checks for uppercase character.
   - Returns `0` otherwise
 
 FYI: The standard library provides a similar function: `isupper`. Run `man isupper` to learn more.
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 0-main.c
 
 #include "main.h"
@@ -84,11 +85,12 @@ Write a function that checks for a digit (`0` through `9`).
   - Returns `0` otherwise
 
 FYI: The standard library provides a similar function: isdigit. Run man isdigit to learn more.
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 1-main.c
 
 #include "main.h"
@@ -124,11 +126,12 @@ a: 0
 Write a function that multiplies two integers.
  
   - Prototype: `int mul(int a, int b)`;
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 2-main.c
 
 #include "main.h"
@@ -161,11 +164,12 @@ Write a function that prints the numbers, from `0` to `9`, followed by a new lin
 
   - Prototype: `void print_numbers(void)`;
   - You can only use `_putchar` twice in your code
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 3-main.c 
   
 #include "main.h"
@@ -196,11 +200,12 @@ Write a function that prints the numbers, from `0` to `9`, followed by a new lin
   - Prototype: `void print_most_numbers(void)`; 
   - Do not print `2` and `4`
   - You can only use `_putchar` twice in your code
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 4-main.c
   
 #include "main.h"
@@ -230,11 +235,12 @@ Write a function that prints 10 times the numbers, from `0` to `14`, followed by
 
   - Prototype: `void more_numbers(void)`;
   - You can only use `_putchar` three times in your code
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 5-main.c
   
 #include "main.h"
@@ -276,11 +282,12 @@ Write a function that draws a straight line in the terminal.
   - Where `n` is the number of times the character `_` should be printed
   - The line should end with a `\n`
   - If `n` is `0` or less, the function should only print `\n`
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 6-main.c
   
 #include "main.h"
@@ -319,11 +326,12 @@ Write a function that draws a diagonal line on the terminal.
   - Where `n` is the number of times the character `\` should be printed
   - The diagonal should end with a `\n`
   - If `n` is `0` or less, the function should only print a `\n`
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 7-main.c
   
 #include "main.h"
@@ -372,11 +380,12 @@ Write a function that prints a square, followed by a new line.
   - Where size is the `size` of the square
   - If `size` is `0` or less, the function should print only a new line
   - Use the character `#` to print the square
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 8-main.c 
   
 #include "main.h"
@@ -423,11 +432,12 @@ Write a program that prints the numbers from `1` to `100`, followed by a new lin
 
   - Each number or word should be separated by a space
   - You are allowed to use the standard library
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 9-fizz_buzz.c -o 9-fizz_buzz
 mathieu@ubuntu:~/$ ./9-fizz_buzz 
 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 16 17 Fizz 19 Buzz Fizz 22 23 Fizz Buzz 26 Fizz 28 29 FizzBuzz 31 32 Fizz 34 Buzz Fizz 37 38 Fizz Buzz 41 Fizz 43 44 FizzBuzz 46 47 Fizz 49 Buzz Fizz 52 53 Fizz Buzz 56 Fizz 58 59 FizzBuzz 61 62 Fizz 64 Buzz Fizz 67 68 Fizz Buzz 71 Fizz 73 74 FizzBuzz 76 77 Fizz 79 Buzz Fizz 82 83 Fizz Buzz 86 Fizz 88 89 FizzBuzz 91 92 Fizz 94 Buzz Fizz 97 98 Fizz Buzz
@@ -445,11 +455,12 @@ Write a function that prints a triangle, followed by a new line.
   - Where `size` is the size of the triangle
   - If `size` is `0` or less, the function should print only a new line
   - Use the character `#` to print the triangle
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 10-main.c 
   
 #include "main.h"
@@ -524,11 +535,12 @@ Write a function that prints an integer.
 - You are not allowed to use `long`
 - You are not allowed to use arrays or pointers
 - You are not allowed to hard-code special values
+
 <details>
 <summary> File Compilation / Test </summary>
 <br>
 
-```
+```c++
 mathieu@ubuntu:~/$ cat 101-main.c
   
 #include "main.h"
