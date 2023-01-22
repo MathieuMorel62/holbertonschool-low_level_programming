@@ -18,14 +18,15 @@ int is_palindrome(char *s)
 
 	while (left < right)
 	{
-		while (isspace(*left) || ispunct(*left))
+		if (isspace(*left) || ispunct(*left))
 			left++;
-		while (isspace(*right) || ispunct(*right))
+		else if (isspace(*right) || ispunct(*right))
 			right--;
-		if (tolower(*left) != tolower(*right))
+		else if (tolower(*left) != tolower(*right))
 			return (0);
-		left++;
-		right--;
+		else
+			left++;
+			right--;
 	}
 	return (1);
 }
