@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 /*---------- PROTOTYPES ----------*/
 int _putchar(char c);

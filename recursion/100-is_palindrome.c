@@ -10,23 +10,19 @@
 int is_palindrome(char *s)
 {
 	int len = strlen(s);
-	char *left = s;
-	char *right = s + len - 1;
+	char *str = malloc((len - 1) * sizeof(char));
+	int res;
 
-	if (s == NULL || len == 0)
+	if (len <= 1)
+		return (1);
+
+	if (tolower(*s) != tolower(s[len - 1]))
 		return (0);
 
-	while (left < right)
-	{
-		if (isspace(*left) || ispunct(*left))
-			left++;
-		else if (isspace(*right) || ispunct(*right))
-			right--;
-		else if (tolower(*left) != tolower(*right))
-			return (0);
-		else
-			left++;
-			right--;
-	}
-	return (1);
+	strncpy(str, s + 1, len - 2);
+	str[len - 2] = '\0';
+	res = is_palindrome(str);
+	free(str);
+
+	return (res);
 }
