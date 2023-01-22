@@ -1,15 +1,18 @@
 #include "main.h"
 
 /**
- * set_string -
- * @s:
- * @to:
+ * set_string - Assign the value of a pointer to a char
+ * @s: Pointer to a pointer of a char
+ * @to: Pointer to a char
 */
 
 void set_string(char **s, char *to)
 {
-	if (s == NULL || to == NULL)
+	if (s == NULL)
 		return;
-	
-	*s = to;
+
+	if (to != NULL)
+		*s = to;
+	else
+		*s = NULL;
 }
