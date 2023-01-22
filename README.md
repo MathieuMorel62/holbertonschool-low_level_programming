@@ -128,7 +128,7 @@
 
 --------------------------------
 
-### [C - ARGC, ARGV](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/argc_argv)
+### [C - ARGC, ARGV](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x0A-argc_argv)
 #### `GENERAL`
 
 - How to use arguments passed to your program
