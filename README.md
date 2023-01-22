@@ -20,7 +20,7 @@
 -------------------------------
 
 
-### [2. C - VARIABLES, IF, ELSE, WHILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/variables_if_else_while)
+### [2. C - VARIABLES, IF, ELSE, WHILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while)
 #### `GENERAL`
 
 - What are the arithmetic operators and how to use them
@@ -41,7 +41,7 @@
 
 --------------------------------
 
-### [3. C - FUNCTIONS, NESTED LOOPS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/functions_nested_loops)
+### [3. C - FUNCTIONS, NESTED LOOPS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x02-functions_nested_loops)
 #### `GENERAL`
 
 - What are nested loops and how to use them
@@ -54,7 +54,7 @@
 
 --------------------------------------
 
-### [4. C - MAKEFILES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/makefiles)
+### [4. C - MAKEFILES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x03-makefiles)
 #### `GENERAL`
 
 - What are `make`, Makefiles
@@ -66,7 +66,7 @@
 
 ----------------------------------
 
-### [5. C - MORE FUNCTIONS, MORE NESTED LOOPS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_functions_nested_loops)
+### [5. C - MORE FUNCTIONS, MORE NESTED LOOPS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x04-more_functions_nested_loops)
 #### `GENERAL`
 
 - What are nested loops and how to use them
@@ -79,7 +79,7 @@
 
 ---------------------------------------
 
-### [6. C - POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/pointers_arrays_strings)
+### [6. C - POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x05-pointers_arrays_strings)
 #### `GENERAL`
 
 - What are pointers and how to use them
@@ -90,7 +90,7 @@
 
 ----------------------------------------
 
-### [6. C - POINTER, ARRAYS AND STRINGS PART 02](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/pointers_arrays_strings_part_02)
+### [6. C - MORE POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0X06-pointers_arrays_strings)
 #### `GENERAL`
 
 - What are pointers and how to use them
@@ -101,7 +101,7 @@
 
 ----------------------------
 
-### [6. C - POINTER, ARRAYS AND STRINGS PART 03](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/pointers_arrays_strings_part_03)
+### [6. C - EVEN MORE POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x07-pointers_arrays_strings)
 #### `GENERAL`
 
 - What are pointers to pointers and how to use them
