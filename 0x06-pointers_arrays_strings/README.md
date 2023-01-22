@@ -1,6 +1,6 @@
-# C - MORE POINTERS, ARRAYS AND STRINGS PART 02
+# C - MORE POINTERS, ARRAYS AND STRINGS
 
-![img](https://cdn.educba.com/academy/wp-content/uploads/2020/03/Function-Pointer-in-C.jpg)
+<img src="https://cdn.educba.com/academy/wp-content/uploads/2020/03/Function-Pointer-in-C.jpg" width="100%">
 
 ## Requirements
 
