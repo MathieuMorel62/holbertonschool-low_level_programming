@@ -1,6 +1,6 @@
 ![img](https://ict.iitk.ac.in/wp-content/uploads/c-programming-2.jpg)
 
-### [1. C - HELLO, WORLD](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x00-hello_world)
+### [C - HELLO, WORLD](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x00-hello_world)
 #### `GENERAL`
 
 - Why C programming is awesome
@@ -20,7 +20,7 @@
 -------------------------------
 
 
-### [2. C - VARIABLES, IF, ELSE, WHILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while)
+### [C - VARIABLES, IF, ELSE, WHILE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while)
 #### `GENERAL`
 
 - What are the arithmetic operators and how to use them
@@ -41,7 +41,7 @@
 
 --------------------------------
 
-### [3. C - FUNCTIONS, NESTED LOOPS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x02-functions_nested_loops)
+### [C - FUNCTIONS, NESTED LOOPS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x02-functions_nested_loops)
 #### `GENERAL`
 
 - What are nested loops and how to use them
@@ -54,7 +54,7 @@
 
 --------------------------------------
 
-### [4. C - MAKEFILES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x03-makefiles)
+### [C - MAKEFILES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x03-makefiles)
 #### `GENERAL`
 
 - What are `make`, Makefiles
@@ -66,7 +66,7 @@
 
 ----------------------------------
 
-### [5. C - MORE FUNCTIONS, MORE NESTED LOOPS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x04-more_functions_nested_loops)
+### [C - MORE FUNCTIONS, MORE NESTED LOOPS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x04-more_functions_nested_loops)
 #### `GENERAL`
 
 - What are nested loops and how to use them
@@ -79,7 +79,7 @@
 
 ---------------------------------------
 
-### [6. C - POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x05-pointers_arrays_strings)
+### [C - POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x05-pointers_arrays_strings)
 #### `GENERAL`
 
 - What are pointers and how to use them
@@ -90,7 +90,7 @@
 
 ----------------------------------------
 
-### [6. C - MORE POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x06-pointers_arrays_strings)
+### [C - MORE POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x06-pointers_arrays_strings)
 #### `GENERAL`
 
 - What are pointers and how to use them
@@ -101,7 +101,7 @@
 
 ----------------------------
 
-### [6. C - EVEN MORE POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x07-pointers_arrays_strings)
+### [C - EVEN MORE POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x07-pointers_arrays_strings)
 #### `GENERAL`
 
 - What are pointers to pointers and how to use them
@@ -110,7 +110,7 @@
 
 ----------------------------
 
-### [7. C _ RECURSION](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/recursion)
+### [C - RECURSION](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x08-recursion)
 #### `GENERAL`
 
 - What is recursion
@@ -120,7 +120,7 @@
 
 ------------------------------
 
-### [8. C - STATIC LIBRARIES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/static_libraries)
+### [C - STATIC LIBRARIES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/static_libraries)
 #### `GENERAL`
 
 - What is a static library, how does it work, how to create one, and how to use it
@@ -128,7 +128,7 @@
 
 --------------------------------
 
-### [9. C - ARGC, ARGV](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/argc_argv)
+### [C - ARGC, ARGV](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/argc_argv)
 #### `GENERAL`
 
 - How to use arguments passed to your program
@@ -137,7 +137,7 @@
 
 ------------------------------------
 
-### [10. C - MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/malloc_free)
+### [C - MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/malloc_free)
 #### `GENERAL`
 
 - What is the difference between automatic and dynamic allocation
@@ -147,7 +147,7 @@
 
 ---------------------------------
 
-### [11. C - MORE MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_malloc_free)
+### [C - MORE MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_malloc_free)
 #### `GENERAL`
 
 - How to use the `exit` function
@@ -155,7 +155,7 @@
 
 -----------------------------
 
-### [12. C - PREPROCESSOR](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/preprocessor)
+### [C - PREPROCESSOR](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/preprocessor)
 #### `GENERAL`
 
 - What are macros and how to use them
@@ -164,7 +164,7 @@
 
 ---------------------------------------------
 
-### [13. C - STRUCTURES, TYPEDEF](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/structures_typedef)
+### [C - STRUCTURES, TYPEDEF](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/structures_typedef)
 #### `GENERAL`
 
 - What are structures, when, why and how to use them
@@ -172,7 +172,7 @@
 
 _____________________________________
 
-### [14. C - FUNCTION POINTERS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/function_pointers)
+### [C - FUNCTION POINTERS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/function_pointers)
 #### `GENERAL`
 
 - What are function pointers and how to use them
@@ -181,7 +181,7 @@ _____________________________________
 
 ------------------------------------
 
-### [15. C - VARIADIC FUNCTIONS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/variadic_functions)
+### [C - VARIADIC FUNCTIONS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/variadic_functions)
 #### `GENERAL`
 
 - What are variadic functions
@@ -190,7 +190,7 @@ _____________________________________
 
 -----------------------------------
 
-### [16. C - SINGLY LINKED LISTS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/singly_linked_lists)
+### [C - SINGLY LINKED LISTS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/singly_linked_lists)
 #### `GENERAL`
 
 - When and why using linked lists vs arrays
@@ -198,7 +198,7 @@ _____________________________________
 
 -------------------------
 
-### [17. C - MORE SINGLY LINKED LISTS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_singly_linked_lists)
+### [C - MORE SINGLY LINKED LISTS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_singly_linked_lists)
 #### `GENERAL`
 
 - How to use linked lists
@@ -206,7 +206,7 @@ _____________________________________
 
 --------------------------
 
-### [18. C - BIT MANIPULATION](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/bit_manipulation)
+### [C - BIT MANIPULATION](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/bit_manipulation)
 #### `GENERAL`
 
 - Look for the right source of information without too much help
@@ -214,7 +214,7 @@ _____________________________________
 
 --------------------------------
 
-### [19. C - FILE I/O](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/file_io)
+### [C - FILE I/O](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/file_io)
 #### `GENERAL`
 
 - Look for the right source of information online
@@ -229,7 +229,7 @@ _____________________________________
 
 ----------------------------
 
-### [20. C - Doubly Linked Lists](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/doubly_linked_lists)
+### [C - Doubly Linked Lists](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/doubly_linked_lists)
 #### `GENERAL`
 
 - What is a doubly linked list
@@ -238,7 +238,7 @@ _____________________________________
 
 -------------------------
 
-### [21. C - Hash Tables](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/hash_tables)
+### [C - Hash Tables](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/hash_tables)
 #### `GENERAL`
 
 - What is a hash function
@@ -250,7 +250,7 @@ _____________________________________
 
 ----------------------
 
-### [22. C - Search Algorithms](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/search_algorithms)
+### [C - Search Algorithms](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/search_algorithms)
 #### `GENERAL`
 
 - What is a search algorithm
@@ -260,7 +260,7 @@ _____________________________________
 
 --------------------------
 
-### [23. C - Binary trees](https://github.com/MathieuMorel62/holbertonschool-binary_trees)
+### [C - Binary trees](https://github.com/MathieuMorel62/holbertonschool-binary_trees)
 #### `GENERAL`
 
 - What is a binary tree
@@ -271,3 +271,7 @@ _____________________________________
 - What is a complete, a full, a perfect, a balanced binary tree
 
 ----------------------------------
+
+## Author
+
+- Mathieu Morel
