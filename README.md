@@ -90,7 +90,7 @@
 
 ----------------------------------------
 
-### [6. C - MORE POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0X06-pointers_arrays_strings)
+### [6. C - MORE POINTERS, ARRAYS AND STRINGS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x06-pointers_arrays_strings)
 #### `GENERAL`
 
 - What are pointers and how to use them
