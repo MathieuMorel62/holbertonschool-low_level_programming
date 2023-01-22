@@ -6,10 +6,8 @@
 #include <string.h>
 #include <unistd.h>
 
-/*
- * Function prototypes
- *
- */
+
+/******** Function prototypes **********/
 
 int _putchar(char c);
 int _islower(int c);

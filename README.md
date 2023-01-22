@@ -120,7 +120,7 @@
 
 ------------------------------
 
-### [C - STATIC LIBRARIES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/static_libraries)
+### [C - STATIC LIBRARIES](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x09-static_libraries)
 #### `GENERAL`
 
 - What is a static library, how does it work, how to create one, and how to use it
