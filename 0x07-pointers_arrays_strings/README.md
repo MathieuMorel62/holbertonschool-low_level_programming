@@ -30,7 +30,7 @@
 
 # TASKS
 
-### [0. Memset](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/0-memset.c)
+#### [0. Memset](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/0-memset.c)
 
 Write a function that fills memory with a constant byte.
 
@@ -122,7 +122,7 @@ mathieu@ubuntu:~/$ ./0-memset
 
 ------------------------------------
 
-### [1. Memcpy](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/1-memcpy.c)
+#### [1. Memcpy](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/1-memcpy.c)
 
 Write a function that copies memory area.
 
@@ -215,7 +215,7 @@ mathieu@ubuntu:~/$ ./1-memcpy
 
 -----------------------------
 
-### [2. Strchr](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/2-strchr.c)
+#### [2. Strchr](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/2-strchr.c)
 
 Write a function that locates a character in a string.
 
@@ -261,7 +261,7 @@ llo
 
 ------------------------------
 
-### [3. Strspn](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/3-strspn.c)
+#### [3. Strspn](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/3-strspn.c)
 
 Write a function that gets the length of a prefix substring.
 
@@ -304,7 +304,7 @@ mathieu@ubuntu:~/$ ./3-strspn
 
 -----------------------------------------
 
-### [4. Strpbrk](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/4-strpbrk.c)
+#### [4. Strpbrk](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/4-strpbrk.c)
 
 Write a function that searches a string for any of a set of bytes.
 
@@ -348,7 +348,7 @@ llo, world
 
 --------------------------------
 
-### [5. Strstr](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/5-strstr.c)
+#### [5. Strstr](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/5-strstr.c)
 
 Write a function that locates a substring.
 
@@ -392,7 +392,7 @@ world
 
 ------------------------------
 
-### [6. Chess Is Mental Torture](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/7-print_chessboard.c)
+#### [6. Chess Is Mental Torture](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/7-print_chessboard.c)
 
 Write a function that prints the chessboard.
 
@@ -444,7 +444,7 @@ RKBQKBKR
 
 ------------------------------
 
-### [7. The Line Of Life Is a Ragged Diagonal Between Duty And Desire](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/8-print_diagsums.c)
+#### [7. The Line Of Life Is a Ragged Diagonal Between Duty And Desire](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/8-print_diagsums.c)
 
 Write a function that prints the sum of the two diagonals of a square matrix of integers.
 
@@ -494,6 +494,56 @@ mathieu@ubuntu:~/$ ./8-print_diagsums
 1214556093, 1137318
 ```
 </details>
+
+--------------------------------
+
+#### [8. Double Pointer, Double Fun](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/100-set_string.c)
+Write a function that sets the value of a pointer to a char.
+
+- Prototype: `void set_string(char **s, char *to);`
+
+<details>
+<summary> Test File </summary>
+<br>
+
+```c++
+mathieu@ubuntu:~/$ cat 100-main.c
+
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char *s0 = "Bob Dylan";
+    char *s1 = "Robert Allen";
+
+    printf("%s, %s\n", s0, s1);
+    set_string(&s1, s0);
+    printf("%s, %s\n", s0, s1);
+    return (0);
+}
+
+mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-set_string.c -o 100-set_string
+mathieu@ubuntu:~/$ ./100-set_string 
+Bob Dylan, Robert Allen
+Bob Dylan, Bob Dylan
+```
+</details>
+
+-------------------------------
+
+#### [9. My Primary Goal Of Hacking Was The Intellectual Curiosity, The Seduction Of Adventure](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x07-pointers_arrays_strings/101-crackme_password)
+Create a file that contains the password for the [crackme2](https://github.com/hs-hq/0x06.c) executable.
+
+- Your file should contain the exact password, no new line, no extra space
+- `ltrace`, `ldd`, `gdb` and `objdump` can help
+- You may need to install the `openssl` library to run the `crakme2` program: `sudo apt install libssl-dev`
+- Edit the source list `sudo nano /etc/apt/sources.list` to add the following line: `deb http://security.ubuntu.com/ubuntu xenial-security main` Then `sudo apt update` and `sudo apt install libssl1.0.0`
 
 --------------------------------
 
