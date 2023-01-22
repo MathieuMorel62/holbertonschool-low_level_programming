@@ -27,7 +27,8 @@ void print_buffer(char *b, int size)
 					printf("  ");
 			}
 			printf(" ");
-			for (ascii_index = buffer_index; ascii_index < buffer_index + 10; ascii_index++)
+			for (ascii_index = buffer_index;
+				ascii_index < buffer_index + 10; ascii_index++)
 			{
 				if (ascii_index >= size)
 					break;
