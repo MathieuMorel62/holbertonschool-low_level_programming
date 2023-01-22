@@ -17,8 +17,15 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
+	if (ac > MAX_ARGS)
+		return (NULL);
+
 	for (index = 0; index < ac; index++)
+	{
+		if (av[index] == NULL)
+			return (NULL);
 		total_len = total_len + strlen((av[index]) + 1);
+	}
 
 	result = malloc(sizeof(char) * total_len);
 	if (result == NULL)
