@@ -31,8 +31,9 @@ char **strtow(char *str)
 			start = i;
 			while (str[i] && str[i] != ' ')
 				i++;
-
 			end = i;
+			if (start == end)
+				continue;
 			words[j] = malloc(sizeof(char) * (end - start + 1));
 			if (!words[j])
 			{
