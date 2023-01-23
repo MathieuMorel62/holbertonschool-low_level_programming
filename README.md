@@ -137,7 +137,7 @@
 
 ------------------------------------
 
-### [C - MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/malloc_free)
+### [C - MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x0B-malloc_free)
 #### `GENERAL`
 
 - What is the difference between automatic and dynamic allocation
