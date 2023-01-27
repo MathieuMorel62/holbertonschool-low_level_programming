@@ -147,7 +147,7 @@
 
 ---------------------------------
 
-### [C - MORE MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_malloc_free)
+### [C - MORE MALLOC, FREE](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x0C-more_malloc_free)
 #### `GENERAL`
 
 - How to use the `exit` function
@@ -155,7 +155,7 @@
 
 -----------------------------
 
-### [C - PREPROCESSOR](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/preprocessor)
+### [C - PREPROCESSOR](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0X0D-preprocessor)
 #### `GENERAL`
 
 - What are macros and how to use them
@@ -164,7 +164,7 @@
 
 ---------------------------------------------
 
-### [C - STRUCTURES, TYPEDEF](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/structures_typedef)
+### [C - STRUCTURES, TYPEDEF](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x0E-structures_typedef)
 #### `GENERAL`
 
 - What are structures, when, why and how to use them
@@ -172,7 +172,7 @@
 
 _____________________________________
 
-### [C - FUNCTION POINTERS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/function_pointers)
+### [C - FUNCTION POINTERS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0X0F-function_pointers)
 #### `GENERAL`
 
 - What are function pointers and how to use them
