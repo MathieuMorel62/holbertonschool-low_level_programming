@@ -1,58 +1,71 @@
 #include "main.h"
 
 /**
- * check_valid_input - checks if the input is valid.
- * @argc: Number of arguments passed to the program.
- * @argv: Array of arguments passed to the program.
- *
- * Return: 0 if input is valid, 98 if invalid input.
-*/
-
-int check_valid_input(int argc, char *argv[])
+  * _isdigit - tells if the string consists of digits
+  * @argv: pointer to current item in argument
+  * Return: return 0 if all digits, 1 if not all digits.
+  */
+int _isdigit(char *argv)
 {
-	int i, j = 0;
+	int i;
+
+	i = 0;
+	while (argv[i])
+	{
+		if (argv[i] >= '0' && argv[i] <= '9')
+			i++;
+		else
+			return (1);
+	}
+	return (0);
+}
+/**
+  * _atoi - converts a string of ascii digits to the values they represent
+  * @s: pointer to the source string
+  * Return: value of digits
+  */
+int _atoi(char *s)
+{
+	int i, result;
+
+	i = result = 0;
+	while (s[i])
+	{
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			result *= 10;
+			result += (s[i] - '0');
+		}
+		i++;
+	}
+	return (result);
+}
+/**
+  * main - main function call
+  * @argc: argument count
+  * @argv: 2D array of arguments
+  * Return: return 0 on success, 98 on failure
+  */
+int main(int argc, char *argv[])
+{
+	int i, num1, num2, result;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
-		return (98);
+		exit(98);
 	}
-
 	for (i = 1; i < argc; i++)
 	{
-		while (argv[i][j])
+		if (_isdigit(argv[i]))
 		{
-			if (!isdigit(argv[i][j]))
-			{
-				printf("Error\n");
-				return (98);
-			}
-			j++;
+			printf("Error\n");
+			exit(98);
 		}
 	}
-	return (0);
-}
-
-/**
- * main - Entry point.
- * @argc: Number of arguments passed to the program.
- * @argv: Array of arguments passed to the program.
- *
- * Return: 0 if successful, 98 if invalid input.
-*/
-
-int main(int argc, char *argv[])
-{
-	long num1, num2, result;
-	int check = check_valid_input(argc, argv);
-
-	if (check == 98)
-		return (98);
-
-	num1 = atol(argv[1]);
-	num2 = atol(argv[2]);
-	result = num1 * num2;
-
-	printf("%ld\n", result);
+	num1 = _atoi(argv[1]);
+    num2 = _atoi(argv[2]);
+    result = num1 * num2;
+    printf("%d\n", result);
 	return (0);
 }
