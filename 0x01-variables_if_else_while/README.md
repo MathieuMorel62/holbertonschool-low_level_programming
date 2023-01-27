@@ -23,7 +23,7 @@ if (x > 10) {
 
 ### Loops
 
-C also allows for the use of loops, such as `while`, to repeatedly execute a block of code. For example, the following code will print the numbers from 1 to 10:
+C also allows for the use of loops, such as `while` or `for`, to repeatedly execute a block of code. For example, the following code will print the numbers from 1 to 10:
 
 ```c++
 int i = 1;
