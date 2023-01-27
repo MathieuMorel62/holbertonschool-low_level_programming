@@ -1,6 +1,6 @@
 # C - VARIABLES, IF, ELSE, WHILE
 
-<img src="https://www.mrvermainstitute.com/wp-content/uploads/2022/04/C-progamming.jpg" height="500px" width="100%">
+<img src="https://www.mrvermainstitute.com/wp-content/uploads/2022/04/C-progamming.jpg" width="100%">
 
 ## Description
 ### Variables
