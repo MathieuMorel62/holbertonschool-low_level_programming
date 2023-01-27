@@ -1,5 +1,12 @@
 ![img](https://ict.iitk.ac.in/wp-content/uploads/c-programming-2.jpg)
 
+## Description
+### C Language
+
+>C is a general-purpose, high-level programming language originally developed by Dennis Ritchie in 1972. It is a powerful and efficient language that is widely used in system programming, embedded systems, and other areas where performance is critical. Some of the key features of C include its low-level access to memory, its flexibility and portability, and its ability to handle a wide variety of data types and data structures. C is also known for its use of pointers, which allow for efficient manipulation of data in memory. Additionally, C has a large number of libraries and frameworks that can be leveraged to create efficient and reliable software. C is a popular choice for many developers because of its speed and performance, as well as its wide range of applications.
+
+## C Projects
+
 ### [C - HELLO, WORLD](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x00-hello_world)
 #### `GENERAL`
 
