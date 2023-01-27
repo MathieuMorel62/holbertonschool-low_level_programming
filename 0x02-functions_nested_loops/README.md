@@ -1,6 +1,41 @@
 # C - FUNCTIONS, NESTED LOOPS
 
-<img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/12/15114057/shutterstock_487518850-1.jpg" width="100%" height="500px">
+<img src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/12/15114057/shutterstock_487518850-1.jpg" width="100%">
+
+## Description
+### C Functions
+
+C functions allow grouping of instructions into a reusable block, which can be called from multiple places in the code. Functions can also take parameters and return a value.  
+
+Here's an example of a C function declaration:
+
+```c++
+int add(int a, int b) {
+    return a + b;
+}
+```
+
+This function takes in two integers `a` and `b`, and returns their sum. It can be called from other parts of the code like this:  
+
+```c++
+int result = add(2, 3);
+``` 
+
+### Nested Loops
+
+Nested loops, on the other hand, allow repeating a series of instructions at multiple levels of depth. For example, a `for` loop inside another `for` loop allows iterating through all possible combinations of the two sets of iteration.  
+  
+Here's an example of nested loops in C:
+
+```c++
+for (int i = 0; i < 10; i++) {
+    for (int j = 0; j < 5; j++) {
+        printf("The value of i is %d and the value of j is %d\n", i, j);
+    }
+}
+```
+
+This code will print the values of `i` and `j` for all possible combinations between 0 and 9 for `i` and between 0 and 4 for `j`.
 
 ## RESOURCES
 ### Read or watch :
