@@ -2,6 +2,47 @@
 
 <img src="https://www.mrvermainstitute.com/wp-content/uploads/2022/04/C-progamming.jpg" height="500px" width="100%">
 
+## Description
+### Variables
+
+In C, variables are used to store data values. Variables are declared with a specific data type, such as `int`, `float`, or `char`, and are given a unique name. For example, the following code declares an integer variable named `x` and assigns it the value of 5:
+
+```C++
+int x = 5;
+```
+
+### Conditional Statements
+
+C allows for the use of conditional statements, such as `if`, `else`, and `else if`, to control the flow of the program. For example, the following code checks if the variable `x` is greater than 10 and, if so, prints "`x` is greater than 10".
+
+```c++
+if (x > 10) {
+    printf("x is greater than 10");
+}
+```
+
+### Loops
+
+C also allows for the use of loops, such as `while`, to repeatedly execute a block of code. For example, the following code will print the numbers from 1 to 10:
+
+```c++
+int i = 1;
+while (i <= 10) {
+    printf("%d\n", i);
+    i++;
+}
+```
+
+The `for` loop is similar to the `while` loop, but with a more concise syntax
+
+```c++
+for(int i = 0; i < 10; i++){
+  printf("%d",i);
+}
+```
+
+These are just a few examples of the basic building blocks of C programming, and it can be used for many more things. C is a powerful and versatile language that can be used for a wide range of applications.
+
 ## RESOURCES
 ### Read or Watch :
 
