@@ -2,7 +2,36 @@
 
 <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/218/58fe6b229144b7fe5ebe88afe9ff5cabe2dd0863e1e79b2d02b4103c30b465dd.jpg" width="100%">
 
-## RESOURCES
+## Description
+### Even More Pointers, Arrays, and Strings
+
+Pointers, arrays, and strings are fundamental concepts in C programming, and there are many more ways to use and manipulate them.  
+  
+One advanced concept related to pointers is the use of **pointers to pointers**. This allows for the creation of a pointer that points to another pointer. This can be useful in situations where the memory location of a pointer needs to be modified.
+
+```c
+int x = 10;
+int *ptr1 = &x;
+int **ptr2 = &ptr1;
+printf("Value of x: %d\n", x); // Output: Value of x: 10
+printf("Value at location pointed by ptr1: %d\n", *ptr1); // Output: Value at location pointed by ptr1: 10
+printf("Value at location pointed by ptr2: %d\n", **ptr2); // Output: Value at location pointed by ptr2: 10
+```
+
+In this example, `ptr1` is a pointer to the memory location of `x`, and `ptr2` is a pointer to the memory location of `ptr1`, which in turn holds the memory location of `x`.  
+  
+Another advanced concept is the use of **multidimensional arrays**. These are arrays that have more than one dimension, allowing for the creation of arrays with multiple levels of elements. For example, a 2-dimensional array can be thought of as a matrix of elements.
+
+```c
+int arr[2][3] = { {1, 2, 3}, {4, 5, 6} };
+printf("Value at arr[1][2]: %d\n", arr[1][2]); // Output: Value at arr[1][2]: 6
+```
+
+In this example, `arr` is a 2-dimensional array with 2 rows and 3 columns. The value at index `[1][2]` is 6.  
+  
+To summarise, pointers to pointers, and multidimensional arrays are advanced concepts that can be used to manipulate memory and data in C programming. Understanding and effectively utilizing these concepts is crucial for writing efficient and safe C code.
+
+## Resources
 ### Read or Watch:
 
  - [C - Pointer To Pointer](https://www.tutorialspoint.com/cprogramming/c_pointer_to_pointer.htm)
