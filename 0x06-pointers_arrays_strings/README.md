@@ -2,6 +2,81 @@
 
 <img src="https://cdn.educba.com/academy/wp-content/uploads/2020/03/Function-Pointer-in-C.jpg" width="100%">
 
+## Description
+### More on Pointers, Arrays and Strings
+
+C is a powerful and versatile programming language that provides low-level access to memory and hardware. One of the key features of C that allows for this is its support for pointers, arrays and strings. In this section, we will delve deeper into the use and manipulation of these three important concepts.
+
+### Pointers
+
+In C, pointers are used to directly access and manipulate memory locations. Pointers can be used to point to variables of any type, and can be used to perform a variety of operations, including reading and modifying the values stored in memory.
+
+```c
+int x = 5;
+int *ptr = &x;
+*ptr = 10;
+printf("x = %d\n", x); // Output: x = 10
+```
+
+In the above example, `ptr` is a pointer to `x`, and `*ptr` is the value stored at the memory address pointed to by `ptr`. The value of `x` is modified by assigning a new value to `*ptr`.  
+  
+Pointers can also be used to dynamically allocate memory using the `malloc()` function. This allows for the creation of variables and arrays of a size that is determined at runtime.  
+
+```c
+int *dyn_array = (int *)malloc(sizeof(int) * 10);
+```
+
+In the above example, `dyn_array` is a pointer to an array of 10 integers that is dynamically allocated on the heap.
+
+### Arrays
+
+Arrays in C are a collection of variables of the same type, stored in contiguous memory locations. They can be declared with a fixed size or dynamically allocated using pointers.  
+  
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+```
+
+In the above example, `arr` is an array of 5 integers, with its elements initialized with the values {1, 2, 3, 4, 5}.  
+  
+Arrays can also be passed as function arguments and modified by the function.
+
+```c
+void modifyArray(int arr[], int size)
+{
+    for(int i = 0; i < size; i++)
+        arr[i] *= 2;
+}
+
+int main()
+{
+    int arr[] = {1, 2, 3, 4, 5};
+    int size = sizeof(arr)/sizeof(arr[0]);
+    modifyArray(arr, size);
+    for(int i = 0; i < size; i++)
+        printf("%d ", arr[i]); 
+    // Output: 2 4 6 8 10
+}
+```
+
+In the above example, the array `arr` is passed as an argument to the function `modifyArray()`, which doubles the value of each element in the array.
+
+### Strings
+
+Strings in C are an array of characters, typically terminated by a null character ('\0') to indicate the end of the string. The standard library provides several functions for manipulating strings, such as `strcpy()`, `strcat()`, and `strlen()`.
+
+```c
+char str1[20] = "Hello";
+char str2[20] = "World";
+strcat(str1, str2);
+printf("Concatenated string: %s\n", str1); // Output: Concatenated string: HelloWorld
+```
+
+In the above example, the `strcat()` function is used to concatenate the contents of `str2` to the end of `str1`, resulting in the string "HelloWorld".  
+  
+It's important to note that strings in C are not a built-in data type, but rather an array of characters. Therefore, strings must be handled with care to avoid buffer overflow and other memory related errors.  
+  
+To summarise, strings in C are an important concept for manipulating text data. The standard library provides several functions to handle strings, and it's crucial to handle them with care to avoid memory related errors.
+
 ## Requirements
 
 - Allowed editors: `vi`, `vim`, `emacs`
