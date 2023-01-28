@@ -1,11 +1,13 @@
 #ifndef LISTS_H
 #define LISTS_H
 
+/****************** LIBRARY ******************/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
 
+/**************** STRUCTURE ****************/
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -21,7 +23,7 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 
-/* prototypes function */
+/***************** PROTOTYPES ******************/
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
 list_t *add_node(list_t **head, const char *str);
