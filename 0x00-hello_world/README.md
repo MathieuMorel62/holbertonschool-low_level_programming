@@ -78,7 +78,7 @@ Write a script that runs a C file through the preprocessor and save the result i
   - The output should be saved in the file `c`
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -122,7 +122,7 @@ Write a script that compiles a C file but does not link.
      - Example: if the C file is `main.c`, the output file should be `main.o`
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -164,7 +164,7 @@ Write a script that generates the assembly code of a C code and save it in an ou
     - Example: if the C file is `main.c`, the output file should be `main.s`
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -222,7 +222,7 @@ Write a script that compiles a C file and creates an executable named `cisfun`.
   - The C file name will be saved in the variable `$CFILE`
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -260,7 +260,7 @@ Write a C program that prints exactly `"Programming is like building a multiling
   - Your program should end with the value `0`
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -284,7 +284,7 @@ Write a C program that prints exactly `with proper grammar, but the outcome is a
   - Your program should compile without warning when using the `-Wall` `gcc` option
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -310,7 +310,7 @@ Write a C program that prints the size of various types on the computer it is co
   - You might have to install the package `libc6-dev-i386` on your Linux (Vagrant) to test the `-m32` `gcc` option
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -347,7 +347,7 @@ Write a script that generates the assembly code (Intel syntax) of a C code and s
     - Example: if the C file is `main.c`, the output file should be `main.s`
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -404,7 +404,7 @@ Write a C program that prints exactly `and that piece of art is useful" - Dora K
   - Your program should compile without any warnings when using the `-Wall` `gcc` option
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
