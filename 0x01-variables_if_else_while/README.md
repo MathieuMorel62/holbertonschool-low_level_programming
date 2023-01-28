@@ -86,7 +86,7 @@ This program will assign a random number to the variable `n` each time it is exe
   - Followed by a new line
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -136,7 +136,7 @@ This program will assign a random number to the variable `n` each time it is exe
     - followed by a new line
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -193,7 +193,7 @@ Write a program that prints the alphabet in lowercase, followed by a new line.
   - You can only use `putchar` twice in your code
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -215,7 +215,7 @@ Write a program that prints the alphabet in lowercase, and then in uppercase, fo
   - You can only use `putchar` three times in your code
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -238,7 +238,7 @@ Write a program that prints the alphabet in lowercase, followed by a new line.
   - You can only use `putchar` twice in your code
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -258,7 +258,7 @@ Write a program that prints all single digit numbers of base 10 starting from `0
   - All your code should be in the `main` function
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -281,7 +281,7 @@ Write a program that prints all single digit numbers of base 10 starting from `0
   - All your code should be in the `main` function
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -303,7 +303,7 @@ Write a program that prints the lowercase alphabet in reverse, followed by a new
   - You can only use `putchar` twice in your code
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -325,7 +325,7 @@ Write a program that prints all the numbers of base 16 in lowercase, followed by
   - You can only use `putchar` three times in your code
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -350,7 +350,7 @@ Write a program that prints all possible combinations of single-digit numbers.
   - You are not allowed to use any variable of type `char`
   
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -376,7 +376,7 @@ mathieu@ubuntu:~/$ ./9-print_comb | cat -e
   - All your code should be in the `main` function
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -403,7 +403,7 @@ Write a program that prints all possible different combinations of three digits.
  - All your code should be in the `main` function
  
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -432,7 +432,7 @@ Write a program that prints all possible combinations of two two-digit numbers.
  - All your code should be in the `main` function
  
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
