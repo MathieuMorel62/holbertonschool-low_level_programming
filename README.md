@@ -162,7 +162,7 @@
 
 -----------------------------
 
-### [C - PREPROCESSOR](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0X0D-preprocessor)
+### [C - PREPROCESSOR](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x0D-preprocessor)
 #### `GENERAL`
 
 - What are macros and how to use them
