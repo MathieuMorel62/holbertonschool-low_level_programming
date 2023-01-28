@@ -8,18 +8,22 @@ int main(int argc, char **argv)
     if (argc != 2)
     {
         printf("Error\n");
-        return 1;
+        return (1);
     }
     nb_bytes = atoi(argv[1]);
     if (nb_bytes < 0)
     {
         printf("Error\n");
-        return 2;
+        return (2);
     }
     for (i = 0; i < nb_bytes; i++)
     {
-        printf("%.2x ", *(unsigned char*)(main+i));
+        printf("%02x", *((unsigned char*)main + i));
+        if (atoi(argv[1]) > i)
+        {
+            printf(" ");
+        }
     }
     printf("\n");
-    return 0;
+    return (0);
 }
