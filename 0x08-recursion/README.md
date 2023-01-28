@@ -2,6 +2,42 @@
 
 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--tw3NWqpc--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/vs461z5rnco8mvjkk1og.jpg" width="100%">
 
+## Description
+### Recursion
+
+Recursion is a programming concept in which a function calls itself. This can be a useful tool in solving certain types of problems, such as traversing a tree structure or generating a sequence of numbers.  
+  
+A basic example of recursion is the function for calculating the factorial of a number. The factorial of a number is the product of all the numbers from 1 to that number. For example, the factorial of 5 (written as 5!) is 1 * 2 * 3 * 4 * 5 = 120.
+
+```c
+int factorial(int n) {
+    if (n == 0) {
+        return 1;
+    }
+    return n * factorial(n-1);
+}
+printf("5! = %d\n", factorial(5)); // Output: 5! = 120
+```
+
+In this example, the function `factorial()` calls itself with the input `n-1` until the base case of `n == 0` is reached. At that point, the function returns 1 and the recursive calls return the product of each value of `n` until the original call returns the final value of 120.  
+  
+Another example of recursion is a function for traversing a tree structure. The function first visits the root node, then recursively visits each of its children, and so on until all nodes have been visited.
+
+```c
+void traverse(struct node *root) {
+    if (root == NULL) {
+        return;
+    }
+    printf("Visiting node with value %d\n", root->value);
+    traverse(root->left);
+    traverse(root->right);
+}
+```
+
+In this example, the function `traverse()` visits the current node, then recursively calls itself on the left and right children of the current node, until all nodes have been visited.  
+  
+To sum up, recursion is a powerful concept that allows for a function to call itself in order to solve a problem. It can be used to perform repetitive tasks, such as traversing a tree structure, or generating a sequence of numbers. It is important to include a base case in the function to stop the recursion from going on indefinitely.
+
 ## Resources
 ### Read or Watch:
 
