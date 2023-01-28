@@ -2,13 +2,54 @@
 
 <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/216/IMG_2410.JPG" width="100%">
 
-## CONCEPTS
+## Description
+### Pointers, Arrays and Strings
+
+C is a powerful and versatile programming language that provides low-level access to memory and hardware. One of the key features of C that allows for this is its support for pointers, arrays and strings.
+
+### Pointers
+
+In C, a pointer is a variable that stores the memory address of another variable. Pointers allow direct access and manipulation of memory locations, and are often used in conjunction with arrays and strings.
+
+```c
+int x = 5;
+int *ptr;
+ptr = &x;
+```
+
+In the above example, `ptr` is a pointer to `x`, and `&x` is the memory address of `x`.
+
+### Arrays
+
+An array in C is a collection of variables of the same type, stored in contiguous memory locations. Each element in an array can be accessed using its index, which is an integer value that corresponds to the position of the element in the array.
+
+```c
+int arr[5] = {1, 2, 3, 4, 5};
+printf("Third element in the array: %d\n", arr[2]);
+```
+
+In the above example, `arr` is an array of 5 integers, and `arr[2]` is the third element in the array (indexes start at 0 in C).
+
+### Strings
+
+A string in C is an array of characters, typically terminated by a null character ('\0') to indicate the end of the string. String functions such as strcpy() and strcat() can be used to manipulate strings, and pointers can be used to traverse and access the individual characters in a string.
+
+```c
+char str[30] = "Hello, World!";
+printf("First character in the string: %c\n", str[0]);
+```
+
+In the above example, `str` is a string containing the text "Hello, World!", and `str[0]` is the first character in the string (the letter "H").  
+  
+Combining Pointers, Arrays, and Strings in C allows to have a lot of powerful tools to manage memory and data, it's a fundamental concepts to master in this language.
+
+## Concepts
 For this project, we expect you to look at these concepts :
 
 - [Pointers and arrays](https://intranet.hbtn.io/concepts/888)
 - [Data Structures](https://intranet.hbtn.io/concepts/889)
 
-## RESOURCES
+## Resources
 ### Read or Watch :
 
 - [C - Arrays](https://intranet.hbtn.io/rltoken/1PQnbj1BHB7w_mKhxhMWdg)
