@@ -2,6 +2,58 @@
 
 <img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/07/Command-Line-Arguments-in-C.jpg" width="100%">
 
+## Description
+### Introduction to argc and argv in C
+
+In C programming, `argc` (argument count) and `argv` (argument vector) are two variables that are passed to the `main()` function when a program is executed from the command line. They are used to access and process command-line arguments passed to the program.  
+  
+### argc
+
+`argc` is an integer variable that holds the number of command-line arguments passed to the program. It includes the name of the program itself, which is always the first argument.  
+  
+For example, if a program called `myprogram` is executed with the command `./myprogram arg1 arg2 arg3`, `argc` would have a value of 4 (the program name and 3 arguments).
+
+### argv
+
+`argv` is an array of character pointers that holds the actual command-line arguments passed to the program. Each element of the array corresponds to a single argument, with the first element (`argv[0]`) being the name of the program.  
+  
+For example, if a program called `myprogram` is executed with the command `./myprogram arg1 arg2 arg3`, argv would be an array with 4 elements: `argv[0]` would hold "myprogram", `argv[1]` would hold "arg1", `argv[2]` would hold "arg2", and `argv[3]` would hold "arg3".
+
+### Using argc and argv
+
+`argc` and `argv` can be used to access and process command-line arguments passed to the program. Here is an example of how to use them to print the command-line arguments passed to a program:
+
+```c
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+    int i;
+    printf("Number of arguments: %d\n", argc);
+    for (i = 0; i < argc; i++) {
+        printf("argv[%d]: %s\n", i, argv[i]);
+    }
+    return 0;
+}
+```
+
+You can also use `argc` and `argv` to check for specific command-line arguments and take different actions based on their presence. For example, you can check whether a specific flag was passed to the program, like so:
+
+```c
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+    int i;
+    for (i = 1; i < argc; i++) {
+        if (strcmp(argv[i], "-v") == 0) {
+            printf("Verbose mode enabled\n");
+        }
+    }
+    return 0;
+}
+```
+
+`argc` and `argv` can be powerful tools for creating command-line programs in C. With the above information, you can now start using them in your own C programs.
+
 ## Resources
 ### Read or watch:
 
