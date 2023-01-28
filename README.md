@@ -197,7 +197,7 @@ _____________________________________
 
 -----------------------------------
 
-### [C - SINGLY LINKED LISTS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/singly_linked_lists)
+### [C - SINGLY LINKED LISTS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x12-singly_linked_lists)
 #### `GENERAL`
 
 - When and why using linked lists vs arrays
