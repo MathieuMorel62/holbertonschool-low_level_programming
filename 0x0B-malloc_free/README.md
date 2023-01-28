@@ -2,6 +2,53 @@
 
 <img src="https://grandidierite.github.io/assets/img/dynamic.jpg" width="100%">
 
+## Description
+### Introduction to malloc and free in C
+
+In C programming, `malloc` and `free` are two functions used to dynamically allocate and deallocate memory at runtime.
+
+### Malloc
+
+`malloc` is a function that dynamically allocates a block of memory. It takes a single argument, which is the size of the block of memory to be allocated, in bytes. The function returns a pointer to the first byte of the allocated memory block.  
+  
+Here is an example of how to use `malloc` to dynamically allocate memory for an array of integers:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *p, i;
+    int n = 5;
+    p = (int *)malloc(n * sizeof(int));
+    if (p == NULL) {
+        printf("Error: memory allocation failed.\n");
+        return 1;
+    }
+    for (i = 0; i < n; i++) {
+        p[i] = i;
+    }
+    for (i = 0; i < n; i++) {
+        printf("%d ", p[i]);
+    }
+    printf("\n");
+    free(p);
+    return 0;
+}
+
+// output : 0 1 2 3 4
+```
+
+### Free
+
+`free` is a function that deallocates a block of memory previously allocated by `malloc`. It takes a single argument, which is the pointer to the first byte of the memory block to be deallocated.  
+  
+It is important to note that when you use `free` function to release the allocated memory, you should no longer use the pointer returned by `malloc` because it's now considered as a dangling pointer.  
+  
+In the above example, `free(p)` is used to deallocate the memory block that was previously allocated by `malloc` and the pointer `p` is no longer used.  
+  
+`malloc` and `free` are powerful tools for creating dynamic memory allocation in C. With the above information, you can now start using them in your own C programs.
+  
 ## Resources
 ### Read or Watch : 
 
