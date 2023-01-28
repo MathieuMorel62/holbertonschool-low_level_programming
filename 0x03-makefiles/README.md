@@ -1,6 +1,33 @@
 # C - MAKEFILES
 
-![img](https://res.cloudinary.com/practicaldev/image/fetch/s--QQoKKPdY--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/0t3fdxw9v0iy0aw44fil.png)
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--QQoKKPdY--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/0t3fdxw9v0iy0aw44fil.png" width="100%">
+
+## Description
+### Introduction to Makefiles in C
+
+Makefiles are a powerful tool for automating the building and compilation process of C projects. They allow you to define dependencies between files and the commands necessary to generate executables.
+
+**Here's an example of a simple makefile:**
+
+```makefile
+all: main
+
+main: main.c helper.c
+    gcc -o main main.c helper.c
+
+clean:
+    rm -f main
+```
+
+This makefile contains two rules: **all** and **clean**. The **all** rule depends on **main**, which is the name of the generated executable. The **main** rule depends on **main.c** and **helper.c**, which are the source files. The command **gcc -o main main.c helper.c** is used to compile the source files and generate the executable. The **clean** rule allows to remove the generated executables.  
+  
+To run the makefile, you can use the `make` command in your terminal. For example, to generate the executable, you can use the command `make all`. To clean the generated files, you can use the command `make clean`.  
+  
+Makefiles can also include additional functionality such as handling different build configurations, creating object files, and handling dependencies between multiple executables.  
+  
+It's worth noting that `makefiles` are not specific to C, but can be used for any kind of projects that requires build automation.  
+  
+It's a good practice to include a makefile in your project so that other developers can easily build and run your code without having to manually set up the build process.  
 
 ## RESOURCES
 ### Read or Watch : 
@@ -39,10 +66,10 @@ Requirements :
   - variables: none
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
-```c++
+```makefile
 mathieu@ubuntu:~/Makefiles$ make -f 0-Makefile 
 gcc main.c school.c -o school
 mathieu@ubuntu:~/Makefiles$ ./school 
@@ -88,10 +115,10 @@ Requirements :
     - `SRC`: the `.c` files
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
-```c++
+```makefile
 mathieu@ubuntu:~/Makefiles$ make -f 1-Makefile
 gcc main.c school.c -o school
 
@@ -120,7 +147,7 @@ Requirements :
 <summary> File Compilation / Test </summary>
 <br>
 
-```c++
+```makefile
 mathieu@ubuntu:~/Makefiles$ make -f 2-Makefile
 gcc    -c -o main.o main.c
 gcc    -c -o school.o school.c
@@ -159,10 +186,10 @@ Requirements :
   - You are not allowed to have a list of all the `.o` files
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
-```c++
+```makefile
 mathieu@ubuntu:~//Makefiles$ ls -1
 0-Makefile
 1-Makefile
@@ -244,10 +271,10 @@ Requirements :
   - You are not allowed to have a list of all the `.o` files      
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
-```c++
+```makefile
 mathieu@ubuntu:~/Makefiles$ make all -f 4-Makefile
 gcc -Wall -Werror -Wextra -pedantic   -c -o main.o main.c
 gcc -Wall -Werror -Wextra -pedantic   -c -o school.o school.c
