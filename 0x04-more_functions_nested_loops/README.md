@@ -1,8 +1,41 @@
 # C - MORE FUNCTIONS, MORE NESTED LOOPS
 
-![img](https://c8.alamy.com/comp/2G18XE3/abstract-modern-tech-of-programming-code-screen-developer-c-programming-language-of-computer-script-and-technology-background-of-software-2G18XE3.jpg)
+<img src="https://c8.alamy.com/comp/2G18XE3/abstract-modern-tech-of-programming-code-screen-developer-c-programming-language-of-computer-script-and-technology-background-of-software-2G18XE3.jpg" width="100%">
 
-## RESOURCES
+## Description
+### Using Functions and Nested Loops in C
+
+Functions and nested loops are important tools for programming in C. Functions allow for breaking down a program into smaller and more manageable parts, while nested loops allow for efficiently processing data.
+
+```c
+#include <stdio.h>
+
+int add(int x, int y) {
+    return x + y;
+}
+
+int main() {
+    int a = 5, b = 7;
+    int result = add(a, b);
+    printf("The result of %d + %d is %d\n", a, b, result);
+    
+    int i, j;
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            printf("The value of i is %d and the value of j is %d\n", i, j);
+        }
+    }
+    return 0;
+}
+```
+
+The above code shows an example of using functions in C. The `add` function takes two parameters, `x` and `y`, both of type integer, and returns their sum. The function is then used in the `main` function to add `a` and `b` and print the result.  
+  
+The code also shows an example of using nested loops in C. The nested `for` loops are used to print the values of `i` and `j` for all numbers from 0 to 3.  
+  
+By combining functions and nested loops, it is possible to create more complex programs that are still easy to understand and maintain. It is therefore important to understand how to effectively use these programming tools in C.
+
+## Resources
 ### Read or Watch :
 
 - [Nested While Loops](https://intranet.hbtn.io/rltoken/lnzT56HYlUClB0-yDfwiqw)
@@ -42,7 +75,7 @@ Write a function that checks for uppercase character.
 FYI: The standard library provides a similar function: `isupper`. Run `man isupper` to learn more.
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -87,7 +120,7 @@ Write a function that checks for a digit (`0` through `9`).
 FYI: The standard library provides a similar function: isdigit. Run man isdigit to learn more.
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -128,7 +161,7 @@ Write a function that multiplies two integers.
   - Prototype: `int mul(int a, int b)`;
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -166,7 +199,7 @@ Write a function that prints the numbers, from `0` to `9`, followed by a new lin
   - You can only use `_putchar` twice in your code
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -202,7 +235,7 @@ Write a function that prints the numbers, from `0` to `9`, followed by a new lin
   - You can only use `_putchar` twice in your code
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -237,7 +270,7 @@ Write a function that prints 10 times the numbers, from `0` to `14`, followed by
   - You can only use `_putchar` three times in your code
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -284,7 +317,7 @@ Write a function that draws a straight line in the terminal.
   - If `n` is `0` or less, the function should only print `\n`
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -328,7 +361,7 @@ Write a function that draws a diagonal line on the terminal.
   - If `n` is `0` or less, the function should only print a `\n`
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -382,7 +415,7 @@ Write a function that prints a square, followed by a new line.
   - Use the character `#` to print the square
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -434,7 +467,7 @@ Write a program that prints the numbers from `1` to `100`, followed by a new lin
   - You are allowed to use the standard library
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -457,7 +490,7 @@ Write a function that prints a triangle, followed by a new line.
   - Use the character `#` to print the triangle
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -537,7 +570,7 @@ Write a function that prints an integer.
 - You are not allowed to hard-code special values
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
