@@ -188,7 +188,7 @@ _____________________________________
 
 ------------------------------------
 
-### [C - VARIADIC FUNCTIONS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/variadic_functions)
+### [C - VARIADIC FUNCTIONS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x10-variadic_functions)
 #### `GENERAL`
 
 - What are variadic functions
