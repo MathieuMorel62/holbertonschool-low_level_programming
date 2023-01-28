@@ -2,6 +2,40 @@
 
 <img src="https://media-exp1.licdn.com/dms/image/C4D12AQHjjeKaE5LWBQ/article-cover_image-shrink_600_2000/0/1620087295947?e=2147483647&v=beta&t=VWAhrUrI1tBd8ZK6PygUu0x2hLOHWj0-AObWzN7eGyU" width="100%">
 
+## Description
+### Introduction to Static Libraries in C
+
+Static libraries in C are collections of object files that are combined into a single file. These libraries can be linked to an executable at compile time, allowing the executable to use the functions and variables defined in the library.
+
+### Advantages of Static Libraries
+
+- **Size:** Static libraries are typically smaller in size than dynamic libraries because they do not contain the extra information required for runtime linking.
+- **Portability:** Static libraries are self-contained and do not rely on external dependencies, making them more portable and easier to distribute.
+- **Performance:** Linking to a static library at compile time can result in faster program execution because the library's code is incorporated directly into the executable.
+
+### Creating a Static Library
+
+To create a static library, you first need to create object files from your source code using the `gcc -c` command. Then, use the `ar` command to combine the object files into a static library.
+
+```c
+# Compile source code into object files
+gcc -c file1.c file2.c file3.c
+
+# Create a static library named "libmylib.a"
+ar rcs libmylib.a file1.o file2.o file3.o
+```
+
+### Linking to a Static Library
+
+To link to a static library when compiling an executable, use the `-l` flag followed by the library's name (without the "lib" prefix and ".a" suffix) and the `-L` flag followed by the directory where the library is located.
+
+```c
+# Link to the "libmylib.a" library in the current directory
+gcc -o myprogram myprogram.c -lmylib -L.
+```
+
+Static libraries in C can be a great way to reuse code and improve the performance of your programs. With the above information, you can now start creating and using static libraries in your own C projects.
+
 ## Resources
 ### Read or Watch:
 
