@@ -179,7 +179,7 @@
 
 _____________________________________
 
-### [C - FUNCTION POINTERS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0X0F-function_pointers)
+### [C - FUNCTION POINTERS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x0F-function_pointers)
 #### `GENERAL`
 
 - What are function pointers and how to use them
