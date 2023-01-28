@@ -74,7 +74,7 @@ Write a program that prints `_putchar`, followed by a new line.
   - The program should return `0`
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -95,7 +95,7 @@ Write a function that prints the alphabet, in lowercase, followed by a new line.
   - You can only use `_putchar` twice in your code
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -132,7 +132,7 @@ Write a function that prints 10 times the alphabet, in lowercase, followed by a 
   - You can only use `_putchar` twice in your code
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -180,7 +180,7 @@ Write a function that checks for lowercase character.
 FYI: The standard library provides a similar function: `islower`. Run `man islower` to learn more.
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -227,7 +227,7 @@ Write a function that checks for alphabetic character.
 FYI: The standard library provides a similar function: `isalpha`. Run `man isalpha` to learn more.
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -275,7 +275,7 @@ Write a function that prints the sign of a number.
   - Returns `-1` and prints `-` if `n` is less than zero
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -336,7 +336,7 @@ Write a function that computes the absolute value of an integer.
 FYI: The standard library provides a similar function: `abs`. Run `man abs` to learn more.
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -385,7 +385,7 @@ Write a function that prints the last digit of a number.
   - Returns the value of the last digit
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -426,7 +426,7 @@ Write a function that prints every minute of the day of Jack Bauer, starting fro
   - You can listen to [this soundtrack](https://intranet.hbtn.io/rltoken/mJ7JsWWRo9nxTuauK1Uyuw) while coding :)
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -487,7 +487,7 @@ Write a function that prints the 9 times table, starting with 0.
   - Prototype: `void times_table(void);`
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -544,7 +544,7 @@ Write a function that adds two integers and returns the result.
   - Prototype: `int add(int, int);`
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -588,7 +588,7 @@ Write a function that prints all natural numbers from `n` to `98`, followed by a
   - You are allowed to use the standard library
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
@@ -632,7 +632,7 @@ Write a function that prints the n times table, starting with 0.
   - If `n` is greater than `15` or less than `0` the function should not print anything
 
 <details>
-<summary> File Compilation / Test </summary>
+<summary>Test File</summary>
 <br>
 
 ```c++
