@@ -213,7 +213,7 @@ _____________________________________
 
 --------------------------
 
-### [C - BIT MANIPULATION](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/bit_manipulation)
+### [C - BIT MANIPULATION](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x14-bit_manipulation)
 #### `GENERAL`
 
 - Look for the right source of information without too much help
