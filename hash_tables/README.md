@@ -2,6 +2,69 @@
 
 <img src="https://i.ytimg.com/vi/2Ti5yvumFTU/maxresdefault.jpg" width="100%">
 
+## Description
+### Hash Tables in C
+
+Hash tables are a type of data structure that allow for efficient storage and retrieval of data, using a hash function to map keys to indices in an array.
+
+### Defining a Hash Table
+
+To define a hash table, you can create an array of pointers to linked lists, where each linked list represents a "bucket" of data with the same hash value:
+
+```c++
+#define SIZE 10
+struct Node* table[SIZE];
+```
+
+This creates an array of `SIZE` pointers to `Node` structs, which will serve as the buckets for the hash table.
+
+### Hash Function
+
+The hash function takes a key as input and returns an index in the array:
+
+```c++
+int hash(int key) {
+  return key % SIZE;
+}
+```
+
+This hash function takes an `int` key as input and returns the remainder of its division by `SIZE`. This simple hash function can result in collisions, which occur when multiple keys map to the same index in the array.
+
+### Adding Data
+
+To add data to the hash table, you can use the following code:
+
+```c++
+int key = 42;
+int index = hash(key);
+struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+newNode->key = key;
+newNode->next = table[index];
+table[index] = newNode;
+```
+
+This creates a new node with the given key, computes the index in the array using the hash function, and adds the node to the linked list at that index.
+
+### Retrieving Data
+
+To retrieve data from the hash table, you can use the following code:
+
+```c++
+int key = 42;
+int index = hash(key);
+struct Node* temp = table[index];
+while (temp != NULL) {
+  if (temp->key == key) {
+    return temp->data;
+  }
+  temp = temp->next;
+}
+```
+
+This computes the index in the array using the hash function, and searches the linked list at that index for a node with the given key. If a node is found, its data is returned; otherwise, the search fails.
+  
+Hash tables offer an efficient way to store and retrieve data based on keys, with an average time complexity of O(1). However, the performance of hash tables can be affected by collisions and the choice of hash function.
+
 ## Resources
 ### Read or Watch :
 - [What Is a HashTable Data Structure - Introduction To Hash Tables , Part 0**](https://www.youtube.com/watch?v=MfhjkfocRR0)
@@ -18,14 +81,14 @@
 - You are not allowed to use global variables
 - No more than 5 functions per file
 - You are allowed to use the C standard library
-- The prototypes of all your functions should be included in your header file called [`hash_tables.h`](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/hash_tables/hash_tables.h)
+- The prototypes of all your functions should be included in your header file called [hash_tables.h](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x17-hash_tables/hash_tables.h)
 - Don’t forget to push your header file
 - All your header files should be include guarded
 
 ## Data Structures
 Here is the structure used for the project
 
-```
+```c++
 /**
  * struct hash_node_s - Node of a hash table
  *
@@ -56,10 +119,17 @@ typedef struct hash_table_s
 } hash_table_t;
 ```
 
+## Python Dictionaries
+
+Python dictionaries are implemented using hash tables. When you will be done with this project, you will be able to better understand the power and simplicity of Python dictionaries. So much is actually happening when you type `d = {'a': 1, 'b': 2}`, but everything looks so simple for the user. Python doesn’t use the exact same implementation than the one you will work on today though. If you are curious on how it works under the hood, here is a good blog post about [how dictionaries are implemented in Python 2.7](https://intranet.hbtn.io/rltoken/XFzuh88rCD5uHeJ6wAjRBA) (not mandatory).
+
+Note that all dictionaries are not implemented using hash tables and there is a difference between a dictionary and a hash table. [Read more here](https://intranet.hbtn.io/rltoken/jyBuNL75AlTZwJLGcsv2qQ) (not mandatory).
+
 ---------------------
+
 # Tasks
 
-#### [0. >>> ht = {}](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/hash_tables/0-hash_table_create.c)
+#### [0. >>> ht = {}](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x17-hash_tables/0-hash_table_create.c)
 
 Write a function that creates a hash table.
 
@@ -69,11 +139,12 @@ Write a function that creates a hash table.
 - If something went wrong, your function should return `NULL`
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Hash tables$ cat 0-main.c 
+```c++
+mathieu@ubuntu:~/Hash tables$ cat 0-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -92,10 +163,12 @@ int main(void)
     printf("%p\n", (void *)ht);
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-hash_table_create.c -o a
-julien@ubuntu:~/Hash tables$ ./a 
+
+mathieu@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-hash_table_create.c -o a
+mathieu@ubuntu:~/Hash tables$ ./a 
 0x238a010
-julien@ubuntu:~/Hash tables$ valgrind ./a
+
+mathieu@ubuntu:~/Hash tables$ valgrind ./a
 ==7602== Memcheck, a memory error detector
 ==7602== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
 ==7602== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
@@ -117,25 +190,25 @@ julien@ubuntu:~/Hash tables$ valgrind ./a
 ==7602== 
 ==7602== For counts of detected and suppressed errors, rerun with: -v
 ==7602== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-julien@ubuntu:~/Hash tables$
 ```
 </details>
 
 --------------------
 
-#### [1. Djb2](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/hash_tables/1-djb2.c)
+#### [1. Djb2](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x17-hash_tables/1-djb2.c)
 
 Write a hash function implementing the djb2 algorithm.
 
 - Prototype: `unsigned long int hash_djb2(const unsigned char *str)`;
-- You are allowed to copy and paste the function from [`this page`](https://gist.github.com/papamuziko/7bb52dfbb859fdffc4bd0f95b76f71e8)
+- You are allowed to copy and paste the function from [this page](https://gist.github.com/papamuziko/7bb52dfbb859fdffc4bd0f95b76f71e8)
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Hash tables$ cat 1-djb2.c 
+```c++
+mathieu@ubuntu:~/Hash tables$ cat 1-djb2.c
+
 unsigned long int hash_djb2(const unsigned char *str)
 {
     unsigned long int hash;
@@ -148,8 +221,10 @@ unsigned long int hash_djb2(const unsigned char *str)
     }
     return (hash);
 }
-julien@ubuntu:~/Hash tables$ 
-julien@ubuntu:~/Hash tables$ cat 1-main.c 
+
+mathieu@ubuntu:~/Hash tables$ 
+mathieu@ubuntu:~/Hash tables$ cat 1-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -172,18 +247,18 @@ int main(void)
     printf("%lu\n", hash_djb2((unsigned char *)s));
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-djb2.c -o b
-julien@ubuntu:~/Hash tables$ ./b 
+
+mathieu@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-djb2.c -o b
+mathieu@ubuntu:~/Hash tables$ ./b 
 6953392314605
 3749890792216096085
 5861846
-julien@ubuntu:~/Hash tables$ 
 ```
 </details>
 
 ------------------
 
-#### [2. Key -> Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/hash_tables/2-key_index.c)
+#### [2. Key -> Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x17-hash_tables/2-key_index.c)
 
 Write a function that gives you the index of a key.
 
@@ -195,11 +270,12 @@ Write a function that gives you the index of a key.
 - You will have to use this hash function for all the next tasks
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Hash tables$ cat 2-main.c 
+```c++
+mathieu@ubuntu:~/Hash tables$ cat 2-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -227,21 +303,21 @@ int main(void)
     printf("%lu\n", key_index((unsigned char *)s, hash_table_array_size));  
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 1-djb2.c 2-key_index.c -o c
-julien@ubuntu:~/Hash tables$ ./c 
+
+mathieu@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 1-djb2.c 2-key_index.c -o c
+mathieu@ubuntu:~/Hash tables$ ./c 
 6953392314605
 237
 3749890792216096085
 341
 5861846
 470
-julien@ubuntu:~/Hash tables$ 
 ```
 </details>
 
 ---------------------
 
-#### [3. >>> ht['Betty'] = 'Cool'](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/hash_tables/3-hash_table_set.c)
+#### [3. >>> ht['Betty'] = 'Cool'](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x17-hash_tables/3-hash_table_set.c)
 
 Write a function that adds an element to the hash table.
 
@@ -253,11 +329,12 @@ Write a function that adds an element to the hash table.
 - In case of collision, add the new node at the beginning of the list
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Hash tables$ cat 3-main.c 
+```c++
+mathieu@ubuntu:~/Hash tables$ cat 3-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -276,8 +353,8 @@ int main(void)
     hash_table_set(ht, "betty", "cool");
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c -o d
-julien@ubuntu:~/Hash tables$
+
+mathieu@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c -o d
 ```
 </details>
 
@@ -293,7 +370,7 @@ If you want to test for collisions, here are some strings that collide using the
 
 ------------------------
 
-#### [4. >>> ht['Betty']](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/hash_tables/4-hash_table_get.c)
+#### [4. >>> ht['Betty']](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x17-hash_tables/4-hash_table_get.c)
 
 Write a function that retrieves a value associated with a key.
 
@@ -303,11 +380,12 @@ Write a function that retrieves a value associated with a key.
 - Returns the value associated with the element, or `NULL` if `key` couldn’t be found
   
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Hash tables$ cat 4-main.c 
+```c++
+mathieu@ubuntu:~/Hash tables$ cat 4-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -351,8 +429,9 @@ int main(void)
     printf("%s:%s\n", "javascript", value);
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c -o e
-julien@ubuntu:~/Hash tables$ ./e 
+
+mathieu@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c -o e
+mathieu@ubuntu:~/Hash tables$ ./e 
 python:awesome
 Bob:and Kris love asm
 N:queens
@@ -361,13 +440,12 @@ Betty:Cool
 98:Battery Street
 c:isfun
 javascript:(null)
-julien@ubuntu:~/Hash tables$
 ```
 </details>
   
 ---------------------
 
-#### [5. >>> Print(ht)](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/hash_tables/5-hash_table_print.c)
+#### [5. >>> Print(ht)](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x17-hash_tables/5-hash_table_print.c)
   
 Write a function that prints a hash table.
 
@@ -379,11 +457,12 @@ Write a function that prints a hash table.
 - If `ht` is NULL, don’t print anything
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Hash tables$ cat 5-main.c 
+```c++
+mathieu@ubuntu:~/Hash tables$ cat 5-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -410,17 +489,17 @@ int main(void)
     hash_table_print(ht);
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c 5-hash_table_print.c -o f
-julien@ubuntu:~/Hash tables$ ./f 
+
+mathieu@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c 5-hash_table_print.c -o f
+mathieu@ubuntu:~/Hash tables$ ./f 
 {}
 {'Betty': 'Cool', 'python': 'awesome', 'Bob': 'and Kris love asm', '98': 'Battery Street', 'N': 'queens', 'c': 'fun', 'Asterix': 'Obelix'}
-julien@ubuntu:~/Hash tables$ 
 ```
 </details>
 
 ---------------------------------
 
-#### [6. >>> Del ht](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/hash_tables/6-hash_table_delete.c)
+#### [6. >>> Del ht](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x17-hash_tables/6-hash_table_delete.c)
 
 Write a function that deletes a hash table.
 
@@ -428,11 +507,12 @@ Write a function that deletes a hash table.
   - where `ht` is the hash table
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Hash tables$ cat 6-main.c 
+```c++
+mathieu@ubuntu:~/Hash tables$ cat 6-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -473,8 +553,9 @@ int main(void)
     hash_table_delete(ht);
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra 6-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c 5-hash_table_print.c 6-hash_table_delete.c -o g
-julien@ubuntu:~/Hash tables$ valgrind ./g
+
+mathieu@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra 6-main.c 0-hash_table_create.c 1-djb2.c 2-key_index.c 3-hash_table_set.c 4-hash_table_get.c 5-hash_table_print.c 6-hash_table_delete.c -o g
+mathieu@ubuntu:~/Hash tables$ valgrind ./g
 ==6621== Memcheck, a memory error detector
 ==6621== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
 ==6621== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
@@ -490,7 +571,6 @@ julien@ubuntu:~/Hash tables$ valgrind ./g
 ==6621== 
 ==6621== For counts of detected and suppressed errors, rerun with: -v
 ==6621== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-julien@ubuntu:~/Hash tables$
 ```
 </details>
   
@@ -507,7 +587,8 @@ For this task, please:
 - Read [PHP Internals Book: HashTable](https://www.phpinternalsbook.com/php5/hashtables/basic_structure.html)
 - Use the same hash function
 - Use these data structures :
-```
+
+```c++
 /**
  * struct shash_node_s - Node of a sorted hash table
  *
@@ -561,11 +642,12 @@ Rewrite the previous functions using these data structures :
 - You are allowed to have more than 5 functions in your file
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Hash tables$ cat 100-main.c 
+```c++
+mathieu@ubuntu:~/Hash tables$ cat 100-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -601,8 +683,9 @@ int main(void)
         shash_table_delete(ht);
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-sorted_hash_table.c 1-djb2.c 2-key_index.c -o sht    
-julien@ubuntu:~/Hash tables$ ./sht 
+
+mathieu@ubuntu:~/Hash tables$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-sorted_hash_table.c 1-djb2.c 2-key_index.c -o sht    
+mathieu@ubuntu:~/Hash tables$ ./sht 
 {'y': '0'}
 {'j': '1', 'y': '0'}
 {'c': '2', 'j': '1', 'y': '0'}
@@ -612,11 +695,11 @@ julien@ubuntu:~/Hash tables$ ./sht
 {'a': '6', 'b': '3', 'c': '2', 'j': '1', 'n': '5', 'y': '0', 'z': '4'}
 {'a': '6', 'b': '3', 'c': '2', 'j': '1', 'm': '7', 'n': '5', 'y': '0', 'z': '4'}
 {'z': '4', 'y': '0', 'n': '5', 'm': '7', 'j': '1', 'c': '2', 'b': '3', 'a': '6'}
-julien@ubuntu:~/Hash tables$
 ```
 </details>
 
 -----------------------
+
 ## AUTHOR
 
 - Mathieu Morel
