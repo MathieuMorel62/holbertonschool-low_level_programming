@@ -1,13 +1,83 @@
 # C - DOUBLY LINKED LISTS
 
-![img](https://lapmos.com//images/posts/Insertion%20and%20deletion%20in%20doubly%20linked%20list%20in%20C%20program.png)
+<img src="https://lapmos.com//images/posts/Insertion%20and%20deletion%20in%20doubly%20linked%20list%20in%20C%20program.png" width="100%">
+
+## Description
+### Doubly Linked Lists in C
+
+A Doubly Linked List is a type of data structure that consists of a sequence of nodes, each of which contains data and links to both the previous and next nodes in the list. This allows for traversal of the list in both forward and backward directions.
+
+### Defining a Node
+
+Each node in a doubly linked list is typically defined as a struct that contains data and pointers to the previous and next nodes in the list:
+
+```c++
+struct Node {
+  int data;
+  struct Node *prev;
+  struct Node *next;
+};
+```
+
+This defines a `Node` struct that contains an `int` data field, and pointers to the previous and next nodes in the list.
+
+### Creating and Adding Nodes
+
+To create a new node, you can use the following code:
+
+```c++
+struct Node *newNode = (struct Node*)malloc(sizeof(struct Node));
+newNode->data = 42;
+newNode->prev = NULL;
+newNode->next = NULL;
+```
+
+This creates a new node, assigns the value `42` to its data field, and sets its `prev` and `next` pointers to `NULL`.
+   
+To add a node to the list, you need to update the `prev` and `next` pointers of the surrounding nodes:
+
+```c++
+newNode->next = head;
+head->prev = newNode;
+head = newNode;
+```
+
+This adds the new node to the front of the list by making it the new head of the list and updating the `prev` pointer of the old head node to point to the new node.
+
+### Traversing the List
+
+To traverse the list, you can start at the head node and follow the `next` pointers until you reach the end of the list:
+
+```c++
+struct Node *temp = head;
+while (temp != NULL) {
+  printf("%d ", temp->data);
+  temp = temp->next;
+}
+```
+
+This prints the data values of each node in the list, starting from the head and following the `next` pointers until it reaches a node with a `NULL` `next` pointer.
+
+### Deleting a Node
+
+To delete a node from the list, you need to update the `prev` and `next` pointers of the surrounding nodes:
+
+```c++
+temp->prev->next = temp->next;
+temp->next->prev = temp->prev;
+free(temp);
+```
+
+This deletes the node pointed to by `temp` by updating the `next` pointer of the previous node to point to the next node, updating the `prev` pointer of the next node to point to the previous node, and freeing the memory occupied by the node.  
+   
+Doubly linked lists offer a flexible and efficient way to store and manipulate data. By allowing traversal in both forward and backward directions, they provide a useful alternative to singly linked lists and arrays.
 
 ## Resources
 ### Read or Watch :
 
 - [What is a Doubly Linked List](https://www.youtube.com/watch?v=k0pjD12bzP0)
 
-## General
+## Requirements
 
 - Allowed editors: `vi`, `vim`, `emacs`
 - All your files will be interpreted/compiled on Ubuntu 20.04 LTS
@@ -18,7 +88,7 @@
 - No more than 5 functions per file
 - The only C standard library functions allowed are `malloc`, `free`, `printf` and `exit`
 - In the following examples, the `main.c` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own `main.c` files at compilation. Our `main.c` files might be different from the one shown in the examples
-- The prototypes of all your functions should be included in your header file called [`lists.h`](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/lists.h)
+- The prototypes of all your functions should be included in your header file called [lists.h](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/lists.h)
 - Don’t forget to push your header file
 - All your header files should be include guarded
 
@@ -26,7 +96,7 @@
 
 Here is the structure used for the project
 
-```
+```c++
 /**
  * struct dlistint_s - doubly linked list
  * @n: integer
@@ -45,9 +115,10 @@ typedef struct dlistint_s
 ```
 
 ----------------------
+
 # Tasks
 
-#### [0. Print List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/0-print_dlistint.c)
+#### [0. Print List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/0-print_dlistint.c)
 
 Write a function that prints all the elements of a `dlistint_t list`.
 
@@ -56,11 +127,12 @@ Write a function that prints all the elements of a `dlistint_t list`.
 - Format: see example
 
 <details>
-<summary>File Compilation / test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Doubly linked lists$ cat 0-main.c 
+```c++
+mathieu@ubuntu:~/Doubly linked lists$ cat 0-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -95,29 +167,30 @@ int main(void)
     free(new);
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_dlistint.c -o a
-julien@ubuntu:~/Doubly linked lists$ ./a 
+
+mathieu@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_dlistint.c -o a
+mathieu@ubuntu:~/Doubly linked lists$ ./a 
 9
 8
 -> 2 elements
-julien@ubuntu:~/Doubly linked lists$
 ```
 </details>
   
 ---------------------
 
-#### [1. List Length](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/1-dlistint_len.c)
+#### [1. List Length](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/1-dlistint_len.c)
 
 Write a function that returns the number of elements in a linked `dlistint_t list`.
 
 - Prototype: `size_t dlistint_len(const dlistint_t *h)`;
 
 <details>
-<summary>File Compilation / test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Doubly linked lists$ cat 1-main.c 
+```c++
+mathieu@ubuntu:~/Doubly linked lists$ cat 1-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -152,16 +225,16 @@ int main(void)
     free(new);
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-dlistint_len.c -o b
-julien@ubuntu:~/Doubly linked lists$ ./b 
+
+mathieu@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-dlistint_len.c -o b
+mathieu@ubuntu:~/Doubly linked lists$ ./b 
 -> 2 elements
-julien@ubuntu:~/Doubly linked lists$ 
 ```
 </details>
 
 -------------------------
 
-#### [2. Add Node](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/2-add_dnodeint.c)
+#### [2. Add Node](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/2-add_dnodeint.c)
 
 Write a function that adds a new node at the beginning of a `dlistint_t list`.
 
@@ -169,11 +242,12 @@ Write a function that adds a new node at the beginning of a `dlistint_t list`.
 - Return: the address of the new element, or `NULL` if it failed
 
 <details>
-<summary>File Compilation / test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Doubly linked lists$ cat 2-main.c 
+```c++
+mathieu@ubuntu:~/Doubly linked lists$ cat 2-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -200,8 +274,9 @@ int main(void)
     print_dlistint(head);
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_dnodeint.c 0-print_dlistint.c -o c
-julien@ubuntu:~/Doubly linked lists$ ./c 
+
+mathieu@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_dnodeint.c 0-print_dlistint.c -o c
+mathieu@ubuntu:~/Doubly linked lists$ ./c 
 1024
 402
 98
@@ -210,13 +285,12 @@ julien@ubuntu:~/Doubly linked lists$ ./c
 2
 1
 0
-julien@ubuntu:~/Doubly linked lists$ 
 ```
 </details>
 
 -----------------------
 
-#### [3. Add Node At The End](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/3-add_dnodeint_end.c)
+#### [3. Add Node At The End](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/3-add_dnodeint_end.c)
 
 Write a function that adds a new node at the end of a `dlistint_t list`.
 
@@ -224,11 +298,12 @@ Write a function that adds a new node at the end of a `dlistint_t list`.
 - Return: the address of the new element, or `NULL` if it failed
 
 <details>
-<summary>File Compilation / test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Doubly linked lists$ cat 3-main.c 
+```c++
+mathieu@ubuntu:~/Doubly linked lists$ cat 3-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -255,8 +330,9 @@ int main(void)
     print_dlistint(head);
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_dnodeint_end.c 0-print_dlistint.c -o d
-julien@ubuntu:~/Doubly linked lists$ ./d 
+
+mathieu@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_dnodeint_end.c 0-print_dlistint.c -o d
+mathieu@ubuntu:~/Doubly linked lists$ ./d 
 0
 1
 2
@@ -265,24 +341,24 @@ julien@ubuntu:~/Doubly linked lists$ ./d
 98
 402
 1024
-julien@ubuntu:~/Doubly linked lists$ 
 ```
 </details>
   
 ---------------------
 
-#### [4. Free List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/4-free_dlistint.c)
+#### [4. Free List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/4-free_dlistint.c)
 
 Write a function that frees a `dlistint_t list`.
 
 - Prototype: `void free_dlistint(dlistint_t *head)`;
     
 <details>
-<summary>File Compilation / test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Doubly linked lists$ cat 4-main.c
+```c++
+mathieu@ubuntu:~/Doubly linked lists$ cat 4-main.c
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -311,8 +387,9 @@ int main(void)
     head = NULL;
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c -o e
-julien@ubuntu:~/Doubly linked lists$ valgrind ./e 
+
+mathieu@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c -o e
+mathieu@ubuntu:~/Doubly linked lists$ valgrind ./e 
 ==4197== Memcheck, a memory error detector
 ==4197== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
 ==4197== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
@@ -335,13 +412,12 @@ julien@ubuntu:~/Doubly linked lists$ valgrind ./e
 ==4197== 
 ==4197== For counts of detected and suppressed errors, rerun with: -v
 ==4197== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-julien@ubuntu:~/Doubly linked lists$ 
 ```
 </details>
 
 ----------------------
 
-#### [5. Get Node At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/5-get_dnodeint.c)
+#### [5. Get Node At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/5-get_dnodeint.c)
     
 Write a function that returns the nth node of a `dlistint_t` linked list.
 
@@ -350,11 +426,12 @@ Write a function that returns the nth node of a `dlistint_t` linked list.
 - if the node does not exist, return `NULL`
 
 <details>
-<summary>File Compilation / test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Doubly linked lists$ cat 5-main.c
+```c++
+mathieu@ubuntu:~/Doubly linked lists$ cat 5-main.c
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -386,8 +463,9 @@ int main(void)
     head = NULL;
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 5-get_dnodeint.c -o h
-julien@ubuntu:~/Doubly linked lists$ ./h
+
+mathieu@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 5-get_dnodeint.c -o h
+mathieu@ubuntu:~/Doubly linked lists$ ./h
 0
 1
 2
@@ -397,13 +475,12 @@ julien@ubuntu:~/Doubly linked lists$ ./h
 402
 1024
 98
-julien@ubuntu:~/Doubly linked lists$
 ```
 </details>
     
 ---------------------
 
-#### [6. Sum List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/6-sum_dlistint.c)
+#### [6. Sum List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/6-sum_dlistint.c)
 
 Write a function that returns the sum of all the data (n) of a `dlistint_t` linked list.
 
@@ -411,11 +488,12 @@ Write a function that returns the sum of all the data (n) of a `dlistint_t` link
 - if the list is empty, return `0`
 
 <details>
-<summary>File Compilation / test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Doubly linked lists$ cat 6-main.c 
+```c++
+mathieu@ubuntu:~/Doubly linked lists$ cat 6-main.c 
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -446,16 +524,16 @@ int main(void)
     head = NULL;
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra 6-main.c -std=gnu89 3-add_dnodeint_end.c 4-free_dlistint.c 6-sum_dlistint.c -o i
-julien@ubuntu:~/Doubly linked lists$ ./i 
+
+mathieu@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra 6-main.c -std=gnu89 3-add_dnodeint_end.c 4-free_dlistint.c 6-sum_dlistint.c -o i
+mathieu@ubuntu:~/Doubly linked lists$ ./i 
 sum = 1534
-julien@ubuntu:~/Doubly linked lists$ 
 ```
 </details>
 
 -------------------------
 
-#### [7. Insert At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/7-insert_dnodeint.c)
+#### [7. Insert At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/7-insert_dnodeint.c)
 
 Write a function that inserts a new node at a given position.
 
@@ -467,11 +545,12 @@ Write a function that inserts a new node at a given position.
 Your files `2-add_dnodeint.c` and `3-add_dnodeint_end.c` will be compiled during the correction
 
 <details>
-<summary>File Compilation / test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Doubly linked lists$ cat 7-main.c
+```c++
+mathieu@ubuntu:~/Doubly linked lists$ cat 7-main.c
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -503,8 +582,9 @@ int main(void)
     head = NULL;
     return (EXIT_SUCCESS);
 }
-julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-main.c 2-add_dnodeint.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 7-insert_dnodeint.c -o j
-julien@ubuntu:~/Doubly linked lists$ ./j 
+
+mathieu@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-main.c 2-add_dnodeint.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 7-insert_dnodeint.c -o j
+mathieu@ubuntu:~/Doubly linked lists$ ./j 
 0
 1
 2
@@ -523,13 +603,12 @@ julien@ubuntu:~/Doubly linked lists$ ./j
 98
 402
 1024
-julien@ubuntu:~/Doubly linked lists$
 ```
 </details>
 
 --------------------
 
-#### [8. Delete At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/doubly_linked_lists/8-delete_dnodeint.c)
+#### [8. Delete At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/8-delete_dnodeint.c)
 
 Write a function that deletes the node at index `index` of a `dlistint_t` linked list.
 
@@ -538,11 +617,12 @@ Write a function that deletes the node at index `index` of a `dlistint_t` linked
 - Returns: `1` if it succeeded, `-1` if it failed
     
 <details>
-<summary>File Compilation / test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/Doubly linked lists$ cat 8-main.c
+```c++
+mathieu@ubuntu:~/Doubly linked lists$ cat 8-main.c
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -611,8 +691,9 @@ int main(void)
     print_dlistint(head);
     return (0);
 }
-julien@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 8-delete_dnodeint.c -o k
-julien@ubuntu:~/Doubly linked lists$ ./k
+
+mathieu@ubuntu:~/Doubly linked lists$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 8-delete_dnodeint.c -o k
+mathieu@ubuntu:~/Doubly linked lists$ ./k
 0
 1
 2
@@ -666,7 +747,6 @@ julien@ubuntu:~/Doubly linked lists$ ./k
 -----------------
 -----------------
 -----------------
-julien@ubuntu:~/Doubly linked lists$
 ```
 </details>
 
@@ -675,7 +755,7 @@ julien@ubuntu:~/Doubly linked lists$
 
 #### [9. Crackme4](url)
 
-Find the password for [`crackme4`](https://github.com/hs-hq/0x17.c).
+Find the password for [crackme4](https://github.com/hs-hq/0x17.c).
 
 - Save the password in the file `100-password`
 - Your file should contain the exact password, no new line, no extra space
@@ -685,7 +765,7 @@ Find the password for [`crackme4`](https://github.com/hs-hq/0x17.c).
     
 #### [10. Palindromes](url)
 
-A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is `9009 = 91 × 99`.
+A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is `9009` = `91` × `99`.
 
 Find the largest palindrome made from the product of two 3-digit numbers.
 
@@ -696,7 +776,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 #### [11. Crackme5](url)
     
-Write a keygen for [`crackme5`](https://github.com/hs-hq/0x17.c).
+Write a keygen for [crackme5](https://github.com/hs-hq/0x17.c).
 
 - Usage of the crackme: `./crackme5 username key`
 - The crackme will segfault if you do not enter the correct key for the user
@@ -704,19 +784,21 @@ Write a keygen for [`crackme5`](https://github.com/hs-hq/0x17.c).
 - Your keygen should print a valid key for the `username`
     
 <details>
-<summary>File Compilation / test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 103-keygen.c -o keygen5
-julien@ubuntu:~/$ ./crackme5 julien javascript
+```c++
+mathieu@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 103-keygen.c -o keygen5
+mathieu@ubuntu:~/$ ./crackme5 mathieu javascript
 Segmentation fault (core dumped)
-julien@ubuntu:~/$ ./crackme5 julien `./keygen5 julien`
+
+mathieu@ubuntu:~/$ ./crackme5 julien `./keygen5 julien`
 Congrats!
-julien@ubuntu:~/$ 
 ```
 </details>
     
 ----------------------------------
-## AUTHOR
+
+## Author
+
 - Mathieu Morel
