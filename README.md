@@ -205,7 +205,7 @@ _____________________________________
 
 -------------------------
 
-### [C - MORE SINGLY LINKED LISTS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/more_singly_linked_lists)
+### [C - MORE SINGLY LINKED LISTS](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x13-more_singly_linked_lists)
 #### `GENERAL`
 
 - How to use linked lists
