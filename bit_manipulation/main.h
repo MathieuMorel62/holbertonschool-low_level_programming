@@ -1,10 +1,12 @@
 #ifndef MAIN_FILE
 #define MAIN_FILE
 
+/*************** LIBRARY ***************/
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
+/*************** PROTOTYPES ***************/
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
