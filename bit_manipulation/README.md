@@ -369,7 +369,7 @@ mathieu@ubuntu:~/Binary$ ./f
 
 ---------------------------
 
-#### [6. Endianness](url)
+#### [6. Endianness](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x14-bit_manipulation/100-get_endianness.c)
 
 Write a function that checks the endianness.
 
@@ -421,7 +421,7 @@ Vendor ID:             GenuineIntel
 
 --------------------------
 
-#### [7. Crackme3](url)
+#### [7. Crackme3](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x14-bit_manipulation/101-password)
 
 Find the password for [this program](https://github.com/holbertonschool/0x13.c).
 
