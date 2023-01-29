@@ -1,8 +1,60 @@
 # C - SEARCH ALGORITHMS
-![img](https://codersera.com/blog/wp-content/uploads/2020/07/Searching-algorithms-1-1024x543.jpg)
+
+<img src="https://codersera.com/blog/wp-content/uploads/2020/07/Searching-algorithms-1-1024x543.jpg" width="100%">
+
+## Description
+### Search Algorithms in C
+
+Search algorithms are a common task in computer science and are used to find a target element in a data structure. There are several types of search algorithms in C, including linear search and binary search.
+
+### Linear Search
+
+Linear search is the simplest search algorithm and involves searching for the target element by iterating through the elements one by one:
+
+```c
+int linearSearch(int arr[], int n, int x) {
+  for (int i = 0; i < n; i++) {
+    if (arr[i] == x) {
+      return i;
+    }
+  }
+  return -1;
+}
+```
+
+This function takes an array `arr`, the number of elements `n`, and the target element `x`, and returns the index of the first occurrence of `x` in the array. If `x` is not found, the function returns `-1`.
+
+### Binary Search
+
+Binary search is a more efficient search algorithm that requires the elements to be sorted in ascending or descending order. The algorithm works by dividing the search space in half with each iteration:
+
+```c
+int binarySearch(int arr[], int n, int x) {
+  int low = 0;
+  int high = n - 1;
+  while (low <= high) {
+    int mid = (low + high) / 2;
+    if (arr[mid] == x) {
+      return mid;
+    } else if (arr[mid] < x) {
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
+  }
+  return -1;
+}
+```
+
+This function takes an array `arr`, the number of elements `n`, and the target element `x`, and returns the index of the first occurrence of `x` in the array. If `x` is not found, the function returns `-1`.
+  
+The time complexity of binary search is O(log n), making it much more efficient than linear search for large data structures. However, binary search requires that the data be sorted, which can add an additional cost.
+  
+In conclusion, the choice of search algorithm depends on the specific requirements of the task at hand, including the size and ordering of the data structure, and the desired time complexity.
 
 ## Resources
 ### Read or Watch :
+
 - [Search Algorithm](https://en.wikipedia.org/wiki/Search_algorithm)
 - [Space Complexity (1)](https://www.geeksforgeeks.org/g-fact-86/)
 
@@ -22,6 +74,7 @@
 - All your header files should be include guarded
 
 ----------------------
+
 # Tasks
 
 #### [0. Linear Search](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/search_algorithms/0-linear.c)
@@ -37,11 +90,12 @@ Write a function that searches for a value in an array of integers using the [Li
 - Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-wilfried@search_algorithms$ cat 0-main.c 
+```c++
+mathieu@search_algorithms$ cat 0-main.c 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "search_algos.h"
@@ -63,8 +117,9 @@ int main(void)
     printf("Found %d at index: %d\n", 999, linear_search(array, size, 999));
     return (EXIT_SUCCESS);
 }
-wilfried@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 0-main.c 0-linear.c -o 0-linear
-wilfried@search_algorithms$ ./0-linear 
+
+mathieu@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 0-main.c 0-linear.c -o 0-linear
+mathieu@search_algorithms$ ./0-linear 
 Value checked array[0] = [10]
 Value checked array[1] = [1]
 Value checked array[2] = [42]
@@ -107,11 +162,12 @@ Write a function that searches for a value in a sorted array of integers using t
 - You must print the array being searched every time it changes. (e.g. at the beginning and when you search a subarray) (See example)
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-wilfried@search_algorithms$ cat 1-main.c 
+```c++
+mathieu@search_algorithms$ cat 1-main.c 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "search_algos.h"
@@ -133,8 +189,9 @@ int main(void)
     printf("Found %d at index: %d\n", 999, binary_search(array, size, 999));
     return (EXIT_SUCCESS);
 }
-wilfried@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 1-main.c 1-binary.c -o 1-binary
-wilfried@search_algorithms$ ./1-binary 
+
+mathieu@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 1-main.c 1-binary.c -o 1-binary
+mathieu@search_algorithms$ ./1-binary 
 Searching in array: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 Searching in array: 0, 1, 2, 3
 Searching in array: 2, 3
@@ -183,7 +240,7 @@ What is the `space complexity` (worst case) of a binary search in an array of si
 
 What is the space complexity of this function / algorithm?
 
-```
+```c++
 int **allocate_map(int n, int m)
 {
      int **map;
@@ -215,11 +272,12 @@ Write a function that searches for a value in a sorted array of integers using t
 - Every time you compare a value in the array to the value you are searching for, you have to print this value (see example)
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-wilfried@search_algorithms$ cat 100-main.c 
+```c++
+mathieu@search_algorithms$ cat 100-main.c 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "search_algos.h"
@@ -241,8 +299,9 @@ int main(void)
     printf("Found %d at index: %d\n", 999, jump_search(array, size, 999));
     return (EXIT_SUCCESS);
 }
-wilfried@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 100-main.c 100-jump.c -lm -o 100-jump
-wilfried@search_algorithms$ ./100-jump 
+
+mathieu@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 100-main.c 100-jump.c -lm -o 100-jump
+mathieu@search_algorithms$ ./100-jump 
 Value checked array[0] = [0]
 Value checked array[3] = [3]
 Value found between indexes [3] and [6]
@@ -291,11 +350,12 @@ Write a function that searches for a value in a sorted array of integers using t
 - Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-wilfried@search_algorithms$ cat 102-main.c 
+```c++
+mathieu@search_algorithms$ cat 102-main.c 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "search_algos.h"
@@ -317,8 +377,9 @@ int main(void)
     printf("Found %d at index: %d\n", 999, interpolation_search(array, size, 999));
     return (EXIT_SUCCESS);
 }
-wilfried@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 102-main.c 102-interpolation.c -o 102-interpolation
-wilfried@search_algorithms$ ./102-interpolation 
+
+mathieu@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 102-main.c 102-interpolation.c -o 102-interpolation
+mathieu@search_algorithms$ ./102-interpolation 
 Value checked array[6] = [2]
 Value checked array[7] = [3]
 Found 3 at index: 7
@@ -350,11 +411,12 @@ Write a function that searches for a value in a sorted array of integers using t
   - Every time you split the array, you have to print the new array (or subarray) you’re searching in (See example)
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-wilfried@search_algorithms$ cat 103-main.c 
+```c++
+mathieu@search_algorithms$ cat 103-main.c 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "search_algos.h"
@@ -376,8 +438,9 @@ int main(void)
     printf("Found %d at index: %d\n", 999, exponential_search(array, size, 999));
     return (EXIT_SUCCESS);
 }
-wilfried@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 103-main.c 103-exponential.c -o 103-exponential
-wilfried@search_algorithms$ ./103-exponential 
+
+mathieu@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 103-main.c 103-exponential.c -o 103-exponential
+mathieu@search_algorithms$ ./103-exponential 
 Value checked array[1] = [1]
 Value checked array[2] = [2]
 Value checked array[4] = [4]
@@ -426,11 +489,12 @@ Write a function that searches for a value in a sorted array of integers.
 - If `value` is not present in `array` or if `array` is `NULL`, your function must return `-1`
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-wilfried@search_algorithms$ cat 104-main.c 
+```c++
+mathieu@search_algorithms$ cat 104-main.c 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "search_algos.h"
@@ -452,8 +516,9 @@ int main(void)
     printf("Found %d at index: %d\n", 999, advanced_binary(array, size, 999));
     return (EXIT_SUCCESS);
 }
-wilfried@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 104-main.c 104-advanced_binary.c -o 104-advanced_binary
-wilfried@search_algorithms$ ./104-advanced_binary
+
+mathieu@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 104-main.c 104-advanced_binary.c -o 104-advanced_binary
+mathieu@search_algorithms$ ./104-advanced_binary
 Searching in array: 0, 1, 2, 5, 5, 6, 6, 7, 8, 9
 Searching in array: 6, 6, 7, 8, 9
 Searching in array: 8, 9
@@ -480,7 +545,7 @@ You might think that linear search is not as effective as any other algorithm, r
 
 Please define the following data structure in your [`search_algos.h`](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/search_algorithms/search_algos.h) header file:
 
-```
+```c++
 /**
  * struct listint_s - singly linked list
  *
@@ -514,11 +579,12 @@ Write a function that searches for a value in a sorted list of integers using th
 NOTE: [You can find here](https://github.com/hs-hq/0x1D.c/tree/main/listint) the functions used in the example. You don’t need to push them, we will compile your file with our own implementation during the correction.
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-wilfried@search_algorithms$ cat 105-main.c 
+```c++
+mathieu@search_algorithms$ cat 105-main.c 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "search_algos.h"
@@ -553,7 +619,8 @@ int main(void)
     free_list(list);
     return (EXIT_SUCCESS);
 }
-wilfried@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 105-main.c 105-jump_list.c listint/*.c -lm -o 105-jump
+
+mathieu@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 105-main.c 105-jump_list.c listint/*.c -lm -o 105-jump
 wilfried@search_algorithms$ ./105-jump 
 List :
 Index[0] = [0]
@@ -611,7 +678,7 @@ As you see now, looking for a specific value in a singly linked list always lead
 
 Please define the following data structure in your [search_algos.h](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/search_algorithms/search_algos.h) header file:
 
-```
+```c++
 /**
  * struct skiplist_s - Singly linked list with an express lane
  *
@@ -645,11 +712,12 @@ Write a function that searches for a value in a sorted skip list of integers.
 NOTE: [You can find here](https://intranet.hbtn.io/rltoken/Mc6ut4h5XB1Q5TktZtz5Hg) the functions used in the example. You don’t need to push them, we will compile your file with our own implementation during the correction.
 
 <details>
-<summary>File Compilation / Test</summary>
+<summary>Test File</summary>
 <br>
 
-```
-wilfried@search_algorithms$ cat 106-main.c 
+```c++
+mathieu@search_algorithms$ cat 106-main.c 
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "search_algos.h"
@@ -684,7 +752,8 @@ int main(void)
     free_skiplist(list);
     return (EXIT_SUCCESS);
 }
-wilfried@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 106-main.c 106-linear_skip.c skiplist/*.c -lm -o 106-linear
+
+mathieu@search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 106-main.c 106-linear_skip.c skiplist/*.c -lm -o 106-linear
 wilfried@search_algorithms$ ./106-linear 
 List :
 Index[0] = [0]
