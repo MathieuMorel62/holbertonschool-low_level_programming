@@ -440,7 +440,7 @@ Congratulations!
 
 ---------------------
 
-#### [8. Two's Complement And Negative Numbers](url)
+#### [8. Two's Complement And Negative Numbers](https://medium.com/@mormth/storing-integers-in-memory-using-twos-complement-1e3d0c3684f6)
 
 Write a blog post on how integers are stored in memory using two’s complement.
 
@@ -448,6 +448,8 @@ Write a blog post on how integers are stored in memory using two’s complement.
 - Have a few examples covering positive and negative numbers
 - Publish your blog post on Medium or LinkedIn
 - Share your blog post at least on LinkedIn
+
+![[img](https://cdn.pixabay.com/photo/2019/06/25/12/59/click-here-4298145_1280.png)](https://medium.com/@mormth/storing-integers-in-memory-using-twos-complement-1e3d0c3684f6)
 
 --------------------------------------
 
