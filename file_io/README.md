@@ -1,9 +1,90 @@
 # C - FILE I/O
 
-![file i/o](https://i.ytimg.com/vi/XTCLJsbtL60/maxresdefault.jpg)
+<img src="https://i.ytimg.com/vi/XTCLJsbtL60/maxresdefault.jpg" width="100%">
 
-## RESOURCES
-### Read or watch:
+## Description
+### File I/O in C
+
+File Input/Output (I/O) is the process of reading and writing data to and from a file in a computer's file system. In C, file I/O is performed using the standard library functions, including `fopen`, `fread`, `fwrite`, `fprintf`, `fscanf`, and others.
+
+### Opening and Closing a File
+
+Before you can read from or write to a file, you need to open it using the `fopen` function. The `fopen` function takes the name of the file and a string that specifies the mode in which the file will be opened. **For example:**
+
+```c
+FILE *fp;
+fp = fopen("file.txt", "r");
+```
+
+This opens the file named "file.txt" for reading and returns a pointer to the `FILE` structure that represents the file. The `fp` variable can be used in subsequent file I/O functions to reference the file.  
+  
+When you're finished reading from or writing to a file, you should close it using the `fclose` function. The `fclose` function takes the pointer to the FILE structure that represents the file:
+
+```c
+fclose(fp);
+```
+
+### Reading from a File
+
+Once a file has been opened, you can read its contents using the `fread` or `fscanf` functions.
+  
+The `fread` function reads binary data from a file into a buffer:
+
+```c
+int data[100];
+fread(data, sizeof(int), 100, fp);
+```
+
+This reads 100 `int` values from the file into the `data` array.
+  
+The `fscanf` function reads formatted data from a file:
+
+```c
+int a, b, c;
+fscanf(fp, "%d%d%d", &a, &b, &c);
+```
+
+This reads three `int` values from the file and stores them in the `a`, `b`, and `c` variables.
+
+### Writing To a File
+
+To write data to a file, you can use the `fwrite` or `fprintf` functions.
+  
+The `fwrite` function writes binary data to a file:
+
+```c
+int data[100];
+fwrite(data, sizeof(int), 100, fp);
+```
+
+This writes 100 `int` values from the `data` array to the file.
+  
+The `fprintf` function writes formatted data to a file:
+
+```c
+int a = 42, b = 123, c = 7;
+fprintf(fp, "%d %d %d\n", a, b, c);
+```
+
+This writes the values of `a`, `b`, and `c` to the file in a formatted string.
+
+### Error Handling
+
+When performing file I/O, it's important to check for errors and take appropriate action. The `ferror` function can be used to check if an error has occurred during file I/O:
+
+```c
+if (ferror(fp)) {
+  perror("Error reading file");
+}
+```
+
+This checks if an error has occurred during file I/O on the file referenced by `fp` and, if so, outputs an error message using the `perror` function.  
+   
+File I/O is a crucial aspect of many programs and is often used to store data that needs to persist beyond the lifetime of the program. By using the standard library functions, it's possible to read from and write to files in a portable and efficient manner. When writing programs that perform file I/O, it's important to consider issues such as error handling and file safety, to ensure that the data being read from and written to files is handled correctly.
+
+## Resources
+### Read or Watch:
+
 - [File Descriptors](https://en.wikipedia.org/wiki/File_descriptor)
 - [C Programming in Linux Tutorial #024 - open() read() write() Functions](https://www.youtube.com/watch?v=dP3N8g7h8gY)
 
@@ -13,11 +94,12 @@
  - A `README.md` file, at the root of the folder of the project is mandatory
  - Your code should use the `Betty` style. It will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
  - In the following examples, the `main.c` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our `main.c` files might be different from the one shown in the examples
- - The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called [`main.h`](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/file_io/main.h)
+ - The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called [`main.h`](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x15-file_io/main.h)
+
 -------------------------------
 # Tasks
 
-#### [0. Tread Lightly, She Is Near](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/file_io/0-read_textfile.c)
+#### [0. Tread Lightly, She Is Near](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x15-file_io/0-read_textfile.c)
 Write a function that reads a text file and prints it to the `POSIX` standard output.
 
 - Prototype: `ssize_t read_textfile(const char *filename, size_t letters);`
@@ -25,14 +107,14 @@ Write a function that reads a text file and prints it to the `POSIX` standard ou
 - returns the actual number of letters it could read and print
 - if the file can not be opened or read, return `0`
 - if `filename` is `NULL` return `0`
-- if `write` fails or does not write the expected amount of bytes, return 0
+- if `write` fails or does not write the expected amount of bytes, return `0`
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/File descriptors and permissions$ cat Requiescat 
+```c++
+mathieu@ubuntu:~/File descriptors and permissions$ cat Requiescat 
 Requiescat
 by Oscar Wilde
 
@@ -60,7 +142,9 @@ Peace, Peace, she cannot hear
 Lyre or sonnet,
 All my life's buried here,
 Heap earth upon it.
-julien@ubuntu:~/File descriptors and permissions$ cat 0-main.c
+
+mathieu@ubuntu:~/File descriptors and permissions$ cat 0-main.c
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
@@ -85,8 +169,9 @@ int main(int ac, char **av)
     printf("\n(printed chars: %li)\n", n);
     return (0);
 }
-julien@ubuntu:~/File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-read_textfile.c -o a
-julien@ubuntu:~/File descriptors and permissions$ ./a Requiescat 
+
+mathieu@ubuntu:~/File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-read_textfile.c -o a
+mathieu@ubuntu:~/File descriptors and permissions$ ./a Requiescat 
 Requiescat
 by Oscar Wilde
 
@@ -124,12 +209,11 @@ All my life's buried here,
 Heap earth upon it.
 
 (printed chars: 468)
-julien@ubuntu:~/File descriptors and permissions$ 
 ```
 </details>
 
 --------------------------
-#### [1. Under The Snow](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/file_io/1-create_file.c)
+#### [1. Under The Snow](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x15-file_io/1-create_file.c)
 
 Create a function that creates a file.
 
@@ -142,11 +226,12 @@ Create a function that creates a file.
 - if `text_content` is `NULL` create an empty file
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/File descriptors and permissions$ cat 1-main.c
+```c++
+mathieu@ubuntu:~/File descriptors and permissions$ cat 1-main.c
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
@@ -169,18 +254,22 @@ int main(int ac, char **av)
     printf("-> %i)\n", res);
     return (0);
 }
-julien@ubuntu:~/File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-create_file.c -o b
-julien@ubuntu:~/File descriptors and permissions$ ./b hello world
+
+mathieu@ubuntu:~/File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-create_file.c -o b
+mathieu@ubuntu:~/File descriptors and permissions$ ./b hello world
 -> 1)
-julien@ubuntu:~/File descriptors and permissions$ ls -l hello
--rw------- 1 julien julien 5 Dec  3 14:28 hello
-julien@ubuntu:~/File descriptors and permissions$ cat hello 
-worldjulien@ubuntu:~/File descriptors and permis$ 
+
+mathieu@ubuntu:~/File descriptors and permissions$ ls -l hello
+-rw------- 1 mathieu mathieu 5 Dec  3 14:28 hello
+
+mathieu@ubuntu:~/File descriptors and permissions$ cat hello 
+worldmathieu@ubuntu:~/File descriptors and permis$ 
 ```
 </details>
 
 -------------------------
-#### [2. Speak Gently, She Can Hear](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/file_io/2-append_text_to_file.c)
+
+#### [2. Speak Gently, She Can Hear](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x15-file_io/2-append_text_to_file.c)
 
 Write a function that appends text at the end of a file.
 
@@ -189,14 +278,15 @@ Write a function that appends text at the end of a file.
 - Return: `1` on success and `-1` on failure
 - Do not create the file if it does not exist
 - If `filename` is `NULL` return `-1`
-- If `text_content` is `NULL`, do not add anything to the file. Return 1 if the file exists and -1 if the file does not exist or if you do not have the required permissions to write the file
+- If `text_content` is `NULL`, do not add anything to the file. Return `1` if the file exists and `-1` if the file does not exist or if you do not have the required permissions to write the file
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/File descriptors and permissions$ cat 2-main.c
+```c++
+mathieu@ubuntu:~/File descriptors and permissions$ cat 2-main.c
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
@@ -219,21 +309,24 @@ int main(int ac, char **av)
     printf("-> %i)\n", res);
     return (0);
 }
-julien@ubuntu:~/File descriptors and permissions$ echo -n Hello > hello
-julien@ubuntu:~/File descriptors and permissions$ ls -l hello
--rw-rw-r-- 1 julien julien 5 Dec  3 14:48 hello
-julien@ubuntu:~/File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-append_text_to_file.c -o c
-julien@ubuntu:~/File descriptors and permissions$ ./c hello " World!
+
+mathieu@ubuntu:~/File descriptors and permissions$ echo -n Hello > hello
+mathieu@ubuntu:~/File descriptors and permissions$ ls -l hello
+-rw-rw-r-- 1 mathieu mathieu 5 Dec  3 14:48 hello
+
+mathieu@ubuntu:~/File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-append_text_to_file.c -o c
+mathieu@ubuntu:~/File descriptors and permissions$ ./c hello " World!
 > "
 -> 1)
-julien@ubuntu:~/File descriptors and permissions$ cat hello 
+
+mathieu@ubuntu:~/File descriptors and permissions$ cat hello 
 Hello World!
-julien@ubuntu:~/File descriptors and permissions$
 ```
 </details>
 
 ----------------------
-#### [3. Cp](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/file_io/3-cp.c)
+
+#### [3. Cp](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x15-file_io/3-cp.c)
 
 Write a program that copies the content of a file to another file.
 
@@ -251,29 +344,31 @@ if `file_from` does not exist, or if you can not read it, exit with code `98` an
 - You are allowed to use `dprintf`
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-cp.c -o cp
-julien@ubuntu:~/File descriptors and permissions$ cat incitatous 
+```c++
+mathieu@ubuntu:~/File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-cp.c -o cp
+mathieu@ubuntu:~/File descriptors and permissions$ cat incitatous 
 Why you should think twice before putting pictures on social media.
 (What you always wanted to know about @Incitatous)
 #PrivacyAware
 http://imgur.com/a/Mq1tc
-julien@ubuntu:~/File descriptors and permissions$ ./cp incitatous Incitatous
-julien@ubuntu:~/File descriptors and permissions$ ls -l Incitatous 
--rw-rw-r-- 1 julien julien 158 Dec  3 15:39 Incitatous
-julien@ubuntu:~/File descriptors and permissions$ cat Incitatous 
+
+mathieu@ubuntu:~/File descriptors and permissions$ ./cp incitatous Incitatous
+mathieu@ubuntu:~/File descriptors and permissions$ ls -l Incitatous 
+-rw-rw-r-- 1 mathieu mathieu 158 Dec  3 15:39 Incitatous
+
+mathieulien@ubuntu:~/File descriptors and permissions$ cat Incitatous 
 Why you should think twice before putting pictures on social media.
 (What you always wanted to know about @Incitatous)
 #PrivacyAware
 http://imgur.com/a/Mq1tc
-julien@ubuntu:~/File descriptors and permissions$ 
 ```
 </details>
 
 --------------------------
+
 #### [4. Elf](url)
 
 Write a program that displays the information contained in the `ELF` header at the start of an `ELF` file.
@@ -298,12 +393,12 @@ Write a program that displays the information contained in the `ELF` header at t
 man `elf`, `readelf` 
 
 <details>
-<summary> File Compilation / test </summary>
+<summary>Test File</summary>
 <br>
 
-```
-julien@ubuntu:~/File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-elf_header.c -o elf_header
-julien@ubuntu:~/File descriptors and permissions$ ./elf_header ubuntu64 
+```c++
+mathieu@ubuntu:~/File descriptors and permissions$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-elf_header.c -o elf_header
+mathieu@ubuntu:~/File descriptors and permissions$ ./elf_header ubuntu64 
 ELF Header:
   Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00
   Class:                             ELF64
@@ -313,13 +408,15 @@ ELF Header:
   ABI Version:                       0
   Type:                              EXEC (Executable file)
   Entry point address:               0x400600
-julien@ubuntu:~/File descriptors and permissions$ readelf --version
+
+mathieu@ubuntu:~/File descriptors and permissions$ readelf --version
 GNU readelf (GNU Binutils for Ubuntu) 2.26.1
 Copyright (C) 2015 Free Software Foundation, Inc.
 This program is free software; you may redistribute it under the terms of
 the GNU General Public License version 3 or (at your option) any later version.
 This program has absolutely no warranty.
-julien@ubuntu:~/File descriptors and permissions$ readelf -h ubuntu64 
+
+mathieu@ubuntu:~/File descriptors and permissions$ readelf -h ubuntu64 
 ELF Header:
   Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
   Class:                             ELF64
@@ -340,7 +437,8 @@ ELF Header:
   Size of section headers:           64 (bytes)
   Number of section headers:         31
   Section header string table index: 28
-julien@ubuntu:~/File descriptors and permissions$ ./elf_header /lib/ld-linux.so.2
+
+mathieu@ubuntu:~/File descriptors and permissions$ ./elf_header /lib/ld-linux.so.2
 ELF Header:
   Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
   Class:                             ELF32
@@ -350,7 +448,8 @@ ELF Header:
   ABI Version:                       0
   Type:                              DYN (Shared object file)
   Entry point address:               0xac0
-julien@ubuntu:~/File descriptors and permissions$ readelf -h /lib/ld-linux.so.2
+
+mathieu@ubuntu:~/File descriptors and permissions$ readelf -h /lib/ld-linux.so.2
 ELF Header:
   Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
   Class:                             ELF32
@@ -371,7 +470,8 @@ ELF Header:
   Size of section headers:           40 (bytes)
   Number of section headers:         24
   Section header string table index: 23
-julien@ubuntu:~/File descriptors and permissions$ ./elf_header netbsd32 
+
+mathieu@ubuntu:~/File descriptors and permissions$ ./elf_header netbsd32 
 ELF Header:
   Magic:   7f 45 4c 46 01 01 01 02 00 00 00 00 00 00 00 00
   Class:                             ELF32
@@ -381,7 +481,8 @@ ELF Header:
   ABI Version:                       0
   Type:                              EXEC (Executable file)
   Entry point address:               0x80484c0
-julien@ubuntu:~/File descriptors and permissions$ ./elf_header sortix32 
+
+mathieu@ubuntu:~/File descriptors and permissions$ ./elf_header sortix32 
 ELF Header:
   Magic:   7f 45 4c 46 01 01 01 53 00 00 00 00 00 00 00 00
   Class:                             ELF32
@@ -391,7 +492,8 @@ ELF Header:
   ABI Version:                       0
   Type:                              EXEC (Executable file)
   Entry point address:               0x80484c0
-julien@ubuntu:~/File descriptors and permissions$ ./elf_header solaris32 
+
+mathieu@ubuntu:~/File descriptors and permissions$ ./elf_header solaris32 
 ELF Header:
   Magic:   7f 45 4c 46 01 01 01 06 01 00 00 00 00 00 00 00
   Class:                             ELF32
@@ -401,7 +503,8 @@ ELF Header:
   ABI Version:                       1
   Type:                              EXEC (Executable file)
   Entry point address:               0x8052400
-julien@ubuntu:~/File descriptors and permissions$ ./elf_header sparc32 
+
+mathieu@ubuntu:~/File descriptors and permissions$ ./elf_header sparc32 
 ELF Header:
   Magic:   7f 45 4c 46 01 02 01 00 00 00 00 00 00 00 00 00
   Class:                             ELF32
@@ -410,8 +513,7 @@ ELF Header:
   OS/ABI:                            UNIX - System V
   ABI Version:                       0
   Type:                              EXEC (Executable file)
-  Entry point address:               0x10d20
-julien@ubuntu:~/File descriptors and permissions$ 
+  Entry point address:               0x10d20 
 ```
 </details>
 
@@ -420,5 +522,3 @@ julien@ubuntu:~/File descriptors and permissions$
 ## Author
 
 - Mathieu Morel 
-
---------------------------
