@@ -1,39 +1,28 @@
 #include "lists.h"
 
 /**
- * free_listint_safe - 
+ * free_listint_safe - function that frees a listint_t list.
  * @h:
  *
  * Return:
 */
 
-size_t free_listint_safe(listint_t **h)
+size_t free_listint_safe(listint_t **h) 
 {
-    size_t count = 0;
-    listint_t *current = *h;
-    listint_t *temp;
-    listint_t *check = *h;
+	listint_t *temp = *h, *current = *h;
+	size_t len = 0;
 
-    while (current != NULL)
-    {
-        temp = current;
-        current = current->next;
-        check = *h;
-        while (check != current)
-        {
-            if (check == temp)
-            {
-                current = NULL;
-                break;
-            }
-            check = check->next;
-        }
-        if (current != NULL)
-        {
-            free(temp);
-            count++;
-        }
-    }
-    *h = NULL;
-    return count;
+	while (current)
+	{
+		len++;
+		if (current->next == *h)
+		{
+			current->next = NULL;
+		}
+		temp = current;
+		current = current->next;
+		free(temp);
+	}
+	*h = NULL;
+	return (len);
 }
