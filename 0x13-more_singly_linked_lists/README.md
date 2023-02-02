@@ -1,4 +1,4 @@
-# C - MORE SINGLY LINKED LISTS
+# <p align=center>C - MORE SINGLY LINKED LISTS</p>
 
 <img src="https://i.ytimg.com/vi/fpVMOcLWoQw/maxresdefault.jpg" width="100%">
 
