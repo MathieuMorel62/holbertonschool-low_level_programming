@@ -1,4 +1,4 @@
-# C - STRUCTURES, TYPEDEF
+# <p align=center>C - STRUCTURES, TYPEDEF</p>
 
 <img src="https://i.ytimg.com/vi/LGTfV6NINmo/maxresdefault.jpg" width="100%">
 
