@@ -1,4 +1,4 @@
-# C - DOUBLY LINKED LISTS
+# <p align=center>C - DOUBLY LINKED LISTS</p>
 
 <img src="https://lapmos.com//images/posts/Insertion%20and%20deletion%20in%20doubly%20linked%20list%20in%20C%20program.png" width="100%">
 
