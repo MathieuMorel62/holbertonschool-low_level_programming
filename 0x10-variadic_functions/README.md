@@ -1,4 +1,4 @@
-# C - VARIADIC FUNCTIONS
+# <p align=center>C - VARIADIC FUNCTIONS</p>
 
 <img src="https://miro.medium.com/max/1400/1*aC11spxGQlpAxviBOQo-8A.png" width="100%">
 
