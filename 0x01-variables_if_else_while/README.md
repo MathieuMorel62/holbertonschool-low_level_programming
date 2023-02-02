@@ -1,4 +1,4 @@
-# C - VARIABLES, IF, ELSE, WHILE
+# <p align=center>C - VARIABLES, IF, ELSE, WHILE</p>
 
 <img src="https://www.mrvermainstitute.com/wp-content/uploads/2022/04/C-progamming.jpg" width="100%">
 
