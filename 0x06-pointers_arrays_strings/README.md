@@ -1,4 +1,4 @@
-# C - MORE POINTERS, ARRAYS AND STRINGS
+# <p align=center>C - MORE POINTERS, ARRAYS AND STRINGS</p>
 
 <img src="https://cdn.educba.com/academy/wp-content/uploads/2020/03/Function-Pointer-in-C.jpg" width="100%">
 
