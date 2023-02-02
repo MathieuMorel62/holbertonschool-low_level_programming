@@ -1,4 +1,4 @@
-# C - HELLO, WORLD
+# <p align=center>C - HELLO, WORLD</p>
 
 ![img](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/212/cisfun.jpg)
 
