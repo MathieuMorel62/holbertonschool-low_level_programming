@@ -1,4 +1,4 @@
-# C - MALLOC, FREE
+# <p align=center>C - MALLOC, FREE</p>
 
 <img src="https://grandidierite.github.io/assets/img/dynamic.jpg" width="100%">
 
