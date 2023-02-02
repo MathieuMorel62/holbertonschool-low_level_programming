@@ -1,4 +1,4 @@
-# C - FUNCTION POINTERS
+# <p align=center>C - FUNCTION POINTERS</p>
 
 <img src="https://i.ytimg.com/vi/cwvdT-4HT9o/maxresdefault.jpg" width="100%">
 
