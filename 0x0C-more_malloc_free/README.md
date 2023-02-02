@@ -1,4 +1,4 @@
-# C - MORE MALLOC, FREE
+# <p align=center>C - MORE MALLOC, FREE</p>
 
 <img src="https://i.ytimg.com/vi/P6oqhAxV0dA/maxresdefault.jpg" width="100%">
 
