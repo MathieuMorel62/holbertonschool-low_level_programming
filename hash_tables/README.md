@@ -1,4 +1,4 @@
-# C - HASH TABLES
+# <p align=center>C - HASH TABLES</p>
 
 <img src="https://i.ytimg.com/vi/2Ti5yvumFTU/maxresdefault.jpg" width="100%">
 
