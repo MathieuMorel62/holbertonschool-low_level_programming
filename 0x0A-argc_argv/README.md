@@ -1,4 +1,4 @@
-# C _ ARGC, ARGV
+# <p align=center>C _ ARGC, ARGV</p>
 
 <img src="https://techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/07/Command-Line-Arguments-in-C.jpg" width="100%">
 
