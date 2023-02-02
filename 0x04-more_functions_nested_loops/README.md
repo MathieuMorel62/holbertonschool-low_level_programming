@@ -1,4 +1,4 @@
-# C - MORE FUNCTIONS, MORE NESTED LOOPS
+# <p align=center>C - MORE FUNCTIONS, MORE NESTED LOOPS</p>
 
 <img src="https://c8.alamy.com/comp/2G18XE3/abstract-modern-tech-of-programming-code-screen-developer-c-programming-language-of-computer-script-and-technology-background-of-software-2G18XE3.jpg" width="100%">
 
