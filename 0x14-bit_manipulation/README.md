@@ -1,4 +1,4 @@
-# C - BIT MANIPULATION
+# <p align=center>C - BIT MANIPULATION</p>
 
 <img src="https://static.vecteezy.com/system/resources/previews/004/525/039/non_2x/binary-code-background-abstract-technology-digital-binary-data-and-secure-data-concept-free-photo.jpg" width="100%">
 
