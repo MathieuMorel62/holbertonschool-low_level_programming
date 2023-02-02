@@ -1,4 +1,4 @@
-# C - FILE I/O
+# <p align=center>C - FILE I/O</p>
 
 <img src="https://i.ytimg.com/vi/XTCLJsbtL60/maxresdefault.jpg" width="100%">
 
