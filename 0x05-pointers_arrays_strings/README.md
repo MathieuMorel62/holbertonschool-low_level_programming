@@ -1,4 +1,4 @@
-# C - POINTERS, ARRAYS AND STRINGS
+# <p align=center>C - POINTERS, ARRAYS AND STRINGS</p>
 
 <img src="https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/216/IMG_2410.JPG" width="100%">
 
