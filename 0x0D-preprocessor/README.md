@@ -1,4 +1,4 @@
-# C - PREPROCESSOR
+# <p align=center>C - PREPROCESSOR</p>
 
 <img src="https://grandidierite.github.io/assets/img/directive.jpg" width="100%">
 
