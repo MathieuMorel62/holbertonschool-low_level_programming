@@ -1,4 +1,4 @@
-# C - RECURSION
+# <p align=center>C - RECURSION</p>
 
 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--tw3NWqpc--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/vs461z5rnco8mvjkk1og.jpg" width="100%">
 
