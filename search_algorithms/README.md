@@ -1,4 +1,4 @@
-# C - SEARCH ALGORITHMS
+# <p align=center>C - SEARCH ALGORITHMS</p>
 
 <img src="https://codersera.com/blog/wp-content/uploads/2020/07/Searching-algorithms-1-1024x543.jpg" width="100%">
 
