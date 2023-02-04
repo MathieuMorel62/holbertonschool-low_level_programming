@@ -763,7 +763,7 @@ Find the password for [crackme4](https://github.com/hs-hq/0x17.c).
     
 ---------------------
     
-### [10. Palindromes](url)
+### [10. Palindromes](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/102-result)
 
 A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is `9009` = `91` × `99`.
 
@@ -774,7 +774,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 ------------------
 
-### [11. Crackme5](url)
+### [11. Crackme5](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/103-keygen.c)
     
 Write a keygen for [crackme5](https://github.com/hs-hq/0x17.c).
 
