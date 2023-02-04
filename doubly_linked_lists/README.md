@@ -1,4 +1,4 @@
-# <p align=center>C - DOUBLY LINKED LISTS</p>
+# <p align=center>C - Doubly linked lists</p>
 
 <img src="https://lapmos.com//images/posts/Insertion%20and%20deletion%20in%20doubly%20linked%20list%20in%20C%20program.png" width="100%">
 
@@ -118,7 +118,7 @@ typedef struct dlistint_s
 
 # Tasks
 
-#### [0. Print List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/0-print_dlistint.c)
+### [0. Print List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/0-print_dlistint.c)
 
 Write a function that prints all the elements of a `dlistint_t list`.
 
@@ -178,7 +178,7 @@ mathieu@ubuntu:~/Doubly linked lists$ ./a
   
 ---------------------
 
-#### [1. List Length](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/1-dlistint_len.c)
+### [1. List Length](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/1-dlistint_len.c)
 
 Write a function that returns the number of elements in a linked `dlistint_t list`.
 
@@ -234,7 +234,7 @@ mathieu@ubuntu:~/Doubly linked lists$ ./b
 
 -------------------------
 
-#### [2. Add Node](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/2-add_dnodeint.c)
+### [2. Add Node](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/2-add_dnodeint.c)
 
 Write a function that adds a new node at the beginning of a `dlistint_t list`.
 
@@ -290,7 +290,7 @@ mathieu@ubuntu:~/Doubly linked lists$ ./c
 
 -----------------------
 
-#### [3. Add Node At The End](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/3-add_dnodeint_end.c)
+### [3. Add Node At The End](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/3-add_dnodeint_end.c)
 
 Write a function that adds a new node at the end of a `dlistint_t list`.
 
@@ -346,7 +346,7 @@ mathieu@ubuntu:~/Doubly linked lists$ ./d
   
 ---------------------
 
-#### [4. Free List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/4-free_dlistint.c)
+### [4. Free List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/4-free_dlistint.c)
 
 Write a function that frees a `dlistint_t list`.
 
@@ -417,7 +417,7 @@ mathieu@ubuntu:~/Doubly linked lists$ valgrind ./e
 
 ----------------------
 
-#### [5. Get Node At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/5-get_dnodeint.c)
+### [5. Get Node At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/5-get_dnodeint.c)
     
 Write a function that returns the nth node of a `dlistint_t` linked list.
 
@@ -480,7 +480,7 @@ mathieu@ubuntu:~/Doubly linked lists$ ./h
     
 ---------------------
 
-#### [6. Sum List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/6-sum_dlistint.c)
+### [6. Sum List](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/6-sum_dlistint.c)
 
 Write a function that returns the sum of all the data (n) of a `dlistint_t` linked list.
 
@@ -533,7 +533,7 @@ sum = 1534
 
 -------------------------
 
-#### [7. Insert At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/7-insert_dnodeint.c)
+### [7. Insert At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/7-insert_dnodeint.c)
 
 Write a function that inserts a new node at a given position.
 
@@ -608,7 +608,7 @@ mathieu@ubuntu:~/Doubly linked lists$ ./j
 
 --------------------
 
-#### [8. Delete At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/8-delete_dnodeint.c)
+### [8. Delete At Index](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/8-delete_dnodeint.c)
 
 Write a function that deletes the node at index `index` of a `dlistint_t` linked list.
 
@@ -753,7 +753,7 @@ mathieu@ubuntu:~/Doubly linked lists$ ./k
 -------------------------
     
 
-#### [9. Crackme4](url)
+### [9. Crackme4](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x16-doubly_linked_lists/100-password)
 
 Find the password for [crackme4](https://github.com/hs-hq/0x17.c).
 
@@ -763,7 +763,7 @@ Find the password for [crackme4](https://github.com/hs-hq/0x17.c).
     
 ---------------------
     
-#### [10. Palindromes](url)
+### [10. Palindromes](url)
 
 A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is `9009` = `91` × `99`.
 
@@ -774,7 +774,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 ------------------
 
-#### [11. Crackme5](url)
+### [11. Crackme5](url)
     
 Write a keygen for [crackme5](https://github.com/hs-hq/0x17.c).
 
