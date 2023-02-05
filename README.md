@@ -236,7 +236,7 @@ _____________________________________
 
 ----------------------------
 
-### [C - Doubly Linked Lists](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/doubly_linked_lists)
+### [C - Doubly Linked Lists](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x16-doubly_linked_lists)
 #### `GENERAL`
 
 - What is a doubly linked list
