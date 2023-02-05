@@ -379,13 +379,6 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
 
 <details>
-<summary></summary>
-<br>
-
->
-</details>
-
-<details>
 <summary>What are pointers and how to use them</summary>
 <br>
 
