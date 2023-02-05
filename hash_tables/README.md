@@ -576,7 +576,7 @@ mathieu@ubuntu:~/Hash tables$ valgrind ./g
   
 ---------------------------
 
-#### [7. $ht['Betty'] = 'Cool'](url)
+#### [7. $ht['Betty'] = 'Cool'](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/blob/master/0x17-hash_tables/100-sorted_hash_table.c
 
 In [PHP](https://www.php.net/manual/en/intro-whatis.php), hash tables are ordered. Wait… WAT? How is this even possible?
   
