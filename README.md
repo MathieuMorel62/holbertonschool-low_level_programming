@@ -717,7 +717,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 --------------------------------
 
-### [C - FILE I/O](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/file_io)
+### [C - FILE I/O](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x15-file_io)
 #### `GENERAL`
 At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
 
@@ -803,7 +803,7 @@ At the end of this project, you are expected to be able to [explain to anyone](h
 
 -------------------------
 
-### [C - Hash Tables](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/hash_tables)
+### [C - Hash Tables](https://github.com/MathieuMorel62/holbertonschool-low_level_programming/tree/master/0x17-hash_tables)
 #### `GENERAL`
 At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/gwuqSZXS7ElRbiObQzDcTg), **without the help of Google:**
 
